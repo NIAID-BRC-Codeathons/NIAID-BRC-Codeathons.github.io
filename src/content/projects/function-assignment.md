@@ -5,36 +5,90 @@ pubDate: 'Nov 12 2025'
 tags: ['AI', 'Genomics', 'Function Prediction', 'Machine Learning']
 ---
 
-## Project Goal
+## Project Theme
 
-Leverage AI and machine learning to predict functions for hypothetical and uncharacterized genes in bacterial and viral pathogens, integrating multiple data types including sequence, structure, expression, and genomic context.
+**Assign Functions to Uncharacterized Genes**
 
-## Key Features
+## Project Summary
 
-- Multi-modal AI models for function prediction
-- Integration of sequence, structure, and context data
-- Prediction confidence scoring
-- Visualization of predicted functions and evidence
-- Batch processing for genome-scale analysis
+A significant portion of genes in bacterial and viral pathogens remain uncharacterized or annotated only as "hypothetical proteins." This project uses AI and machine learning to predict functions for these genes by integrating multiple data types including sequence, structure, genomic context, and expression patterns. By combining deep learning on protein sequences, AlphaFold structure predictions, and comparative genomics, we aim to provide functional annotations with confidence scores, helping researchers understand pathogen biology and identify novel therapeutic targets.
 
-## Technical Approach
+## Goals and Objectives
 
-- Deep learning on protein sequences and structures
-- Integration with AlphaFold structure predictions
-- Genomic context analysis (operons, neighborhoods)
-- Transfer learning from well-characterized organisms
+1. **Develop multi-modal AI models** for function prediction integrating sequence, structure, and context
+2. **Generate functional predictions** for hypothetical proteins in priority pathogens
+3. **Provide confidence scores** and supporting evidence for predictions
+4. **Create visualization tools** for exploring predictions and evidence
+
+## Approach
+
+**Methods and AI/ML Approaches:**
+- Deep learning on protein sequences (transformers, CNNs)
+- Structure-based function prediction using AlphaFold models
+- Genomic context analysis (operons, gene neighborhoods, synteny)
+- Transfer learning from well-characterized model organisms
 - Ensemble methods combining multiple prediction approaches
+- Graph neural networks for protein-protein interaction prediction
 
-## Expected Outcomes
+**Implementation Steps:**
+1. Compile datasets of characterized proteins for training
+2. Extract features: sequences, structures, genomic context
+3. Train and validate multi-modal prediction models
+4. Generate predictions for hypothetical proteins in BRC
+5. Implement confidence scoring and evidence aggregation
+6. Build visualization interface for predictions
+7. Validate predictions with experimental data where available
 
-- Functional predictions for uncharacterized genes
-- Confidence metrics and validation strategies
-- Comparison with existing annotation tools
-- Web interface for function prediction
-- Public repository and API
+## Data and Resources Required
 
-## Target Users
+| Resource Type | Source / Link | Description / Purpose |
+|---------------|---------------|----------------------|
+| **Data** | BV-BRC genome annotations | Target genes for prediction |
+| **Data** | UniProt, InterPro, Pfam | Characterized protein functions |
+| **Data** | AlphaFold Database | Protein structure predictions |
+| **Data** | STRING, BioGRID | Protein interaction networks |
+| **LLMs / AI Models** | ESM-2, ProtTrans | Protein language models |
+| **Tools / Services** | PyTorch, TensorFlow | Deep learning frameworks |
+| **Compute / Storage** | GPU for model training | Large-scale predictions |
 
-- Genome annotators and curators
-- Researchers studying emerging pathogens
-- Comparative genomics researchers
+## Expected Outcomes / Deliverables
+
+- **Functional predictions** for hypothetical proteins in priority pathogens
+- **Confidence metrics** and evidence summaries for each prediction
+- **Trained models** for function prediction
+- **Web interface** or API for batch predictions
+- **Comparison with existing tools** (InterProScan, BLAST, HHpred)
+- **Public repository** with code, models, and documentation
+- **Publication-ready validation results**
+
+## Potential Impact and Next Steps
+
+**Impact on:**
+- **Infectious disease research:** Accelerates functional annotation of pathogen genomes
+- **AI/ML automation:** Advances protein function prediction methods
+- **Public health preparedness:** Enables rapid characterization of emerging pathogens
+
+**Next Steps After Codeathon:**
+- Apply to all BRC genomes genome-wide
+- Integrate with BRC annotation pipelines
+- Add experimental validation suggestions
+- Develop active learning for continuous improvement
+- Create educational materials on protein function prediction
+
+## Technical Support Needed
+
+- [ ] BRC genome data access
+- [ ] AlphaFold structure predictions
+- [ ] GPU compute for training
+- [ ] Curated protein function datasets
+- [ ] Mentor support from structural biologists
+
+## Team Information
+
+Teams will be formed during the Codeathon. Ideal team composition:
+
+- **ML/AI Researcher:** Model development and training
+- **Structural Biologist:** Structure-function relationships
+- **Comparative Genomicist:** Genomic context analysis
+- **Bioinformatician:** Data integration and validation
+- **Software Developer:** Interface and deployment
