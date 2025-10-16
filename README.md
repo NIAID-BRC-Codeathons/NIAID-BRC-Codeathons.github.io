@@ -38,8 +38,8 @@ All commands are run from the root of the project:
 
 To add a new project proposal:
 
-1. Create a new `.md` file in `src/content/projects/`
-2. Add frontmatter with required fields:
+1. Copy `src/content/projects/your-project-here.md` to a new file (e.g., `my-project.md`)
+2. Edit the frontmatter with your project details:
    ```yaml
    ---
    title: 'Your Project Title'
@@ -47,10 +47,10 @@ To add a new project proposal:
    tags: ['AI', 'Bioinformatics']
    ---
    ```
-3. Write your project content in Markdown
+3. Fill in the project sections following the template structure
 4. The project will automatically appear on the projects page
 
-See `src/content/projects/your-project-here.md` for a complete template.
+The template includes all recommended sections for a complete project proposal.
 
 ## 🌐 Deployment
 
