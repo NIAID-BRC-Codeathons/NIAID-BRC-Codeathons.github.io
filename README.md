@@ -1,48 +1,30 @@
-# Astro Starter Kit: Blog
+# BRC NIAID AI Codeathon 2025 Website
 
-```sh
-npm create astro@latest -- --template blog
-```
+Website for the BRC NIAID AI Codeathon 2025, November 12-14, 2025 at Argonne National Laboratory.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+Built with [Astro](https://astro.build/), a modern static site generator.
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
 ```text
-├── public/
+├── public/              # Static assets (fonts, favicon)
 ├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+│   ├── components/      # Reusable Astro components
+│   ├── content/
+│   │   └── projects/    # Project proposals as Markdown files
+│   ├── layouts/         # Page layouts
+│   ├── pages/           # Routes (file-based routing)
+│   │   ├── index.astro  # Homepage
+│   │   ├── schedule.astro # Event schedule
+│   │   └── projects/    # Project listing and detail pages
+│   └── consts.ts        # Site configuration
+├── astro.config.mjs     # Astro configuration
+└── package.json
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+All commands are run from the root of the project:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -51,12 +33,31 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 📝 Adding Project Content
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+To add a new project proposal:
 
-## Credit
+1. Create a new `.md` file in `src/content/projects/`
+2. Add frontmatter with required fields:
+   ```yaml
+   ---
+   title: 'Your Project Title'
+   description: 'Brief description'
+   pubDate: 'Nov 12 2025'
+   tags: ['AI', 'Bioinformatics']
+   ---
+   ```
+3. Write your project content in Markdown
+4. The project will automatically appear on the projects page
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+See `src/content/projects/your-project-here.md` for a complete template.
+
+## 🌐 Deployment
+
+This site is configured to deploy to GitHub Pages at `https://niaid-brc-codeathons.github.io/`
+
+## 📚 Learn More
+
+- [Astro Documentation](https://docs.astro.build)
+- [Astro Content Collections](https://docs.astro.build/en/guides/content-collections/)
