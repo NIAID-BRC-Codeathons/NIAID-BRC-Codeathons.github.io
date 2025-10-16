@@ -1,7 +1,6 @@
 ---
 title: 'Automated Workflow Generation and Execution'
 description: 'Develop AI tools to generate and run workflows from user descriptions using data and tools from BRCs and external resources'
-pubDate: 'Nov 12 2025'
 tags: ['AI', 'Workflows', 'Automation', 'Bioinformatics']
 ---
 

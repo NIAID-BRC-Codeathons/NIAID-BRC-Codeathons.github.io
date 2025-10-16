@@ -44,7 +44,6 @@ To add a new project proposal:
    ---
    title: 'Your Project Title'
    description: 'Brief description'
-   pubDate: 'Nov 12 2025'
    tags: ['AI', 'Bioinformatics']
    ---
    ```

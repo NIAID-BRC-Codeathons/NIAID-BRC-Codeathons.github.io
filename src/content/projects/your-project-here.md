@@ -1,7 +1,6 @@
 ---
 title: 'Your Project Here'
 description: 'Use this template to propose your own codeathon project'
-pubDate: 'Nov 12 2025'
 tags: ['Template']
 ---
 

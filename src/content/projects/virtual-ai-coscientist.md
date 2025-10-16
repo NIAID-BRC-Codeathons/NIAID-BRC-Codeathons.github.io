@@ -1,7 +1,6 @@
 ---
 title: 'Virtual AI Co-scientist'
 description: 'Create a multi-agent AI system that generates, debates, and ranks hypotheses based on user-defined research goals'
-pubDate: 'Nov 12 2025'
 tags: ['AI', 'Multi-Agent', 'Hypothesis Generation', 'Research Automation']
 ---
 

@@ -9,9 +9,6 @@ const projects = defineCollection({
 		z.object({
 			title: z.string(),
 			description: z.string(),
-			// Transform string to Date object
-			pubDate: z.coerce.date(),
-			updatedDate: z.coerce.date().optional(),
 			heroImage: image().optional(),
 			team: z.array(z.string()).optional(),
 			github: z.string().url().optional(),

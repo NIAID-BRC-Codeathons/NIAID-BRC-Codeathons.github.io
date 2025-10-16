@@ -1,7 +1,6 @@
 ---
 title: 'Outbreak Monitoring and Tracking'
 description: 'Develop an AI system to track, collect, filter, and process outbreak data from diverse sources for near real-time monitoring and reporting'
-pubDate: 'Nov 12 2025'
 tags: ['AI', 'Surveillance', 'Epidemiology', 'Data Integration']
 ---
 

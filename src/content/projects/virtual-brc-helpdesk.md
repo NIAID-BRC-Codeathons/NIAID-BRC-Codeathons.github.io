@@ -1,7 +1,6 @@
 ---
 title: 'Virtual BRC Helpdesk'
 description: 'Build an AI-powered helpdesk to guide users through complex bioinformatics tasks and lower the learning barrier'
-pubDate: 'Nov 12 2025'
 tags: ['AI', 'Helpdesk', 'User Support', 'NLP']
 ---
 

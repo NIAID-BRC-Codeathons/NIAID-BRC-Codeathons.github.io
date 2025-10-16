@@ -1,7 +1,6 @@
 ---
 title: 'Automated Knowledge Extraction and Curation'
 description: 'Apply AI to extract and curate key biological insights from literature and other sources'
-pubDate: 'Nov 12 2025'
 tags: ['AI', 'Text Mining', 'Literature', 'Knowledge Graphs']
 ---
 

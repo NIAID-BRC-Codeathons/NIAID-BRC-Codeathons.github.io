@@ -1,7 +1,6 @@
 ---
 title: 'Assign Functions to Uncharacterized Genes'
 description: 'Use AI-driven approaches to predict functions for uncharacterized genes in priority and prototype pathogens'
-pubDate: 'Nov 12 2025'
 tags: ['AI', 'Genomics', 'Function Prediction', 'Machine Learning']
 ---
 
