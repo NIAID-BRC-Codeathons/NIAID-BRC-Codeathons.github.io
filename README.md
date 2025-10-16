@@ -2,6 +2,8 @@
 
 Website for the BRC NIAID AI Codeathon 2025, November 12-14, 2025 at Argonne National Laboratory.
 
+**Live Site:** https://niaid-brc-codeathons.github.io/
+
 Built with [Astro](https://astro.build/), a modern static site generator.
 
 ## 🚀 Project Structure
