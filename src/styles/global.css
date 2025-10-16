@@ -5,8 +5,8 @@
  */
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+	--accent: 35, 55, 255;
+	--accent-dark: 0, 13, 138;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -79,10 +79,10 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: rgb(var(--accent));
 }
 a:hover {
-	color: var(--accent);
+	color: rgb(var(--accent));
 }
 p {
 	margin-bottom: 1em;
@@ -118,7 +118,7 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border-left: 4px solid var(--accent);
+	border-left: 4px solid rgb(var(--accent));
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.333em;
