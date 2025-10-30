@@ -18,9 +18,11 @@ npm run astro     # Run Astro CLI commands
 ## Architecture
 
 ### Content-First Approach
+
 This is a static site using Astro's Content Collections for type-safe content management. Content lives in markdown/MDX files, not a database.
 
 **Key Concept**: `blog` collection → `projects` collection
+
 - The blog template's "posts" are being repurposed as "project" entries
 - Each codeathon project gets a markdown file in `src/content/blog/` (will be renamed to `projects/`)
 - Frontmatter schema in `src/content.config.ts` defines required fields (title, description, dates, images)
@@ -42,19 +44,23 @@ src/
 ```
 
 ### Content Collections Flow
+
 1. Markdown files in `src/content/blog/` are loaded via glob pattern
 2. Frontmatter is validated against zod schema in `content.config.ts`
 3. Use `getCollection('blog')` to retrieve all entries with type safety
 4. Each file automatically becomes a route via `[...slug].astro`
 
 ### Styling
+
 Minimal CSS in `src/styles/global.css`. No CSS framework installed. Styles are intentionally minimal for easy customization.
 
 ## Content Management
 
 ### Adding a New Project
+
 1. Create markdown file in `src/content/blog/` (e.g., `ai-helpdesk.md`)
 2. Add required frontmatter:
+
 ```yaml
 ---
 title: "Virtual BRC Helpdesk"
@@ -63,11 +69,14 @@ pubDate: 2025-11-12
 heroImage: "./project-image.jpg"
 ---
 ```
+
 3. Write content in markdown
 4. File automatically appears in listings and generates route
 
 ### Modifying Content Schema
+
 Edit `src/content.config.ts` to add fields like:
+
 - `team: z.array(z.string())` for team members
 - `github: z.string().url()` for repository links
 - `tags: z.array(z.string())` for project categories
@@ -75,19 +84,24 @@ Edit `src/content.config.ts` to add fields like:
 ## Project-Specific Patterns
 
 ### Adapting Blog → Projects
+
 When renaming from blog to projects:
+
 1. Rename `src/content/blog/` to `src/content/projects/`
 2. Update collection name in `content.config.ts`: `const projects = defineCollection({...})`
 3. Update `pages/blog/` directory to `pages/projects/`
 4. Search/replace `getCollection('blog')` with `getCollection('projects')`
 
 ### GitHub Integration
+
 For displaying repository stats (stars, last commit, etc.):
+
 - Use GitHub API in page frontmatter or component
 - Consider caching strategy (build-time fetch vs. client-side)
 - Example: fetch in `getStaticPaths()` or Astro component frontmatter
 
 ### Pages to Create
+
 - `/` - Event overview
 - `/projects` - Project listings with filters
 - `/projects/[slug]` - Individual project pages

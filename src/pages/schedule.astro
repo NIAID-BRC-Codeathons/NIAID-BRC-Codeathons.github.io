@@ -1,14 +1,17 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_TITLE } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { SITE_TITLE } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`Schedule | ${SITE_TITLE}`} description="BRC NIAID AI Codeathon 2025 Schedule - November 12-14, 2025 at Argonne National Laboratory" />
+		<BaseHead
+			title={`Schedule | ${SITE_TITLE}`}
+			description="BRC NIAID AI Codeathon 2025 Schedule - November 12-14, 2025 at Argonne National Laboratory"
+		/>
 		<style>
 			main {
 				width: 720px;
@@ -82,8 +85,8 @@ import { SITE_TITLE } from '../consts';
 			<div class="location-info">
 				<h3>Event Location</h3>
 				<p>
-					<strong>Room 1416, Building 240</strong><br>
-					Argonne National Laboratory<br>
+					<strong>Room 1416, Building 240</strong><br />
+					Argonne National Laboratory<br />
 					9700 S Cass Ave, Lemont, IL
 				</p>
 			</div>

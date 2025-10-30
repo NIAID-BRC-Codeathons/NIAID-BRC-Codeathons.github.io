@@ -1,13 +1,13 @@
 ---
-import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
-import BaseHead from '../../components/BaseHead.astro';
-import Footer from '../../components/Footer.astro';
-import Header from '../../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import BaseHead from "../../components/BaseHead.astro";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
 
-const projects = (await getCollection('projects')).sort(
-	(a, b) => a.data.title.localeCompare(b.data.title),
+const projects = (await getCollection("projects")).sort((a, b) =>
+	a.data.title.localeCompare(b.data.title)
 );
 ---
 
@@ -80,7 +80,12 @@ const projects = (await getCollection('projects')).sort(
 							<li>
 								<a href={`/projects/${project.id}/`}>
 									{project.data.heroImage && (
-										<Image width={720} height={360} src={project.data.heroImage} alt="" />
+										<Image
+											width={720}
+											height={360}
+											src={project.data.heroImage}
+											alt=""
+										/>
 									)}
 									<h4 class="title">{project.data.title}</h4>
 									<p class="description">{project.data.description}</p>

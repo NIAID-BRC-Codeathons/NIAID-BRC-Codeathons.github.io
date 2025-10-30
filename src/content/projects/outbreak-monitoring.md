@@ -1,7 +1,7 @@
 ---
-title: 'Outbreak Monitoring and Tracking'
-description: 'Develop an AI system to track, collect, filter, and process outbreak data from diverse sources for near real-time monitoring and reporting'
-tags: ['AI', 'Surveillance', 'Epidemiology', 'Data Integration']
+title: "Outbreak Monitoring and Tracking"
+description: "Develop an AI system to track, collect, filter, and process outbreak data from diverse sources for near real-time monitoring and reporting"
+tags: ["AI", "Surveillance", "Epidemiology", "Data Integration"]
 ---
 
 ## Project Theme
@@ -22,6 +22,7 @@ Infectious disease outbreaks require rapid detection and response, but informati
 ## Approach
 
 **Methods and AI/ML Approaches:**
+
 - Web scraping and API integration for data collection
 - Natural Language Processing for text analysis and entity extraction
 - Named Entity Recognition for pathogens, locations, dates, and case counts
@@ -31,6 +32,7 @@ Infectious disease outbreaks require rapid detection and response, but informati
 - Geographic visualization and mapping
 
 **Implementation Steps:**
+
 1. Identify and integrate data sources (ProMED, HealthMap, news APIs, Twitter)
 2. Build data collection and preprocessing pipeline
 3. Implement NER for outbreak-relevant entities
@@ -42,16 +44,16 @@ Infectious disease outbreaks require rapid detection and response, but informati
 
 ## Data and Resources Required
 
-| Resource Type | Source / Link | Description / Purpose |
-|---------------|---------------|----------------------|
-| **Data** | ProMED, HealthMap, GISAID | Existing outbreak databases |
-| **Data** | News APIs, Twitter API | Real-time information sources |
-| **Data** | WHO, CDC, ECDC reports | Official outbreak data |
-| **Tools / Services** | BV-BRC genomic data | Integration with sequence surveillance |
-| **LLMs / AI Models** | GPT-4, Claude for summarization | Report generation |
-| **Tools / Services** | BeautifulSoup, Scrapy | Web scraping frameworks |
-| **Tools / Services** | Folium, Plotly | Mapping and visualization |
-| **Compute / Storage** | Database for time series data | Store outbreak records |
+| Resource Type         | Source / Link                   | Description / Purpose                  |
+| --------------------- | ------------------------------- | -------------------------------------- |
+| **Data**              | ProMED, HealthMap, GISAID       | Existing outbreak databases            |
+| **Data**              | News APIs, Twitter API          | Real-time information sources          |
+| **Data**              | WHO, CDC, ECDC reports          | Official outbreak data                 |
+| **Tools / Services**  | BV-BRC genomic data             | Integration with sequence surveillance |
+| **LLMs / AI Models**  | GPT-4, Claude for summarization | Report generation                      |
+| **Tools / Services**  | BeautifulSoup, Scrapy           | Web scraping frameworks                |
+| **Tools / Services**  | Folium, Plotly                  | Mapping and visualization              |
+| **Compute / Storage** | Database for time series data   | Store outbreak records                 |
 
 ## Expected Outcomes / Deliverables
 
@@ -66,11 +68,13 @@ Infectious disease outbreaks require rapid detection and response, but informati
 ## Potential Impact and Next Steps
 
 **Impact on:**
+
 - **Infectious disease research:** Provides early warning for emerging pathogens
 - **AI/ML automation:** Demonstrates practical surveillance automation
 - **Public health preparedness:** Enables faster outbreak detection and response
 
 **Next Steps After Codeathon:**
+
 - Expand to additional data sources and languages
 - Add genomic surveillance integration for variant tracking
 - Implement predictive models for outbreak trajectory

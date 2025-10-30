@@ -1,7 +1,7 @@
 ---
-title: 'Assign Functions to Uncharacterized Genes'
-description: 'Use AI-driven approaches to predict functions for uncharacterized genes in priority and prototype pathogens'
-tags: ['AI', 'Genomics', 'Function Prediction', 'Machine Learning']
+title: "Assign Functions to Uncharacterized Genes"
+description: "Use AI-driven approaches to predict functions for uncharacterized genes in priority and prototype pathogens"
+tags: ["AI", "Genomics", "Function Prediction", "Machine Learning"]
 ---
 
 ## Project Theme
@@ -22,6 +22,7 @@ A significant portion of genes in bacterial and viral pathogens remain uncharact
 ## Approach
 
 **Methods and AI/ML Approaches:**
+
 - Deep learning on protein sequences (transformers, CNNs)
 - Structure-based function prediction using AlphaFold models
 - Genomic context analysis (operons, gene neighborhoods, synteny)
@@ -30,6 +31,7 @@ A significant portion of genes in bacterial and viral pathogens remain uncharact
 - Graph neural networks for protein-protein interaction prediction
 
 **Implementation Steps:**
+
 1. Compile datasets of characterized proteins for training
 2. Extract features: sequences, structures, genomic context
 3. Train and validate multi-modal prediction models
@@ -40,15 +42,15 @@ A significant portion of genes in bacterial and viral pathogens remain uncharact
 
 ## Data and Resources Required
 
-| Resource Type | Source / Link | Description / Purpose |
-|---------------|---------------|----------------------|
-| **Data** | BV-BRC genome annotations | Target genes for prediction |
-| **Data** | UniProt, InterPro, Pfam | Characterized protein functions |
-| **Data** | AlphaFold Database | Protein structure predictions |
-| **Data** | STRING, BioGRID | Protein interaction networks |
-| **LLMs / AI Models** | ESM-2, ProtTrans | Protein language models |
-| **Tools / Services** | PyTorch, TensorFlow | Deep learning frameworks |
-| **Compute / Storage** | GPU for model training | Large-scale predictions |
+| Resource Type         | Source / Link             | Description / Purpose           |
+| --------------------- | ------------------------- | ------------------------------- |
+| **Data**              | BV-BRC genome annotations | Target genes for prediction     |
+| **Data**              | UniProt, InterPro, Pfam   | Characterized protein functions |
+| **Data**              | AlphaFold Database        | Protein structure predictions   |
+| **Data**              | STRING, BioGRID           | Protein interaction networks    |
+| **LLMs / AI Models**  | ESM-2, ProtTrans          | Protein language models         |
+| **Tools / Services**  | PyTorch, TensorFlow       | Deep learning frameworks        |
+| **Compute / Storage** | GPU for model training    | Large-scale predictions         |
 
 ## Expected Outcomes / Deliverables
 
@@ -63,11 +65,13 @@ A significant portion of genes in bacterial and viral pathogens remain uncharact
 ## Potential Impact and Next Steps
 
 **Impact on:**
+
 - **Infectious disease research:** Accelerates functional annotation of pathogen genomes
 - **AI/ML automation:** Advances protein function prediction methods
 - **Public health preparedness:** Enables rapid characterization of emerging pathogens
 
 **Next Steps After Codeathon:**
+
 - Apply to all BRC genomes genome-wide
 - Integrate with BRC annotation pipelines
 - Add experimental validation suggestions

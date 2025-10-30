@@ -1,7 +1,7 @@
 ---
-title: 'Automated Knowledge Extraction and Curation'
-description: 'Apply AI to extract and curate key biological insights from literature and other sources'
-tags: ['AI', 'Text Mining', 'Literature', 'Knowledge Graphs']
+title: "Automated Knowledge Extraction and Curation"
+description: "Apply AI to extract and curate key biological insights from literature and other sources"
+tags: ["AI", "Text Mining", "Literature", "Knowledge Graphs"]
 ---
 
 ## Project Theme
@@ -22,6 +22,7 @@ The scientific literature on infectious diseases grows exponentially, making man
 ## Approach
 
 **Methods and AI/ML Approaches:**
+
 - Named Entity Recognition (NER) for biological entities (genes, proteins, pathogens, phenotypes)
 - Relation extraction using transformer models (BioBERT, SciBERT, PubMedBERT)
 - Knowledge graph construction and validation
@@ -29,6 +30,7 @@ The scientific literature on infectious diseases grows exponentially, making man
 - Active learning for curator feedback integration
 
 **Implementation Steps:**
+
 1. Collect literature corpus (PubMed, PMC) for priority pathogens
 2. Fine-tune NER models on infectious disease texts
 3. Extract entities and relationships
@@ -39,14 +41,14 @@ The scientific literature on infectious diseases grows exponentially, making man
 
 ## Data and Resources Required
 
-| Resource Type | Source / Link | Description / Purpose |
-|---------------|---------------|----------------------|
-| **Data** | PubMed, PubMed Central | Scientific literature corpus |
-| **Data** | BV-BRC, UniProt, GO | Reference databases for validation |
-| **LLMs / AI Models** | BioBERT, SciBERT, PubMedBERT | Domain-specific language models |
-| **Tools / Services** | spaCy, Hugging Face Transformers | NLP frameworks |
-| **Tools / Services** | Neo4j or NetworkX | Knowledge graph storage |
-| **Compute / Storage** | GPU for model training | Fine-tuning language models |
+| Resource Type         | Source / Link                    | Description / Purpose              |
+| --------------------- | -------------------------------- | ---------------------------------- |
+| **Data**              | PubMed, PubMed Central           | Scientific literature corpus       |
+| **Data**              | BV-BRC, UniProt, GO              | Reference databases for validation |
+| **LLMs / AI Models**  | BioBERT, SciBERT, PubMedBERT     | Domain-specific language models    |
+| **Tools / Services**  | spaCy, Hugging Face Transformers | NLP frameworks                     |
+| **Tools / Services**  | Neo4j or NetworkX                | Knowledge graph storage            |
+| **Compute / Storage** | GPU for model training           | Fine-tuning language models        |
 
 ## Expected Outcomes / Deliverables
 
@@ -61,11 +63,13 @@ The scientific literature on infectious diseases grows exponentially, making man
 ## Potential Impact and Next Steps
 
 **Impact on:**
+
 - **Infectious disease research:** Accelerates literature review and knowledge synthesis
 - **AI/ML automation:** Demonstrates practical biomedical NLP applications
 - **Public health preparedness:** Enables rapid knowledge compilation for emerging pathogens
 
 **Next Steps After Codeathon:**
+
 - Expand to all BRC pathogens and related literature
 - Implement continuous monitoring of new publications
 - Add multi-language support for non-English literature

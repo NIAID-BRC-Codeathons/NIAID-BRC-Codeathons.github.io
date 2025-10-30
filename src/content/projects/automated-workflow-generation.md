@@ -1,7 +1,7 @@
 ---
-title: 'Automated Workflow Generation and Execution'
-description: 'Develop AI tools to generate and run workflows from user descriptions using data and tools from BRCs and external resources'
-tags: ['AI', 'Workflows', 'Automation', 'Bioinformatics']
+title: "Automated Workflow Generation and Execution"
+description: "Develop AI tools to generate and run workflows from user descriptions using data and tools from BRCs and external resources"
+tags: ["AI", "Workflows", "Automation", "Bioinformatics"]
 ---
 
 ## Project Theme
@@ -22,6 +22,7 @@ Bioinformatics workflows often require expertise in multiple tools, file formats
 ## Approach
 
 **Methods and AI/ML Approaches:**
+
 - Large Language Models for parsing research questions and generating workflow logic
 - Workflow description languages (CWL, Nextflow, Snakemake, or Galaxy)
 - BRC API integration for tool execution
@@ -29,6 +30,7 @@ Bioinformatics workflows often require expertise in multiple tools, file formats
 - Knowledge graphs of tool relationships and compatibility
 
 **Implementation Steps:**
+
 1. Define common workflow patterns for infectious disease research
 2. Create prompts for LLM-based workflow generation
 3. Build a tool registry with BRC and external bioinformatics tools
@@ -39,14 +41,14 @@ Bioinformatics workflows often require expertise in multiple tools, file formats
 
 ## Data and Resources Required
 
-| Resource Type | Source / Link | Description / Purpose |
-|---------------|---------------|----------------------|
-| **Data** | BV-BRC sample datasets | Testing workflow execution |
-| **Tools / Services** | BV-BRC analysis services API | Tool execution backend |
-| **Tools / Services** | Galaxy, Nextflow, or Snakemake | Workflow engine |
-| **LLMs / AI Models** | GPT-4, Claude 3, or Code Llama | Workflow generation |
-| **Data** | Tool documentation and schemas | For tool selection and parameterization |
-| **Compute / Storage** | HPC access for workflow execution | Run generated pipelines |
+| Resource Type         | Source / Link                     | Description / Purpose                   |
+| --------------------- | --------------------------------- | --------------------------------------- |
+| **Data**              | BV-BRC sample datasets            | Testing workflow execution              |
+| **Tools / Services**  | BV-BRC analysis services API      | Tool execution backend                  |
+| **Tools / Services**  | Galaxy, Nextflow, or Snakemake    | Workflow engine                         |
+| **LLMs / AI Models**  | GPT-4, Claude 3, or Code Llama    | Workflow generation                     |
+| **Data**              | Tool documentation and schemas    | For tool selection and parameterization |
+| **Compute / Storage** | HPC access for workflow execution | Run generated pipelines                 |
 
 ## Expected Outcomes / Deliverables
 
@@ -61,11 +63,13 @@ Bioinformatics workflows often require expertise in multiple tools, file formats
 ## Potential Impact and Next Steps
 
 **Impact on:**
+
 - **Infectious disease research:** Accelerates time from question to analysis results
 - **AI/ML automation:** Advances AI-driven scientific workflow automation
 - **Public health preparedness:** Enables rapid deployment of analysis pipelines during outbreaks
 
 **Next Steps After Codeathon:**
+
 - Expand tool registry to cover all BRC services
 - Add interactive workflow refinement (user feedback loop)
 - Implement workflow version control and sharing

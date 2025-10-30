@@ -1,7 +1,7 @@
 ---
-title: 'Virtual BRC Helpdesk'
-description: 'Build an AI-powered helpdesk to guide users through complex bioinformatics tasks and lower the learning barrier'
-tags: ['AI', 'Helpdesk', 'User Support', 'NLP']
+title: "Virtual BRC Helpdesk"
+description: "Build an AI-powered helpdesk to guide users through complex bioinformatics tasks and lower the learning barrier"
+tags: ["AI", "Helpdesk", "User Support", "NLP"]
 ---
 
 ## Project Theme
@@ -22,12 +22,14 @@ Many researchers find bioinformatics resources challenging to navigate, especial
 ## Approach
 
 **Methods and AI/ML Approaches:**
+
 - Large Language Models (GPT-4, Claude, or open-source alternatives like Llama)
 - Retrieval-Augmented Generation (RAG) for BRC-specific knowledge
 - Vector embeddings of BRC documentation, tutorials, and user guides
 - Fine-tuning on BRC FAQs and support ticket history
 
 **Implementation Steps:**
+
 1. Collect and preprocess BRC documentation, tutorials, and help resources
 2. Build a vector database of BRC knowledge for RAG
 3. Design conversational prompts and system instructions
@@ -37,14 +39,14 @@ Many researchers find bioinformatics resources challenging to navigate, especial
 
 ## Data and Resources Required
 
-| Resource Type | Source / Link | Description / Purpose |
-|---------------|---------------|----------------------|
-| **Data** | BV-BRC tutorials, documentation, FAQs | Training corpus for RAG system |
-| **Data** | User forum questions/answers | Real-world query examples |
-| **Tools / Services** | BV-BRC API | For demonstrating tool usage |
-| **LLMs / AI Models** | GPT-4, Claude 3, or Llama 3 | Core conversational AI |
-| **Tools / Services** | LangChain, LlamaIndex | RAG framework |
-| **Compute / Storage** | Vector database (Pinecone, Chroma, or Weaviate) | Store document embeddings |
+| Resource Type         | Source / Link                                   | Description / Purpose          |
+| --------------------- | ----------------------------------------------- | ------------------------------ |
+| **Data**              | BV-BRC tutorials, documentation, FAQs           | Training corpus for RAG system |
+| **Data**              | User forum questions/answers                    | Real-world query examples      |
+| **Tools / Services**  | BV-BRC API                                      | For demonstrating tool usage   |
+| **LLMs / AI Models**  | GPT-4, Claude 3, or Llama 3                     | Core conversational AI         |
+| **Tools / Services**  | LangChain, LlamaIndex                           | RAG framework                  |
+| **Compute / Storage** | Vector database (Pinecone, Chroma, or Weaviate) | Store document embeddings      |
 
 ## Expected Outcomes / Deliverables
 
@@ -58,11 +60,13 @@ Many researchers find bioinformatics resources challenging to navigate, especial
 ## Potential Impact and Next Steps
 
 **Impact on:**
+
 - **Infectious disease research:** Lowers barrier for researchers to access powerful bioinformatics tools
 - **AI/ML automation:** Demonstrates practical application of LLMs for scientific support
 - **Public health preparedness:** Enables rapid onboarding of new users during outbreaks
 
 **Next Steps After Codeathon:**
+
 - Expand knowledge base to include all BRC resources
 - Add multi-turn conversation capabilities
 - Integrate with BRC user authentication for personalized help

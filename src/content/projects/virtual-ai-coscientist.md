@@ -1,7 +1,7 @@
 ---
-title: 'Virtual AI Co-scientist'
-description: 'Create a multi-agent AI system that generates, debates, and ranks hypotheses based on user-defined research goals'
-tags: ['AI', 'Multi-Agent', 'Hypothesis Generation', 'Research Automation']
+title: "Virtual AI Co-scientist"
+description: "Create a multi-agent AI system that generates, debates, and ranks hypotheses based on user-defined research goals"
+tags: ["AI", "Multi-Agent", "Hypothesis Generation", "Research Automation"]
 ---
 
 ## Project Theme
@@ -22,6 +22,7 @@ Scientific discovery often requires brainstorming multiple hypotheses, evaluatin
 ## Approach
 
 **Methods and AI/ML Approaches:**
+
 - Multi-agent LLM framework (AutoGen, CrewAI, LangGraph, or custom)
 - Specialized agents with distinct roles and personas
 - Chain-of-thought reasoning and debate protocols
@@ -31,6 +32,7 @@ Scientific discovery often requires brainstorming multiple hypotheses, evaluatin
 - Experimental design suggestion algorithms
 
 **Implementation Steps:**
+
 1. Design multi-agent architecture and agent roles
 2. Implement agent communication protocols
 3. Create prompts for hypothesis generation
@@ -42,15 +44,15 @@ Scientific discovery often requires brainstorming multiple hypotheses, evaluatin
 
 ## Data and Resources Required
 
-| Resource Type | Source / Link | Description / Purpose |
-|---------------|---------------|----------------------|
-| **Data** | PubMed, PubMed Central | Literature for evidence gathering |
-| **Data** | BV-BRC databases | Pathogen data for validation |
-| **LLMs / AI Models** | GPT-4, Claude 3, Gemini | Multi-agent reasoning |
-| **Tools / Services** | AutoGen, CrewAI, or LangGraph | Multi-agent frameworks |
-| **Tools / Services** | LangChain for RAG | Evidence retrieval |
-| **Data** | ArXiv, bioRxiv preprints | Cutting-edge research |
-| **Compute / Storage** | High token limits for LLM calls | Extended reasoning chains |
+| Resource Type         | Source / Link                   | Description / Purpose             |
+| --------------------- | ------------------------------- | --------------------------------- |
+| **Data**              | PubMed, PubMed Central          | Literature for evidence gathering |
+| **Data**              | BV-BRC databases                | Pathogen data for validation      |
+| **LLMs / AI Models**  | GPT-4, Claude 3, Gemini         | Multi-agent reasoning             |
+| **Tools / Services**  | AutoGen, CrewAI, or LangGraph   | Multi-agent frameworks            |
+| **Tools / Services**  | LangChain for RAG               | Evidence retrieval                |
+| **Data**              | ArXiv, bioRxiv preprints        | Cutting-edge research             |
+| **Compute / Storage** | High token limits for LLM calls | Extended reasoning chains         |
 
 ## Expected Outcomes / Deliverables
 
@@ -65,11 +67,13 @@ Scientific discovery often requires brainstorming multiple hypotheses, evaluatin
 ## Potential Impact and Next Steps
 
 **Impact on:**
+
 - **Infectious disease research:** Accelerates hypothesis generation and research planning
 - **AI/ML automation:** Advances multi-agent reasoning and collaboration
 - **Public health preparedness:** Enables rapid hypothesis generation for emerging threats
 
 **Next Steps After Codeathon:**
+
 - Add experimental design and protocol suggestions
 - Integrate with grant writing assistance
 - Implement learning from user feedback
