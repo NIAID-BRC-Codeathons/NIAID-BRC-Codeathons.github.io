@@ -8,7 +8,7 @@ import { SITE_TITLE } from '../consts';
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`Schedule | ${SITE_TITLE}`} description="BRC NIAID AI Codeathon 2025 Schedule" />
+		<BaseHead title={`Schedule | ${SITE_TITLE}`} description="BRC NIAID AI Codeathon 2025 Schedule - November 12-14, 2025 at Argonne National Laboratory" />
 		<style>
 			main {
 				width: 720px;
@@ -62,6 +62,16 @@ import { SITE_TITLE } from '../consts';
 				font-size: 0.9em;
 				color: rgb(var(--gray-dark));
 			}
+			.location-info {
+				background: rgba(var(--accent), 0.1);
+				border-left: 4px solid rgb(var(--accent));
+				padding: 1em;
+				margin: 2em 0;
+			}
+			.location-info h3 {
+				margin-top: 0;
+				color: rgb(var(--accent));
+			}
 		</style>
 	</head>
 	<body>
@@ -69,97 +79,71 @@ import { SITE_TITLE } from '../consts';
 		<main>
 			<h1>Codeathon Schedule</h1>
 
-			<div class="draft-notice">
-				⚠️ This is a placeholder schedule and will absolutely change
+			<div class="location-info">
+				<h3>Event Location</h3>
+				<p>
+					<strong>Room 1416, Building 240</strong><br>
+					Argonne National Laboratory<br>
+					9700 S Cass Ave, Lemont, IL
+				</p>
 			</div>
 
 			<div class="day">
 				<h2>Day 1 - Wednesday, November 12, 2025</h2>
 
 				<div class="schedule-item">
-					<div class="time">8:30 AM</div>
+					<div class="time">8:30-9:00 AM</div>
 					<div class="activity">
-						<div class="activity-title">Registration & Coffee</div>
-						<div class="activity-desc">Check-in, breakfast, and networking</div>
+						<div class="activity-title">Check-in, Meet and Greet</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">9:00 AM</div>
+					<div class="time">9:00-9:15 AM</div>
 					<div class="activity">
-						<div class="activity-title">Welcome & Opening Remarks</div>
-						<div class="activity-desc">Event overview, goals, and logistics</div>
+						<div class="activity-title">Welcome and Introductions</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">9:30 AM</div>
+					<div class="time">9:15-10:00 AM</div>
 					<div class="activity">
-						<div class="activity-title">Lightning Talks</div>
-						<div class="activity-desc">BRC resources overview, AI/LLM tools, project pitches</div>
+						<div class="activity-title">Hackathon Overview and Charge</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">10:30 AM</div>
+					<div class="time">10:00 AM-Noon</div>
 					<div class="activity">
-						<div class="activity-title">Team Formation</div>
-						<div class="activity-desc">Self-organize into teams around project themes</div>
+						<div class="activity-title">Breakout Sessions</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">11:30 AM</div>
+					<div class="time">Noon-1:00 PM</div>
 					<div class="activity">
-						<div class="activity-title">Hacking Begins!</div>
-						<div class="activity-desc">Teams start working on projects</div>
+						<div class="activity-title">Lunch Break</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">12:30 PM</div>
+					<div class="time">1:00-4:00 PM</div>
 					<div class="activity">
-						<div class="activity-title">Lunch</div>
-						<div class="activity-desc">Catered lunch provided</div>
+						<div class="activity-title">Breakout Sessions</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">1:30 PM</div>
+					<div class="time">4:00-5:00 PM</div>
 					<div class="activity">
-						<div class="activity-title">Hacking Session</div>
-						<div class="activity-desc">Continue project development</div>
+						<div class="activity-title">Team Reports</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">3:00 PM</div>
+					<div class="time">6:00-8:00 PM</div>
 					<div class="activity">
-						<div class="activity-title">Afternoon Break</div>
-						<div class="activity-desc">Coffee and snacks</div>
-					</div>
-				</div>
-
-				<div class="schedule-item">
-					<div class="time">3:15 PM</div>
-					<div class="activity">
-						<div class="activity-title">Hacking Session</div>
-						<div class="activity-desc">Continue project development</div>
-					</div>
-				</div>
-
-				<div class="schedule-item">
-					<div class="time">4:30 PM</div>
-					<div class="activity">
-						<div class="activity-title">Daily Standup</div>
-						<div class="activity-desc">Quick team updates and blockers</div>
-					</div>
-				</div>
-
-				<div class="schedule-item">
-					<div class="time">5:00 PM</div>
-					<div class="activity">
-						<div class="activity-title">Day 1 Wrap-up</div>
+						<div class="activity-title">Group Dinner</div>
 					</div>
 				</div>
 			</div>
@@ -168,72 +152,65 @@ import { SITE_TITLE } from '../consts';
 				<h2>Day 2 - Thursday, November 13, 2025</h2>
 
 				<div class="schedule-item">
-					<div class="time">8:30 AM</div>
+					<div class="time">8:30-9:00 AM</div>
 					<div class="activity">
-						<div class="activity-title">Coffee & Breakfast</div>
+						<div class="activity-title">Check-in</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">9:00 AM</div>
+					<div class="time">9:00-9:30 AM</div>
 					<div class="activity">
-						<div class="activity-title">Morning Standup</div>
-						<div class="activity-desc">Team updates and plans for the day</div>
+						<div class="activity-title">Recap from Day 1 and Day 2 Charter</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">9:30 AM</div>
+					<div class="time">9:30 AM-Noon</div>
 					<div class="activity">
-						<div class="activity-title">Hacking Session</div>
-						<div class="activity-desc">Full day of project development</div>
+						<div class="activity-title">Breakout Sessions</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">12:30 PM</div>
+					<div class="time">Noon-1:00 PM</div>
 					<div class="activity">
-						<div class="activity-title">Lunch</div>
-						<div class="activity-desc">Catered lunch provided</div>
+						<div class="activity-title">Lunch Break</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">1:30 PM</div>
+					<div class="time">1:00-2:30 PM</div>
 					<div class="activity">
-						<div class="activity-title">Hacking Session</div>
-						<div class="activity-desc">Continue project development</div>
+						<div class="activity-title">Team Reports</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">3:00 PM</div>
+					<div class="time">2:30-3:00 PM</div>
 					<div class="activity">
-						<div class="activity-title">Afternoon Break</div>
-						<div class="activity-desc">Coffee and snacks</div>
+						<div class="activity-title">Break</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">3:15 PM</div>
+					<div class="time">3:00-4:00 PM</div>
 					<div class="activity">
-						<div class="activity-title">Hacking Session</div>
-						<div class="activity-desc">Continue project development</div>
+						<div class="activity-title">Discussion and Next Steps</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">4:30 PM</div>
+					<div class="time">4:00-4:30 PM</div>
 					<div class="activity">
-						<div class="activity-title">Daily Standup</div>
-						<div class="activity-desc">Progress check and preparation for demos</div>
+						<div class="activity-title">Closeout</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">5:00 PM</div>
+					<div class="time">Evening</div>
 					<div class="activity">
-						<div class="activity-title">Day 2 Wrap-up</div>
+						<div class="activity-title">Dinner on your own</div>
 					</div>
 				</div>
 			</div>
@@ -242,72 +219,61 @@ import { SITE_TITLE } from '../consts';
 				<h2>Day 3 - Friday, November 14, 2025</h2>
 
 				<div class="schedule-item">
-					<div class="time">8:30 AM</div>
+					<div class="time">8:30-9:00 AM</div>
 					<div class="activity">
-						<div class="activity-title">Coffee & Breakfast</div>
+						<div class="activity-title">Check-in</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">9:00 AM</div>
+					<div class="time">9:00-9:30 AM</div>
 					<div class="activity">
-						<div class="activity-title">Morning Standup</div>
-						<div class="activity-desc">Final day plans and presentation prep</div>
+						<div class="activity-title">Recap from Day 2 and Day 3 Charter</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">9:30 AM</div>
+					<div class="time">9:30 AM-Noon</div>
 					<div class="activity">
-						<div class="activity-title">Final Hacking Session</div>
-						<div class="activity-desc">Finish implementations and prepare presentations</div>
+						<div class="activity-title">Breakout Sessions</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">12:00 PM</div>
+					<div class="time">Noon-1:00 PM</div>
 					<div class="activity">
-						<div class="activity-title">Lunch</div>
-						<div class="activity-desc">Catered lunch provided</div>
+						<div class="activity-title">Lunch Break</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">1:00 PM</div>
+					<div class="time">1:00-2:30 PM</div>
 					<div class="activity">
-						<div class="activity-title">Team Presentations</div>
-						<div class="activity-desc">Each team presents their project (10 min + Q&A)</div>
+						<div class="activity-title">Team Reports</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">3:00 PM</div>
+					<div class="time">2:30-3:00 PM</div>
 					<div class="activity">
-						<div class="activity-title">Closing Remarks</div>
-						<div class="activity-desc">Wrap-up, next steps, and acknowledgments</div>
+						<div class="activity-title">Break</div>
+					</div>
+				</div>
+
+				<div class="schedule-item">
+					<div class="time">3:00-3:30 PM</div>
+					<div class="activity">
+						<div class="activity-title">Wrap-up</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
 					<div class="time">3:30 PM</div>
 					<div class="activity">
-						<div class="activity-title">Reception & Networking</div>
-						<div class="activity-desc">Informal discussions and connections</div>
-					</div>
-				</div>
-
-				<div class="schedule-item">
-					<div class="time">4:00 PM</div>
-					<div class="activity">
-						<div class="activity-title">Event Concludes</div>
+						<div class="activity-title">Adjourn</div>
 					</div>
 				</div>
 			</div>
-
-			<p style="margin-top: 3em; font-style: italic; color: rgb(var(--gray));">
-				<strong>Note:</strong> This is a placeholder schedule and will absolutely change.
-				Updates will be posted as the event approaches.
-			</p>
 		</main>
 		<Footer />
 	</body>
