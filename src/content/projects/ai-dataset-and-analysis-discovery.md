@@ -2,6 +2,7 @@
 title: "AI-Powered Analysis Pathfinder: From Research Questions to Data and Workflows"
 description: "Enabling bench scientists to start with analysis goals and receive both relevant datasets and executable workflows—a complete path from question to execution."
 tags: ["AI", "Dataset Discovery", "Workflow Recommendation", "LLM", "ENA"]
+github: "https://github.com/NIAID-BRC-Codeathons/ai-dataset-and-analysis-discovery"
 ---
 
 **Project Themes:**

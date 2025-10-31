@@ -2,6 +2,7 @@
 title: "Generative AI-Driven Workflow Design and Execution via MCP"
 description: "Automating bioinformatics workflow design, refinement, and execution using generative AI models guided through the Model Context Protocol (MCP)"
 tags: ["AI", "Workflows", "MCP", "Automation", "LLM"]
+github: "https://github.com/NIAID-BRC-Codeathons/workflow-generation-mcp"
 ---
 
 **Project Themes:**

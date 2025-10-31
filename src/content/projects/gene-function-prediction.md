@@ -2,6 +2,7 @@
 title: "Assigning Functions to Uncharacterized Genes"
 description: "Leveraging machine learning and AI to predict functions of characterized and uncharacterized genes using K-mers, ensemble methods, and LLM embeddings"
 tags: ["Machine Learning", "Gene Function", "LLM", "Protein Function"]
+github: "https://github.com/NIAID-BRC-Codeathons/gene-function-prediction"
 ---
 
 **Project Themes:**

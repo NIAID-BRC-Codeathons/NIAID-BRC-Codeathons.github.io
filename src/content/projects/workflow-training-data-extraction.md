@@ -2,6 +2,7 @@
 title: "Extracting Training Data for Automated Workflow Generation"
 description: "Creating structured question-answer training datasets from BRC resources and publications to train LLMs for bioinformatics workflow generation"
 tags: ["LLM", "Training Data", "Workflows", "Question Answering"]
+github: "https://github.com/NIAID-BRC-Codeathons/workflow-training-data-extraction"
 ---
 
 **Project Themes:**

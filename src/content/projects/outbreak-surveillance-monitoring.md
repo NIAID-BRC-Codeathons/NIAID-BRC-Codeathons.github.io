@@ -2,6 +2,7 @@
 title: "InterWeb Outbreak Surveillance and Progress Monitoring"
 description: "AI-powered outbreak surveillance aggregating web data sources including social media, news, case reports, and public health databases"
 tags: ["Outbreak Monitoring", "Surveillance", "AI", "Public Health", "Web Data"]
+github: "https://github.com/NIAID-BRC-Codeathons/outbreak-surveillance-monitoring"
 ---
 
 **Project Themes:**

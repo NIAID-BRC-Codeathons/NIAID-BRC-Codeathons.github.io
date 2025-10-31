@@ -2,6 +2,7 @@
 title: "RDF Knowledge Graph Construction"
 description: "Transforming Pathogen Data Network Resources to RDF using Large Language Models"
 tags:
+github: "https://github.com/NIAID-BRC-Codeathons/RDF-knowledge-graph-construction"
   ["Knowledge Graphs", "RDF", "Linked Data", "Semantic Web", "Data Integration"]
 ---
 

@@ -2,6 +2,7 @@
 title: "Extracting Influenza Passaging Cell Type from GenBank Records"
 description: "Fine-tuning question answering LLMs to extract passaging cell type metadata from unstructured influenza GenBank records"
 tags: ["LLM", "Metadata Extraction", "Influenza", "GenBank", "RoBERTa"]
+github: "https://github.com/NIAID-BRC-Codeathons/influenza-passage-cell-extraction"
 ---
 
 **Project Themes:**
