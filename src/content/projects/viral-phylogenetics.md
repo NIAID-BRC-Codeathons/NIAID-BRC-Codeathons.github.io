@@ -1,15 +1,8 @@
 ---
 title: "Viral Structural Phylogenetics"
 description: "Optimizing protein language model to predict viral protein structures at scale"
-tags:
+tags: ["AI", "Structural Biology", "Phylogenetics", "Protein Language Models", "Virology"]
 github: "https://github.com/NIAID-BRC-Codeathons/viral-phylogenetics"
-  [
-    "AI",
-    "Structural Biology",
-    "Phylogenetics",
-    "Protein Language Models",
-    "Virology",
-  ]
 ---
 
 \*\*Project Theme
