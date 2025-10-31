@@ -64,4 +64,5 @@ tags: ["Outbreak Monitoring", "Surveillance", "AI", "Public Health", "Web Data"]
 - Mentor support
 
 **Additional Comments**
-**Additional Comments: API keys would ideally be set up before project start**
+
+API keys would ideally be set up before project start

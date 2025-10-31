@@ -51,8 +51,6 @@ Public data and sequence resources such as Genbank are of great value to the com
 3. Evaluate model on hold-out dataset (presumably unlabeled data) and quantify amount of training data needed.
 4. Leave code in good shape for possible integration into a service or BRC data curation
 
-![][image1]
-
 **Data and Resources Required**
 
 | Resource Type     | Source / Link                                         | Description / Purpose |
@@ -75,6 +73,7 @@ The BRCs provide a comprehensive suite of tools for sequence analysis, and many 
 **Technical Support Needed**
 
 - GPU / LLM access
-  **Additional Comments**
+
+**Additional Comments**
 
 [Image placeholder - to be added]
