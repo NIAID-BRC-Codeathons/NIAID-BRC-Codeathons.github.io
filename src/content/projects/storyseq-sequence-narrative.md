@@ -4,15 +4,9 @@ description: "Automating sequence identification and contextualization using BLA
 tags: ["LLM", "BLAST", "Narrative Generation", "Knowledge Extraction"]
 ---
 
-**Project Theme**
-
-☐ Virtual BRC Helpdesk  
-☐ Automated Workflow Generation and Execution  
-x Automated Knowledge Extraction and Curation  
-X Assign Functions to Uncharacterized Genes  
-☐ Outbreak Monitoring and Tracking  
-☐ Virtual AI Co‑scientist  
-☐ Other
+**Project Themes:**
+- Automated Knowledge Extraction and Curation
+- Assign Functions to Uncharacterized Genes
 
 **Team Name: StoryTime**
 

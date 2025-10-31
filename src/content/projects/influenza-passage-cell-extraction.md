@@ -4,15 +4,8 @@ description: "Fine-tuning question answering LLMs to extract passaging cell type
 tags: ["LLM", "Metadata Extraction", "Influenza", "GenBank", "RoBERTa"]
 ---
 
-**Project Theme**
-
-☐ Virtual BRC Helpdesk  
-☐ Automated Workflow Generation and Execution  
-☐ Automated Knowledge Extraction and Curation  
-☐ Assign Functions to Uncharacterized Genes  
-☐ Outbreak Monitoring and Tracking  
-☐ Virtual AI Co‑scientist  
-☒ Other
+**Project Themes:**
+- Other
 
 **Team Name:**
 

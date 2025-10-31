@@ -4,15 +4,8 @@ description: "Using LLMs to automatically generate RDF triples from Pathogen Dat
 tags: ["RDF", "Knowledge Graph", "SPARQL", "LLM", "Semantic Web"]
 ---
 
-**Project Theme**
-
-- [ ] Virtual BRC Helpdesk  
-- [ ] Automated Workflow Generation and Execution  
-- [x] ~~Automated Knowledge Extraction and Curation~~  
-- [ ] Assign Functions to Uncharacterized Genes  
-- [ ] Outbreak Monitoring and Tracking  
-- [ ] Virtual AI Co‑scientist  
-- [ ] Other
+**Project Themes:**
+- Automated Knowledge Extraction and Curation
 
 **Team Name: PDN2RDF**
 

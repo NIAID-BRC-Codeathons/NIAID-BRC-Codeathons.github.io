@@ -4,15 +4,8 @@ description: "Automating bioinformatics workflow design, refinement, and executi
 tags: ["AI", "Workflows", "MCP", "Automation", "LLM"]
 ---
 
-**Project Theme**
-
-☐ Virtual BRC Helpdesk  
-☐ Automated Workflow Generation and Execution \[X\]  
-☐ Automated Knowledge Extraction and Curation  
-☐ Assign Functions to Uncharacterized Genes  
-☐ Outbreak Monitoring and Tracking  
-☐ Virtual AI Co‑scientist  
-☐ Other
+**Project Themes:**
+- Automated Workflow Generation and Execution
 
 **Team Name: BRC Automated Workflow Group**
 

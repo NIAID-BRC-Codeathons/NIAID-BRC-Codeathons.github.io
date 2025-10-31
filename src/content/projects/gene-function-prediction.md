@@ -4,15 +4,8 @@ description: "Leveraging machine learning and AI to predict functions of charact
 tags: ["Machine Learning", "Gene Function", "LLM", "Protein Function"]
 ---
 
-**Project Theme**
-
-☐ Virtual BRC Helpdesk  
-☐ Automated Workflow Generation and Execution  
-☐ Automated Knowledge Extraction and Curation  
-☒ Assign Functions to Uncharacterized Genes  
-☐ Outbreak Monitoring and Tracking  
-☐ Virtual AI Co‑scientist  
-☐ Other
+**Project Themes:**
+- Assign Functions to Uncharacterized Genes
 
 **Team Name: Correct Horse Battery Staple**
 

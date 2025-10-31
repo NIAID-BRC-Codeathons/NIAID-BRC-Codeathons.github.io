@@ -4,15 +4,8 @@ description: "Fine-tuning ProstT5 with LoRA optimization to predict viral protei
 tags: ["Protein Language Model", "Structure Prediction", "Virology", "Machine Learning"]
 ---
 
-**Project Theme**
-
-- [ ] Virtual BRC Helpdesk  
-- [ ] Automated Workflow Generation and Execution  
-- [ ] Automated Knowledge Extraction and Curation  
-- [x] ~~Assign Functions to Uncharacterized Genes~~  
-- [ ] Outbreak Monitoring and Tracking  
-- [ ] Virtual AI Co‑scientist  
-- [ ] Other
+**Project Themes:**
+- Assign Functions to Uncharacterized Genes
 
 **Team Name: *virAllSpark***
 

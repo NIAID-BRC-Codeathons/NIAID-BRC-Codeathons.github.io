@@ -4,15 +4,8 @@ description: "AI-powered outbreak surveillance aggregating web data sources incl
 tags: ["Outbreak Monitoring", "Surveillance", "AI", "Public Health", "Web Data"]
 ---
 
-**Project Theme**
-
-☐ Virtual BRC Helpdesk  
-☐ Automated Workflow Generation and Execution  
-☐ Automated Knowledge Extraction and Curation  
-☐ Assign Functions to Uncharacterized Genes  
-x☐ Outbreak Monitoring and Tracking  
-☐ Virtual AI Co‑scientist  
-☐ Other
+**Project Themes:**
+- Outbreak Monitoring and Tracking
 
 **Team Name: Waiting for Gadot**
 

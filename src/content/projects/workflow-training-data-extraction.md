@@ -4,15 +4,8 @@ description: "Creating structured question-answer training datasets from BRC res
 tags: ["LLM", "Training Data", "Workflows", "Question Answering"]
 ---
 
-**Project Theme**
-
-☐ Virtual BRC Helpdesk  
-x Automated Workflow Generation and Execution  
-☐ Automated Knowledge Extraction and Curation  
-☐ Assign Functions to Uncharacterized Genes  
-☐ Outbreak Monitoring and Tracking  
-☐ Virtual AI Co‑scientist  
-☐ Other
+**Project Themes:**
+- Automated Workflow Generation and Execution
 
 **Team Name: Capybara**
 

@@ -4,15 +4,8 @@ description: "Enabling bench scientists to start with analysis goals and receive
 tags: ["AI", "Dataset Discovery", "Workflow Recommendation", "LLM", "ENA"]
 ---
 
-## Project Theme
-
-☐ Virtual BRC Helpdesk
-☒ Automated Workflow Generation and Execution
-☐ Automated Knowledge Extraction and Curation
-☐ Assign Functions to Uncharacterized Genes
-☐ Outbreak Monitoring and Tracking
-☐ Virtual AI Co‑scientist
-☐ Other
+**Project Themes:**
+- Automated Workflow Generation and Execution
 
 ## Team Name: BRC Analysis Pathfinder
 
