@@ -5,26 +5,27 @@ tags: ["LLM", "BLAST", "Narrative Generation", "Knowledge Extraction"]
 ---
 
 **Project Themes:**
+
 - Automated Knowledge Extraction and Curation
 - Assign Functions to Uncharacterized Genes
 
 **Team Name: StoryTime**
 
-**Team Lead(s):** 
+**Team Lead(s):**
 
-* Name: Andrew Warren  
-* Affiliation: UVA  
-* Email: asw3xp@virginia.edu
+- Name: Andrew Warren
+- Affiliation: UVA
+- Email: asw3xp@virginia.edu
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name | Affiliation | Role / Expertise |
-| ----- | ----- | ----- |
-| Dustin Machi | UVA | AI / Software |
-| Curtis Hendrickson | UAB | Software development |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Name               | Affiliation | Role / Expertise     |
+| ------------------ | ----------- | -------------------- |
+| Dustin Machi       | UVA         | AI / Software        |
+| Curtis Hendrickson | UAB         | Software development |
+|                    |             |                      |
+|                    |             |                      |
+|                    |             |                      |
 
 **Project Summary**
 
@@ -34,9 +35,9 @@ Identifying and contextualizing sequences from clinical or environmental samples
 
 List 2–4 measurable goals your team aims to achieve during the Codeathon.
 
-* Goal 1: Develop a MVP of the core "Find-Enrich-Narrate" pipeline.  
-* Goal 2: Implement a modular architecture for interchangeable backends.  
-* Goal 3 (optional): Design and stub out the provider interfaces for search tools and database APIs.
+- Goal 1: Develop a MVP of the core "Find-Enrich-Narrate" pipeline.
+- Goal 2: Implement a modular architecture for interchangeable backends.
+- Goal 3 (optional): Design and stub out the provider interfaces for search tools and database APIs.
 
 **Approach**
 
@@ -52,12 +53,12 @@ List 2–4 measurable goals your team aims to achieve during the Codeathon.
 
 **Data and Resources Required**
 
-| Resource Type | Source / Link | Description / Purpose |
-| ----- | ----- | ----- |
-| Data | BV-BRC genomes, Bioprojects, Biosummary, Large search Indexes e.g. BLAST | Find, Enrich, Extract steps above |
-| Tools / Services | Potentially NCBI BLAST, BV-BRC BLAST, BLAST, DIAMOND | Find, Enrich, Extract steps above |
-| LLMs / AI Models | Llama, GPT-4, Claude3, etc | Narration step |
-| Compute / Storage | Argonne HPC, BRC cluster nodes | Hold the data and tools |
+| Resource Type     | Source / Link                                                            | Description / Purpose             |
+| ----------------- | ------------------------------------------------------------------------ | --------------------------------- |
+| Data              | BV-BRC genomes, Bioprojects, Biosummary, Large search Indexes e.g. BLAST | Find, Enrich, Extract steps above |
+| Tools / Services  | Potentially NCBI BLAST, BV-BRC BLAST, BLAST, DIAMOND                     | Find, Enrich, Extract steps above |
+| LLMs / AI Models  | Llama, GPT-4, Claude3, etc                                               | Narration step                    |
+| Compute / Storage | Argonne HPC, BRC cluster nodes                                           | Hold the data and tools           |
 
 **Expected Outcomes / Deliverables**
 
@@ -94,37 +95,27 @@ We will deliver a documented integration concept for connecting StorySeq to BV-
 ● **Infectious Disease Research or Surveillance:**  
 StorySeq directly accelerates the "time-to-insight" in infectious disease research. Reduces time-consuming "detective work" process to determine its potential significance. StorySeq automates first-pass analysis, allowing researchers to rapidly triage hundreds of unknown sequences to identify high-priority candidates, such as a new antimicrobial resistance (AMR) gene or a sequence indicative of zoonotic spillover. This speed enables research labs and surveillance programs to react more quickly to emerging threats and focus their expert time on deeper analysis rather than on repetitive preliminary searches.
 
-* **Follow-up Activities:**
+- **Follow-up Activities:**
+  - **Integration with BRC:** We will extend the tool with BV-BRC Blast, providing more relevant context for AMR, virulence factors, and epidemiological data.
 
-  * **Integration with BRC:** We will extend the tool with BV-BRC Blast, providing more relevant context for AMR, virulence factors, and epidemiological data. 
-
-  * **Batch or Genome Processing:** We will enhance the command-line tool to accept multi-FASTA files, allowing it to process an entire set of contigs from a genome assembly and generate a summary report, flagging the most significant findings for the user. Will likely require different prompt development
+  - **Batch or Genome Processing:** We will enhance the command-line tool to accept multi-FASTA files, allowing it to process an entire set of contigs from a genome assembly and generate a summary report, flagging the most significant findings for the user. Will likely require different prompt development
 
 ● **AI/ML Automation and Interpretability:**  
 This project serves as an example of leveraging AI/ML for practical automation to augment human-in-the-loop workflows in bioinformatics. The key is its RAG-inspired workflow using traditional sequence similarity search to supply contextual information to an LLM. Instead of using an LLM as a "black box," our pipeline strictly constrains its role to synthesizing structured data retrieved from trusted, primary sources like NCBI. This approach mitigates the risk of model "hallucination," as every statement in the output narrative is grounded in verifiable data from the retrieval stage.
 
-* **Follow-up Activities:**
+- **Follow-up Activities:**
+  - **Interactive Outputs:** We will develop an HTML output option where the generated narrative includes interactive attribution. Clicking a statement in the summary would reveal the specific BLAST hits and metadata records used by the LLM to generate that sentence, providing full traceability.
 
-  * **Interactive Outputs:** We will develop an HTML output option where the generated narrative includes interactive attribution. Clicking a statement in the summary would reveal the specific BLAST hits and metadata records used by the LLM to generate that sentence, providing full traceability.
-
-  * **Semantic Aggregation:**  A future version will use embedding models to semantically cluster the top hits, allowing the LLM to provide a more nuanced summary (e.g., "The sequence has two distinct clusters of homologs: one in marine bacteria and another in human clinical isolates.").
+  - **Semantic Aggregation:**  A future version will use embedding models to semantically cluster the top hits, allowing the LLM to provide a more nuanced summary (e.g., "The sequence has two distinct clusters of homologs: one in marine bacteria and another in human clinical isolates.").
 
 ● **Public Health Preparedness or Education:**  
 StorySeq contributes to public health by dramatically lowering the barrier to entry for interpreting genomic data. For preparedness, it provides a tool for rapid situational awareness. During an outbreak, public health officials who are not bioinformatics experts can use it to get an immediate, plain-language summary of a newly identified variant. For education, it democratizes access to bioinformatics by translating BLAST results into simple, understandable narratives. This makes it an ideal tool for students, medical professionals, and policymakers, helping to improve general bioinformatics literacy and enabling more people to understand the implications of genomic data in public health.
 
 **Technical Support Needed**
 
-Indicate additional requirements:
 
-X Datasets preloaded  BLAST/DIAMOND/MASH/KRAKEN databases would be handy
-
-X GPU / LLM access  
-
-☐ API keys  
-
-X Mentor support         Advice welcome
-
-☐ Other ( )
+- Datasets preloaded (BLAST/DIAMOND/MASH/KRAKEN databases would be handy)
+- GPU / LLM access
+- Mentor support
 
 **Additional Comments**
-
