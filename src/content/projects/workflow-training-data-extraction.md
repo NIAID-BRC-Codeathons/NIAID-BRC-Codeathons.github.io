@@ -1,13 +1,10 @@
-**NIAID BRC AI Codeathon 2025 — Project Proposal Template**  
+---
+title: "Extracting Training Data for Automated Workflow Generation"
+description: "Creating structured question-answer training datasets from BRC resources and publications to train LLMs for bioinformatics workflow generation"
+tags: ["LLM", "Training Data", "Workflows", "Question Answering"]
 ---
 
-**Event website:** [https://www.bv-brc.org/brc-niaid-ai-codeathon-2025](https://www.bv-brc.org/brc-niaid-ai-codeathon-2025)
-
-**Project Title**
-
-*Extracting Question-Answer Training Data for Automated Workflow Generation*
-
-**Project Theme \[Check One\]**
+**Project Theme**
 
 ☐ Virtual BRC Helpdesk  
 x Automated Workflow Generation and Execution  

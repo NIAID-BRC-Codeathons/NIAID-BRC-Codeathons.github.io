@@ -1,13 +1,10 @@
-**NIAID BRC AI Codeathon 2025 — Project Proposal Template**  
+---
+title: "Transforming Pathogen Data Network Resources to RDF"
+description: "Using LLMs to automatically generate RDF triples from Pathogen Data Network resources for improved semantic interoperability in the Linked Data ecosystem"
+tags: ["RDF", "Knowledge Graph", "SPARQL", "LLM", "Semantic Web"]
 ---
 
-**Event website:** [https://www.bv-brc.org/brc-niaid-ai-codeathon-2025](https://www.bv-brc.org/brc-niaid-ai-codeathon-2025)
-
-**Project Title**
-
-Transforming Pathogen Data Network Resources to RDF
-
-**Project Theme \[Check One\]**
+**Project Theme**
 
 - [ ] Virtual BRC Helpdesk  
 - [ ] Automated Workflow Generation and Execution  

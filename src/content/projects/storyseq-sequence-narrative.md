@@ -1,13 +1,10 @@
-**NIAID BRC AI Codeathon 2025 — Project Proposal Template**  
+---
+title: "StorySeq: Automated Sequence Narrative Generation"
+description: "Automating sequence identification and contextualization using BLAST, database queries, and LLM narrative synthesis to accelerate pathogen and AMR gene discovery"
+tags: ["LLM", "BLAST", "Narrative Generation", "Knowledge Extraction"]
 ---
 
-**Event website:** [https://www.bv-brc.org/brc-niaid-ai-codeathon-2025](https://www.bv-brc.org/brc-niaid-ai-codeathon-2025)
-
-**Project Title: StorySeq**
-
-*(Concise, descriptive, and creative if possible)*
-
-**Project Theme \[Check One\]**
+**Project Theme**
 
 ☐ Virtual BRC Helpdesk  
 ☐ Automated Workflow Generation and Execution  

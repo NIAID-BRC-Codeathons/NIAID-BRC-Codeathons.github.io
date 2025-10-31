@@ -1,13 +1,10 @@
-**NIAID BRC AI Codeathon 2025 — Project Proposal Template**  
+---
+title: "Generative AI-Driven Workflow Design and Execution via MCP"
+description: "Automating bioinformatics workflow design, refinement, and execution using generative AI models guided through the Model Context Protocol (MCP)"
+tags: ["AI", "Workflows", "MCP", "Automation", "LLM"]
 ---
 
-**Event website:** [https://www.bv-brc.org/brc-niaid-ai-codeathon-2025](https://www.bv-brc.org/brc-niaid-ai-codeathon-2025)
-
-**Generative AI–Driven Workflow Design and Execution via MCP**
-
-*Leveraging generative AI models (ChatGPT, Claude, Llama-Scout) and custom MCP-integrated scripts to automatically design, refine, and execute bioinformatics workflows utilizing BV-BRC tools and other bioinformatics resource services.*
-
-**Project Theme \[Check One\]**
+**Project Theme**
 
 ☐ Virtual BRC Helpdesk  
 ☐ Automated Workflow Generation and Execution \[X\]  

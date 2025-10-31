@@ -1,15 +1,10 @@
-**NIAID BRC AI Codeathon 2025 — Project Proposal Template**  
+---
+title: "Extracting Influenza Passaging Cell Type from GenBank Records"
+description: "Fine-tuning question answering LLMs to extract passaging cell type metadata from unstructured influenza GenBank records"
+tags: ["LLM", "Metadata Extraction", "Influenza", "GenBank", "RoBERTa"]
 ---
 
-**Event website:** [https://www.bv-brc.org/brc-niaid-ai-codeathon-2025](https://www.bv-brc.org/brc-niaid-ai-codeathon-2025)
-
-**Project Title**
-
-An Egg by Many Other Names: Extracting Influenza Passaging Cell Type from Genbank Records Using LLMs
-
-*(Concise, descriptive, and creative if possible)*
-
-**Project Theme \[Check One\]**
+**Project Theme**
 
 ☐ Virtual BRC Helpdesk  
 ☐ Automated Workflow Generation and Execution  

@@ -1,13 +1,10 @@
-**NIAID BRC AI Codeathon 2025 — Project Proposal Template**  
+---
+title: "Optimizing Protein Language Model for Viral Structure Prediction"
+description: "Fine-tuning ProstT5 with LoRA optimization to predict viral protein structures at scale, integrating with Foldseek for massive database analysis"
+tags: ["Protein Language Model", "Structure Prediction", "Virology", "Machine Learning"]
 ---
 
-**Event website:** [https://www.bv-brc.org/brc-niaid-ai-codeathon-2025](https://www.bv-brc.org/brc-niaid-ai-codeathon-2025)
-
-**Project Title**
-
-*Optimizing protein language model to predict viral protein structures at scale*
-
-**Project Theme \[Check One\]**
+**Project Theme**
 
 - [ ] Virtual BRC Helpdesk  
 - [ ] Automated Workflow Generation and Execution  

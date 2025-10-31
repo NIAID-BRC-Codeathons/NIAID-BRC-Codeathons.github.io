@@ -1,3 +1,9 @@
+---
+title: "Potential Project Topics"
+description: "Overview of proposed project themes and initial team formations for the BRC AI Codeathon 2025"
+tags: ["Overview", "Themes", "Planning"]
+---
+
 **Potential Project Topics**
 
 Participants will form teams and select from proposed themes or pitch new ideas:

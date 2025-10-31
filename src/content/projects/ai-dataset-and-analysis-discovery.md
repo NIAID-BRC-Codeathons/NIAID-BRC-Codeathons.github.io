@@ -1,10 +1,8 @@
-# NIAID BRC AI Codeathon 2025 — Project Proposal
-
-**Event website:** [https://www.bv-brc.org/brc-niaid-ai-codeathon-2025](https://www.bv-brc.org/brc-niaid-ai-codeathon-2025)
-
-## AI-Powered Analysis Pathfinder: From Research Questions to Data and Workflows
-
-*Enabling bench scientists to start with analysis goals and receive both relevant datasets and executable workflows—a complete path from question to execution.*
+---
+title: "AI-Powered Analysis Pathfinder: From Research Questions to Data and Workflows"
+description: "Enabling bench scientists to start with analysis goals and receive both relevant datasets and executable workflows—a complete path from question to execution."
+tags: ["AI", "Dataset Discovery", "Workflow Recommendation", "LLM", "ENA"]
+---
 
 ## Project Theme
 

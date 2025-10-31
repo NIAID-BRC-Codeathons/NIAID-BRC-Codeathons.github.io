@@ -1,11 +1,10 @@
-**NIAID BRC AI Codeathon 2025 — Project Proposal Template**  
+---
+title: "Assigning Functions to Uncharacterized Genes"
+description: "Leveraging machine learning and AI to predict functions of characterized and uncharacterized genes using K-mers, ensemble methods, and LLM embeddings"
+tags: ["Machine Learning", "Gene Function", "LLM", "Protein Function"]
 ---
 
-**Event website:** [https://www.bv-brc.org/brc-niaid-ai-codeathon-2025](https://www.bv-brc.org/brc-niaid-ai-codeathon-2025)
-
-**Project Title: Assigning functions to uncharacterized genes by leveraging machine learning and artificial intelligence to predict functions of characterized genes.**
-
-**Project Theme \[Check One\]**
+**Project Theme**
 
 ☐ Virtual BRC Helpdesk  
 ☐ Automated Workflow Generation and Execution  

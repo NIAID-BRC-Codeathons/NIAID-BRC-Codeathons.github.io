@@ -1,13 +1,10 @@
-**NIAID BRC AI Codeathon 2025 — Project Proposal Template**  
+---
+title: "InterWeb Outbreak Surveillance and Progress Monitoring"
+description: "AI-powered outbreak surveillance aggregating web data sources including social media, news, case reports, and public health databases"
+tags: ["Outbreak Monitoring", "Surveillance", "AI", "Public Health", "Web Data"]
 ---
 
-**Event website:** [https://www.bv-brc.org/brc-niaid-ai-codeathon-2025](https://www.bv-brc.org/brc-niaid-ai-codeathon-2025)
-
-**Project Title**
-
-*InterWeb Outbreak Surveillance and Progress Monitoring*
-
-**Project Theme \[Check One\]**
+**Project Theme**
 
 ☐ Virtual BRC Helpdesk  
 ☐ Automated Workflow Generation and Execution  
