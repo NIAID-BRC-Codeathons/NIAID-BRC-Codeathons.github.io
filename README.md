@@ -1,6 +1,6 @@
-# BRC NIAID AI Codeathon 2025 Website
+# NIAID BRC AI Codeathon 2025 Website
 
-Website for the BRC NIAID AI Codeathon 2025, November 12-14, 2025 at Argonne National Laboratory.
+Website for the NIAID BRC AI Codeathon 2025, November 12-14, 2025 at Argonne National Laboratory.
 
 **Live Site:** https://niaid-brc-codeathons.github.io/
 

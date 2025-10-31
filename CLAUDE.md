@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Website for the BRC NIAID AI Codeathon 2025 (November 12-14, 2025 at Argonne National Laboratory). Built with Astro's blog template, adapted to display codeathon projects, teams, schedule, and resources.
+Website for the NIAID BRC AI Codeathon 2025 (November 12-14, 2025 at Argonne National Laboratory). Built with Astro's blog template, adapted to display codeathon projects, teams, schedule, and resources.
 
 ## Key Commands
 
