@@ -1,14 +1,21 @@
 ---
 title: "Viral Structural Phylogenetics"
 description: "Optimizing protein language model to predict viral protein structures at scale"
-tags: ["AI", "Structural Biology", "Phylogenetics", "Protein Language Models", "Virology"]
+tags:
+  [
+    "AI",
+    "Structural Biology",
+    "Phylogenetics",
+    "Protein Language Models",
+    "Virology",
+  ]
 ---
 
-## Project Theme
+\*\*Project Theme
 
 **Other** - Viral Structural Phylogenetics
 
-## Team Information
+\*\*Team Information
 
 **Team Name:** virAllSpark
 
@@ -24,24 +31,24 @@ tags: ["AI", "Structural Biology", "Phylogenetics", "Protein Language Models", "
 
 **Team Members (4-6 members recommended):**
 
-| Name | Affiliation | Role / Expertise |
-| ---- | ----------- | ---------------- |
-| David Moi | University of Lausanne | Project leader (model development) / AI, ML, snakemake, HPC, docker, structural biology, phylogenetics |
+| Name         | Affiliation            | Role / Expertise                                                                                                            |
+| ------------ | ---------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| David Moi    | University of Lausanne | Project leader (model development) / AI, ML, snakemake, HPC, docker, structural biology, phylogenetics                      |
 | Dongwook Kim | University of Lausanne | Project leader (validation and integration) / Phylogenetics, sequence analysis, protein structures, Protein Language Models |
-| TBD | - | Model development part / AI expert(s) on transformer models, biological language models, sequence embeddings |
-| TBD | - | Validation part / Biology and/or Bioinformatics expert(s) on virology, viral taxonomy, sequence analysis, sequence database |
+| TBD          | -                      | Model development part / AI expert(s) on transformer models, biological language models, sequence embeddings                |
+| TBD          | -                      | Validation part / Biology and/or Bioinformatics expert(s) on virology, viral taxonomy, sequence analysis, sequence database |
 
-## Project Summary
+\*\*Project Summary
 
 In this project, we will zero in on producing a fast and accurate language model for viral structure prediction. Current state-of-the-art models, such as ProstT5, are shown robust in species with a wealth of sequences, while suffering from under-represented species like viruses. For this, we will fine-tune the ProstT5 model weights with the LoRA optimization layer, where we can exploit the recent expansion on viral protein structure databases. We will validate the model by reconstructing viral taxonomy with structurally conserved core genes. Integrating this model into the Foldseek framework will allow us to predict structures from massive, possibly all publicly available, viral sequence databases.
 
-## Goals and Objectives
+\*\*Goals and Objectives
 
 1. **Develop a protein language model for viral structural token prediction**
 2. **Validate the model with ground-truth viral structures and taxonomy**
 3. **Integrate the model into Foldseek and apply on massive databases**
 
-## Approach
+\*\*Approach
 
 **Methods and AI/ML Approaches:**
 
@@ -71,16 +78,16 @@ In this project, we will zero in on producing a fast and accurate language model
    - Run model on viral subset of NCBI/UniProt protein databases
    - Convert to 3Di strings as valuable resource for structural analysis
 
-## Data and Resources Required
+\*\*Data and Resources Required
 
-| Resource Type         | Source / Link                                           | Description / Purpose            |
-| --------------------- | ------------------------------------------------------- | -------------------------------- |
-| **Data**              | BFVD dataset (https://bfvd.steineggerlab.workers.dev)   | Key component to train protein language model tailored for viral structure prediction |
-| **Data**              | Viro3d structures, UniProt Viral sequences              | Datasets for model refinement and inference |
-| **Compute / Storage** | Argonne HPC – GPU resources                             | Required for model training, benchmarking, and post-application of the model on large databases |
-| **Compute / Storage** | Argonne HPC – Storage                                   | Required to store prerequisite, intermediate, resulting data produced during the development |
+| Resource Type         | Source / Link                                         | Description / Purpose                                                                           |
+| --------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Data**              | BFVD dataset (https://bfvd.steineggerlab.workers.dev) | Key component to train protein language model tailored for viral structure prediction           |
+| **Data**              | Viro3d structures, UniProt Viral sequences            | Datasets for model refinement and inference                                                     |
+| **Compute / Storage** | Argonne HPC – GPU resources                           | Required for model training, benchmarking, and post-application of the model on large databases |
+| **Compute / Storage** | Argonne HPC – Storage                                 | Required to store prerequisite, intermediate, resulting data produced during the development    |
 
-## Expected Outcomes / Deliverables
+\*\*Expected Outcomes / Deliverables
 
 By the end of the Codeathon, we expect to deliver:
 
@@ -91,7 +98,7 @@ By the end of the Codeathon, we expect to deliver:
 - **Documentation:** Model usage guides and API documentation
 - **Presentation:** Demo showing model performance and validation results
 
-## Potential Impact and Next Steps
+\*\*Potential Impact and Next Steps
 
 **Impact on:**
 
@@ -107,14 +114,14 @@ By the end of the Codeathon, we expect to deliver:
 - Publish methodology and make model weights publicly available
 - Apply to outbreak surveillance and viral evolution studies
 
-## Technical Support Needed
+\*\*Technical Support Needed
 
-- [x] Datasets preloaded - Pre-downloaded BFVD datasets to save time
-- [x] GPU / LLM access - Access to the ANL GPU resources (for fine-tuning and database-scale prediction)
-- [ ] API keys
-- [ ] Mentor support
-- [ ] Other: [Specify]
+- Datasets preloaded - Pre-downloaded BFVD datasets to save time
+- GPU / LLM access - Access to the ANL GPU resources (for fine-tuning and database-scale prediction)
+  API keys
+  Mentor support
+  Other: [Specify]
 
-## Additional Comments
+\*\*Additional Comments
 
 This project focuses on addressing the under-representation of viral proteins in current state-of-the-art structural prediction models. By fine-tuning ProstT5 specifically for viral sequences, we aim to create a specialized tool that can handle the unique characteristics of viral proteins and enable large-scale structural analysis across viral species.
