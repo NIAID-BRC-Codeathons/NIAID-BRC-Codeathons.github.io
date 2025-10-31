@@ -35,8 +35,6 @@ _In this project, we will explore the use of Large Language Models (LLMs) to aut
 
 **Goals and Objectives**
 
-List 2–4 measurable goals your team aims to achieve during the Codeathon.
-
 - Goal 1: Generate RDF triples from PDN resources
 - Goal 2: Enhance the interoperability of these resources within the data ecosystem of SIB
 

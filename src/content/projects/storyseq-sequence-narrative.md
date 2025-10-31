@@ -33,8 +33,6 @@ Identifying and contextualizing sequences from clinical or environmental samples
 
 **Goals and Objectives**
 
-List 2–4 measurable goals your team aims to achieve during the Codeathon.
-
 - Goal 1: Develop a MVP of the core "Find-Enrich-Narrate" pipeline.
 - Goal 2: Implement a modular architecture for interchangeable backends.
 - Goal 3 (optional): Design and stub out the provider interfaces for search tools and database APIs.
@@ -112,7 +110,6 @@ This project serves as an example of leveraging AI/ML for practical automation t
 StorySeq contributes to public health by dramatically lowering the barrier to entry for interpreting genomic data. For preparedness, it provides a tool for rapid situational awareness. During an outbreak, public health officials who are not bioinformatics experts can use it to get an immediate, plain-language summary of a newly identified variant. For education, it democratizes access to bioinformatics by translating BLAST results into simple, understandable narratives. This makes it an ideal tool for students, medical professionals, and policymakers, helping to improve general bioinformatics literacy and enabling more people to understand the implications of genomic data in public health.
 
 **Technical Support Needed**
-
 
 - Datasets preloaded (BLAST/DIAMOND/MASH/KRAKEN databases would be handy)
 - GPU / LLM access

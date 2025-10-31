@@ -28,13 +28,9 @@ tags: ["LLM", "Metadata Extraction", "Influenza", "GenBank", "RoBERTa"]
 
 **Project Summary**
 
-_(4-6 sentences describing the problem, its relevance to infectious disease research, and the AI/ML innovation your team will pursue.)_
-
 Public data and sequence resources such as Genbank are of great value to the community, but many questions we would like to address require the extraction of specific metadata from unstructured or loosely structured input fields. We would like to fine-tune a question answering LLM like Roberta to extract passaging cell type(s) from influenza Genbank records to enable downstream sequence analysis for passaging signals. A dataset of metadata records associated with the correct cell type would be used as input. A limited number of possible cell types exist (e.g. egg, MDCK, monkey kidney), but there are no standardized fields or formats/abbreviations for this data so manual review is currently required for each file. This approach, if successful, could be applied to any unstructured metadata for which someone is willing to curate a subset of training examples.
 
 **Goals and Objectives**
-
-List 2–4 measurable goals your team aims to achieve during the Codeathon.
 
 - Goal 1: Develop a method for scoring responses
 - Goal 2: Fine-tune an LLM to extract passaging cell type
@@ -68,21 +64,11 @@ List 2–4 measurable goals your team aims to achieve during the Codeathon.
 
 **Expected Outcomes / Deliverables**
 
-Describe tangible outputs expected by the end of the Codeathon:
-
 - Fine-tuned model
 
 - Full set of passaging cell type predictions
 
 **Potential Impact and Next Steps**
-
-Explain how this project contributes to:
-
-- Infectious disease research or surveillance
-- AI/ML automation and interpretability
-- Public health preparedness or education
-
-_(Include possible follow-up activities after the Codeathon.)_
 
 The BRCs provide a comprehensive suite of tools for sequence analysis, and many experiments are now bottlenecked by the process of extracting relevant metadata from unstructured text. An LLM for automatically extracting fields of interest from public data would be useful behind the scenes to expand the amount of metadata the BRCs can curate, as well as a possible service to allow users to target questions of interest. Code generated here could be expanded to any metadata characteristic with a significant presence in public databases. Estimates of how much data is required for a good model would also be useful in minimizing human curation effort required. After developing a prototype, feedback from the community could help us build new models for the highest “value added” data types.
 

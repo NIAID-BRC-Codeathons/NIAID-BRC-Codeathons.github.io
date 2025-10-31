@@ -28,11 +28,7 @@ tags: ["Outbreak Monitoring", "Surveillance", "AI", "Public Health", "Web Data"]
 
 **Project Summary**
 
-_(4-6 sentences describing the problem, its relevance to infectious disease research, and the AI/ML innovation your team will pursue.)_
-
 **Goals and Objectives**
-
-List 2–4 measurable goals your team aims to achieve during the Codeathon.
 
 - Goal 1: Identify sources and APIs for pulling data by date, i.e., google search statistics, xweets, facebook, google scholar, news, case reports, CDC, WHO
 - Goal 2: Define report data expected and reporting format
@@ -42,8 +38,6 @@ List 2–4 measurable goals your team aims to achieve during the Codeathon.
 
 - Text extraction, text chunking, figure parsing, tabular data processing, APIs
 - Prototype of reporting tool
-
-_(Add a simple block diagram or numbered workflow if useful.)_
 
 **Data and Resources Required**
 
@@ -56,19 +50,13 @@ _(Add a simple block diagram or numbered workflow if useful.)_
 
 **Expected Outcomes / Deliverables**
 
-Describe tangible outputs expected by the end of the Codeathon:
-
 - Prototype of outbreak tracking with outcome
 
 **Potential Impact and Next Steps**
 
-Explain how this project contributes to:
-
 - Infectious disease research or surveillance: The project is infectious disease surveillance
 - AI/ML automation and interpretability: The project is infectious disease surveillance using AI and output in interpretable sentences
 - Public health preparedness or education: The project is infectious disease surveillance using AI and output in interpretable sentences with a mind to eventually be good enough for public health preparedness
-
-_(Include possible follow-up activities after the Codeathon.)_
 
 **Technical Support Needed**
 

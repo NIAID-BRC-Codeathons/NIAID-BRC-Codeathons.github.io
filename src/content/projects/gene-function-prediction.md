@@ -31,8 +31,6 @@ In this project, we aim to leverage aspects of machine learning and large langua
 
 **Goals and Objectives**
 
-List 2–4 measurable goals your team aims to achieve during the Codeathon.
-
 - Goal 1: Build ensemble models utilizing k-mers
 - Goal 2: Build ensemble models utilizing LLM embeddings
 - Goal 3 (time permitting): Fine tune LLM model for classification task
@@ -41,8 +39,6 @@ List 2–4 measurable goals your team aims to achieve during the Codeathon.
 
 - Featurizing sequences via K-mers and LLM embeddings for XGBoost or random forest
 - Fine tuning GenSLMs
-
-_(Add a simple block diagram or numbered workflow if useful.)_
 
 **Data and Resources Required**
 
@@ -55,13 +51,9 @@ _(Add a simple block diagram or numbered workflow if useful.)_
 
 **Expected Outcomes / Deliverables**
 
-Describe tangible outputs expected by the end of the Codeathon:
-
 - Models that predict protein function
 
 **Potential Impact and Next Steps**
-
-Explain how this project contributes to:
 
 - Infectious disease research or surveillance: characterizing unknown and known genes can be useful to know what genes are in the population
 - AI/ML automation and interpretability: the product is an ML/AI/LLM model to predict protein function
