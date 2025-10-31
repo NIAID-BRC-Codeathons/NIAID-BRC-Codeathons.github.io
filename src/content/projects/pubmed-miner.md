@@ -1,7 +1,14 @@
 ---
 title: "PubMed Miner: AI-Powered Sequence Feature Extraction from Literature"
 description: "Automated extraction of viral sequence features, mutations, and epitopes from PubMed literature using LLMs to accelerate outbreak response and genomic analysis"
-tags: ["LLM", "PubMed", "Literature Mining", "Sequence Features", "Mutation Detection"]
+tags:
+  [
+    "LLM",
+    "PubMed",
+    "Literature Mining",
+    "Sequence Features",
+    "Mutation Detection",
+  ]
 github: "https://github.com/NIAID-BRC-Codeathons/pubmed-miner"
 ---
 

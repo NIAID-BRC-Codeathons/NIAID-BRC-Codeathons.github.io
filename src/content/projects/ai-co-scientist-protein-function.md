@@ -1,7 +1,14 @@
 ---
 title: "AI Co-Scientist for Protein Function Prediction and Hypothesis Generation"
 description: "Extending the Co-Scientist framework to build reasoning agents for protein function prediction using CEPI and BV-BRC datasets for priority pathogens"
-tags: ["AI Co-Scientist", "Protein Function", "Hypothesis Generation", "Reasoning Agents", "Jnana"]
+tags:
+  [
+    "AI Co-Scientist",
+    "Protein Function",
+    "Hypothesis Generation",
+    "Reasoning Agents",
+    "Jnana",
+  ]
 github: "https://github.com/NIAID-BRC-Codeathons/ai-co-scientist-protein-function"
 ---
 
@@ -17,12 +24,12 @@ github: "https://github.com/NIAID-BRC-Codeathons/ai-co-scientist-protein-functio
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name                 | Affiliation                      | Role / Expertise                        |
-| -------------------- | -------------------------------- | --------------------------------------- |
-| Arvind Ramanathan    | Argonne National Laboratory      | Principal Investigator, AI Systems Architect |
-| Ozan                 | Argonne National Laboratory      | RAG and Data Integration Specialist     |
-| BV-BRC Developers    | -                                | Model integration and deployment        |
-| CEPI Scientists      | -                                | Use-case definition and validation      |
+| Name              | Affiliation                 | Role / Expertise                             |
+| ----------------- | --------------------------- | -------------------------------------------- |
+| Arvind Ramanathan | Argonne National Laboratory | Principal Investigator, AI Systems Architect |
+| Ozan              | Argonne National Laboratory | RAG and Data Integration Specialist          |
+| BV-BRC Developers | -                           | Model integration and deployment             |
+| CEPI Scientists   | -                           | Use-case definition and validation           |
 
 **Project Summary**
 
@@ -40,12 +47,12 @@ The Co-Scientist framework will use an agentic reasoning loop combining retrieva
 
 **Data and Resources Required**
 
-| Resource Type     | Source / Link                          | Description / Purpose              |
-| ----------------- | -------------------------------------- | ---------------------------------- |
-| Data              | BV-BRC genomes, CEPI curated datasets  | Training and evaluation data       |
-| Tools / Services  | Jnana (Co-Scientist GitHub repo)       | Agentic reasoning system           |
-| LLMs / AI Models  | GPT-4, Claude 3                        | Reasoning and synthesis agents     |
-| Compute / Storage | Argonne HPC                            | Experimentation environment        |
+| Resource Type     | Source / Link                         | Description / Purpose          |
+| ----------------- | ------------------------------------- | ------------------------------ |
+| Data              | BV-BRC genomes, CEPI curated datasets | Training and evaluation data   |
+| Tools / Services  | Jnana (Co-Scientist GitHub repo)      | Agentic reasoning system       |
+| LLMs / AI Models  | GPT-4, Claude 3                       | Reasoning and synthesis agents |
+| Compute / Storage | Argonne HPC                           | Experimentation environment    |
 
 **Expected Outcomes / Deliverables**
 

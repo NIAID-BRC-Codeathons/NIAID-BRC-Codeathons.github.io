@@ -19,12 +19,12 @@ github: "https://github.com/NIAID-BRC-Codeathons/rhea-workflow-automation"
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name                  | Affiliation                      | Role / Expertise                           |
-| --------------------- | -------------------------------- | ------------------------------------------ |
-| Chris Grams           | Argonne National Laboratory      | Lead Developer, Galaxy Integration         |
-| Oleksandr Narykov     | Argonne National Laboratory      | Workflow Automation Engineer               |
-| Arvind Ramanathan     | Argonne National Laboratory      | AI Systems Integration Advisor             |
-| CEPI collaborators    | -                                | Use-case Alignment and Testing             |
+| Name               | Affiliation                 | Role / Expertise                   |
+| ------------------ | --------------------------- | ---------------------------------- |
+| Chris Grams        | Argonne National Laboratory | Lead Developer, Galaxy Integration |
+| Oleksandr Narykov  | Argonne National Laboratory | Workflow Automation Engineer       |
+| Arvind Ramanathan  | Argonne National Laboratory | AI Systems Integration Advisor     |
+| CEPI collaborators | -                           | Use-case Alignment and Testing     |
 
 **Project Summary**
 
@@ -42,12 +42,12 @@ Rhea will use retrieval-augmented generation (RAG) to identify relevant BV-BRC t
 
 **Data and Resources Required**
 
-| Resource Type     | Source / Link                              | Description / Purpose           |
-| ----------------- | ------------------------------------------ | ------------------------------- |
-| Data              | BV-BRC genomes, CEPI priority pathogen datasets | Training and workflow inputs    |
-| Tools / Services  | BV-BRC APIs, Galaxy server                 | Workflow integration and execution |
-| LLMs / AI Models  | Rhea MCP model, GPT-5                      | Tool reasoning and synthesis    |
-| Compute / Storage | Argonne HPC / Galaxy cluster               | Execution backend               |
+| Resource Type     | Source / Link                                   | Description / Purpose              |
+| ----------------- | ----------------------------------------------- | ---------------------------------- |
+| Data              | BV-BRC genomes, CEPI priority pathogen datasets | Training and workflow inputs       |
+| Tools / Services  | BV-BRC APIs, Galaxy server                      | Workflow integration and execution |
+| LLMs / AI Models  | Rhea MCP model, GPT-5                           | Tool reasoning and synthesis       |
+| Compute / Storage | Argonne HPC / Galaxy cluster                    | Execution backend                  |
 
 **Expected Outcomes / Deliverables**
 

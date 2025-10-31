@@ -1,7 +1,14 @@
 ---
 title: "HiPerRAG for Literature-based Data Extraction on Priority Pathogens"
 description: "Leveraging high-performance retrieval-augmented generation to extract and curate structured biological data for CEPI priority pathogens from scientific literature"
-tags: ["HiPerRAG", "Literature Mining", "Knowledge Extraction", "RAG", "Priority Pathogens"]
+tags:
+  [
+    "HiPerRAG",
+    "Literature Mining",
+    "Knowledge Extraction",
+    "RAG",
+    "Priority Pathogens",
+  ]
 github: "https://github.com/NIAID-BRC-Codeathons/hiperrag-literature-extraction"
 ---
 
@@ -17,12 +24,12 @@ github: "https://github.com/NIAID-BRC-Codeathons/hiperrag-literature-extraction"
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name                 | Affiliation                      | Role / Expertise                        |
-| -------------------- | -------------------------------- | --------------------------------------- |
-| Ozan                 | Argonne National Laboratory      | AI/ML Engineer, Data Curation Lead      |
-| Arvind Ramanathan    | Argonne National Laboratory      | Scientific Advisor                      |
-| BV-BRC Analysts      | -                                | Data integration and validation         |
-| CEPI collaborators   | -                                | Priority Pathogen Data Alignment        |
+| Name               | Affiliation                 | Role / Expertise                   |
+| ------------------ | --------------------------- | ---------------------------------- |
+| Ozan               | Argonne National Laboratory | AI/ML Engineer, Data Curation Lead |
+| Arvind Ramanathan  | Argonne National Laboratory | Scientific Advisor                 |
+| BV-BRC Analysts    | -                           | Data integration and validation    |
+| CEPI collaborators | -                           | Priority Pathogen Data Alignment   |
 
 **Project Summary**
 
@@ -40,12 +47,12 @@ HiPerRAG will be configured to parse biomedical literature and extract relations
 
 **Data and Resources Required**
 
-| Resource Type     | Source / Link                          | Description / Purpose                        |
-| ----------------- | -------------------------------------- | -------------------------------------------- |
-| Data              | PubMed, BV-BRC text corpora            | Literature sources for entity/relation extraction |
-| Tools / Services  | HiPerRAG (ArXiv:2505.04846)            | RAG-based extraction framework               |
-| LLMs / AI Models  | Mistral Large, GPT-4 via Rhea          | Entity normalization and summarization       |
-| Compute / Storage | Argonne HPC, BRC clusters              | Parallel literature processing               |
+| Resource Type     | Source / Link                 | Description / Purpose                             |
+| ----------------- | ----------------------------- | ------------------------------------------------- |
+| Data              | PubMed, BV-BRC text corpora   | Literature sources for entity/relation extraction |
+| Tools / Services  | HiPerRAG (ArXiv:2505.04846)   | RAG-based extraction framework                    |
+| LLMs / AI Models  | Mistral Large, GPT-4 via Rhea | Entity normalization and summarization            |
+| Compute / Storage | Argonne HPC, BRC clusters     | Parallel literature processing                    |
 
 **Expected Outcomes / Deliverables**
 
