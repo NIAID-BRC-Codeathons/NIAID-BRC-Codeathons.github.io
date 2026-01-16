@@ -13,11 +13,9 @@ github: "https://github.com/NIAID-BRC-Codeathons/viral-phylogenetics"
 video: "https://www.youtube.com/watch?v=84mxnspRuk8"
 ---
 
-# Viral Structural Phylogenetics
+**Project Themes:**
 
-## Team Information
-
-### Team Name: _virAllSpark_
+- Function Assignment
 
 **Team Lead(s):**
 
