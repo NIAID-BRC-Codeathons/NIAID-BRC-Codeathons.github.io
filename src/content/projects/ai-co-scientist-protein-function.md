@@ -20,7 +20,7 @@ github: "https://github.com/NIAID-BRC-Codeathons/ai-co-scientist-protein-functio
 
 - Name: Arvind Ramanathan
 - Affiliation: Argonne National Laboratory
-- Email: [To be added]
+- Email: ramanathana@anl.gov
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
