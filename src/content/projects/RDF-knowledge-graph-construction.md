@@ -4,7 +4,7 @@ description: "Transforming Pathogen Data Network Resources to RDF using Large La
 tags:
   ["Knowledge Graphs", "RDF", "Linked Data", "Semantic Web", "Data Integration"]
 github: "https://github.com/NIAID-BRC-Codeathons/RDF-knowledge-graph-construction"
-video: "https://www.youtube.com/watch?v=84mxnspRuk8"
+video: "https://www.youtube.com/watch?v=0fcYShCnXA4"
 ---
 
 \*\*Project Theme
