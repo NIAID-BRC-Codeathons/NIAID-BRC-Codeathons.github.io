@@ -40,13 +40,13 @@ This project extends the Rhea platform—an MCP+RAG-based environment that dynam
 
 **Approach**
 
-Rhea will use retrieval-augmented generation (RAG) to identify relevant BV-BRC tools and Galaxy workflows via semantic search and metadata tagging. The system will then employ an LLM-based synthesis engine to auto-compose workflow specifications (e.g., CWL/YAML) executable within Galaxy. The team will test interoperability, runtime efficiency, and reproducibility using selected CEPI priority pathogens.
+Rhea will use retrieval-augmented generation (RAG) to identify relevant BV-BRC tools and Galaxy workflows via semantic search and metadata tagging. The system will then employ an LLM-based synthesis engine to auto-compose workflow specifications (e.g., CWL/YAML) executable within Galaxy. The team will test interoperability, runtime efficiency, and reproducibility using selected priority pathogens.
 
 **Data and Resources Required**
 
 | Resource Type     | Source / Link                                   | Description / Purpose              |
 | ----------------- | ----------------------------------------------- | ---------------------------------- |
-| Data              | BV-BRC genomes, CEPI priority pathogen datasets | Training and workflow inputs       |
+| Data              | BV-BRC genomes, priority pathogen datasets | Training and workflow inputs       |
 | Tools / Services  | BV-BRC APIs, Galaxy server                      | Workflow integration and execution |
 | LLMs / AI Models  | Rhea MCP model, GPT-5                           | Tool reasoning and synthesis       |
 | Compute / Storage | Argonne HPC / Galaxy cluster                    | Execution backend                  |
@@ -59,7 +59,7 @@ Rhea will use retrieval-augmented generation (RAG) to identify relevant BV-BRC t
 
 **Potential Impact and Next Steps**
 
-This project will provide a foundation for automated workflow assembly in bioinformatics, enhancing reproducibility and scalability for CEPI and BV-BRC researchers. Follow-up activities may include connecting Rhea to HiPerRAG for data retrieval and integrating Co-Scientist reasoning modules for workflow evaluation.
+This project will provide a foundation for automated workflow assembly in bioinformatics, enhancing reproducibility and scalability for BV-BRC researchers. Follow-up activities may include connecting Rhea to HiPerRAG for data retrieval and integrating Co-Scientist reasoning modules for workflow evaluation.
 
 **Technical Support Needed**
 
