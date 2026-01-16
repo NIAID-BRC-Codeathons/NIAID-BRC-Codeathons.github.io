@@ -10,6 +10,7 @@ tags:
     "Priority Pathogens",
   ]
 github: "https://github.com/NIAID-BRC-Codeathons/hiperrag-literature-extraction"
+video: "https://www.youtube.com/watch?v=PQ_r2Cc8OPY"
 ---
 
 **Project Themes:**

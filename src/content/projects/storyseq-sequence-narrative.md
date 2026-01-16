@@ -3,6 +3,7 @@ title: "StorySeq: Automated Sequence Narrative Generation"
 description: "Automating sequence identification and contextualization using BLAST, database queries, and LLM narrative synthesis to accelerate pathogen and AMR gene discovery"
 tags: ["LLM", "BLAST", "Narrative Generation", "Knowledge Extraction"]
 github: "https://github.com/NIAID-BRC-Codeathons/storyseq-sequence-narrative"
+video: "https://www.youtube.com/watch?v=jTAEv2hpLgQ"
 ---
 
 **Project Themes:**
