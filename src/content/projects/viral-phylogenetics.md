@@ -18,19 +18,21 @@ github: "https://github.com/NIAID-BRC-Codeathons/viral-phylogenetics"
 
 ### Team Name: _virAllSpark_
 
-### Team Leads
+**Team Lead(s):**
 
-- David Moi, University of Lausanne [✉️](mailto:david.moi@unil.ch)
-- Dongwook Kim, University of Lausanne [✉️](mailto:dongwook.kim@unil.ch)
+- Name: Dave Moi, Dongwook Kim
+- Affiliation: University of Lausanne / SIB, PDN
+- Email: david.moi@unil.ch, dongwook.kim@unil.ch
 
-### Team Members
+**Suggested Team Members and Roles [4-6 members]**
 
-| Name         | Affiliation            | Expected Role / Expertise                                                                                                            |
-| ------------ | ---------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| David Moi    | University of Lausanne | Project leader (model development) / AI, ML, snakemake, HPC, docker, structural biology, phylogenetics                      |
-| Dongwook Kim | University of Lausanne | Project leader (validation and integration) / Phylogenetics, sequence analysis, protein structures, Protein Language Models |
-| TBD          | -                      | Model development part / AI expert(s) on transformer models, biological language models, sequence embeddings                |
-| TBD          | -                      | Validation part / Biology and/or Bioinformatics expert(s) on virology, viral taxonomy, sequence analysis, sequence database |
+| Name             | Affiliation                                        | Expected Role / Expertise                                                                                                            |
+| ---------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Alex Partin      | Argonne National Laboratory, BV-BRC/ANL            | Model development part / AI expert(s) on transformer models, biological language models, sequence embeddings                         |
+| Christian Zmasek | J. Craig Venter Institute, BV-BRC                  | Validation part / Biology and/or Bioinformatics expert(s) on virology, viral taxonomy, sequence analysis, sequence database          |
+| Dave Moi         | University of Lausanne / SIB, PDN                  | Project leader (model development) / AI, ML, snakemake, HPC, docker, structural biology, phylogenetics                               |
+| Dongwook Kim     | University of Lausanne / SIB, PDN                  | Project leader (validation and integration) / Phylogenetics, sequence analysis, protein structures, Protein Language Models          |
+| Jamie Overbeek   | Argonne National Laboratory, BV-BRC/ANL            | Model development part / AI expert(s) on transformer models, biological language models, sequence embeddings                         |
 
 ## Project Summary
 

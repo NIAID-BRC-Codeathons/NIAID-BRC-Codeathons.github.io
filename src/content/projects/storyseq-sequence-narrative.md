@@ -15,18 +15,17 @@ github: "https://github.com/NIAID-BRC-Codeathons/storyseq-sequence-narrative"
 **Team Lead(s):**
 
 - Name: Andrew Warren
-- Affiliation: UVA
+- Affiliation: University of Virginia, BV-BRC
 - Email: asw3xp@virginia.edu
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name               | Affiliation | Role / Expertise     |
-| ------------------ | ----------- | -------------------- |
-| Dustin Machi       | UVA         | AI / Software        |
-| Curtis Hendrickson | UAB         | Software development |
-|                    |             |                      |
-|                    |             |                      |
-|                    |             |                      |
+| Name               | Affiliation                                  | Role / Expertise     |
+| ------------------ | -------------------------------------------- | -------------------- |
+| Andrew Warren      | University of Virginia, BV-BRC               | AI / Software        |
+| Curtis Hendrickson | University of Alabama at Birmingham, BV-BRC  | Software development |
+| Dustin Machi       | University of Virginia, BV-BRC               | AI / Software        |
+| Jason Williams     | Cold Spring Harbor Laboratory, PDN           |                      |
 
 **Project Summary**
 

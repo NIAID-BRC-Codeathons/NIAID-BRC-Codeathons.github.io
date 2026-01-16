@@ -14,18 +14,19 @@ github: "https://github.com/NIAID-BRC-Codeathons/outbreak-surveillance-monitorin
 **Team Lead(s):**
 
 - Name: Nicholas Chia
-- Affiliation: ANL
+- Affiliation: Argonne National Laboratory, BV-BRC/ANL
 - Email: chia@ANL.gov
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name | Affiliation | Role / Expertise |
-| ---- | ----------- | ---------------- |
-| ???? |             |                  |
-|      |             |                  |
-|      |             |                  |
-|      |             |                  |
-|      |             |                  |
+| Name               | Affiliation                                      | Role / Expertise |
+| ------------------ | ------------------------------------------------ | ---------------- |
+| Alexander Taepper  | Swiss Institute of Bioinformatics, PDN           |                  |
+| Natalie Kucher     | Galaxy (Non-BRC)                                 |                  |
+| Nicholas Chia      | Argonne National Laboratory, BV-BRC/ANL          |                  |
+| Rachel Poretskey   | UIC, BV-BRC                                      |                  |
+| Sam Halabi         | Georgetown University, PDN                       |                  |
+| Thomas Grys        | Mayo Clinic (Non-BRC)                            |                  |
 
 **Project Summary**
 

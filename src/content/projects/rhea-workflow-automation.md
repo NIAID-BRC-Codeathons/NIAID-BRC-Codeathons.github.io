@@ -15,16 +15,17 @@ github: "https://github.com/NIAID-BRC-Codeathons/rhea-workflow-automation"
 
 - Name: Chris Grams, Oleksandr Narykov
 - Affiliation: Argonne National Laboratory, BV-BRC
-- Email: [To be added]
+- Email: cgrams@anl.gov, onarykov@anl.gov
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name               | Affiliation                 | Role / Expertise                   |
-| ------------------ | --------------------------- | ---------------------------------- |
-| Chris Grams        | Argonne National Laboratory | Lead Developer, Galaxy Integration |
-| Oleksandr Narykov  | Argonne National Laboratory | Workflow Automation Engineer       |
-| Arvind Ramanathan  | Argonne National Laboratory | AI Systems Integration Advisor     |
-| CEPI collaborators | -                           | Use-case Alignment and Testing     |
+| Name                  | Affiliation                                  | Role / Expertise                   |
+| --------------------- | -------------------------------------------- | ---------------------------------- |
+| Arvind Ramanathan     | Argonne National Laboratory                  | AI Systems Integration Advisor     |
+| Chris Grams           | Argonne National Laboratory, BV-BRC/ANL      | Lead Developer, Galaxy Integration |
+| Marius van den Beek   | SCI-SCALE, BRC Analytics                     | Workflow Automation Engineer       |
+| Maulik Shukla         | Argonne National Laboratory, BV-BRC          | Use-case Alignment and Testing     |
+| Oleksandr Narykov     | Argonne National Laboratory, BV-BRC/ANL      | Workflow Automation Engineer       |
 
 **Project Summary**
 

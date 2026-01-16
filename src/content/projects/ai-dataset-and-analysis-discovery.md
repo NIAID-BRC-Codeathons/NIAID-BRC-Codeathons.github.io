@@ -19,13 +19,14 @@ github: "https://github.com/NIAID-BRC-Codeathons/ai-dataset-and-analysis-discove
 
 **Suggested Team Members and Roles [4-6 members]**
 
-| Name       | Affiliation   | Role / Expertise                    |
-| ---------- | ------------- | ----------------------------------- |
-| [Member 1] | [Institution] | AI/ML Engineer - LLM Integration    |
-| [Member 2] | [Institution] | Bioinformatician - Domain Knowledge |
-| [Member 3] | [Institution] | Backend Developer - API Integration |
-| [Member 4] | [Institution] | Frontend Developer - User Interface |
-| [Member 5] | [Institution] | Data Scientist - Query Optimization |
+| Name               | Affiliation                              | Role / Expertise                    |
+| ------------------ | ---------------------------------------- | ----------------------------------- |
+| Anton Nekrutenko   | Penn State, BRC Analytics                | AI/ML Engineer - LLM Integration    |
+| Danielle Callan    | Temple University, BRC Analytics         | Bioinformatician - Domain Knowledge |
+| Dannon Baker       | Johns Hopkins, BRC Analytics             | Backend Developer - API Integration |
+| Dave Rogers        | Penn State/Clever Canary, BRC Analytics  | Frontend Developer - User Interface |
+| Jonathan Livny     | Genomic Center for Infectious Disease, NIAID (Non-BRC) | Data Scientist - Query Optimization |
+| Steven Weaver      | Temple University, BRC Analytics         | Data Scientist - Query Optimization |
 
 **Project Summary**
 

@@ -1,6 +1,6 @@
 ---
 title: "HiPerRAG for Literature-based Data Extraction on Priority Pathogens"
-description: "Leveraging high-performance retrieval-augmented generation to extract and curate structured biological data for CEPI priority pathogens from scientific literature"
+description: "Leveraging high-performance retrieval-augmented generation to extract and curate structured biological data for priority pathogens from scientific literature"
 tags:
   [
     "HiPerRAG",
@@ -18,18 +18,19 @@ github: "https://github.com/NIAID-BRC-Codeathons/hiperrag-literature-extraction"
 
 **Team Lead(s):**
 
-- Name: Ozan
-- Affiliation: Argonne National Laboratory, BV-BRC
-- Email: [To be added]
+- Name: Ozan Gokdemir
+- Affiliation: Argonne National Laboratory, BV-BRC/ANL
+- Email: ogokdemir@anl.gov
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name               | Affiliation                 | Role / Expertise                   |
-| ------------------ | --------------------------- | ---------------------------------- |
-| Ozan               | Argonne National Laboratory | AI/ML Engineer, Data Curation Lead |
-| Arvind Ramanathan  | Argonne National Laboratory | Scientific Advisor                 |
-| BV-BRC Analysts    | -                           | Data integration and validation    |
-| CEPI collaborators | -                           | Priority Pathogen Data Alignment   |
+| Name              | Affiliation                                 | Role / Expertise                   |
+| ----------------- | ------------------------------------------- | ---------------------------------- |
+| Blessy Antony     | Virginia Tech (Non-BRC)                     | Data integration and validation    |
+| James McFeeters   | CViSB (Non-BRC)                             | Scientific Advisor                 |
+| Maliha Aziz       | George Washington University (Non-BRC)      | Data integration and validation    |
+| Ozan Gokdemir     | Argonne National Laboratory, BV-BRC/ANL     | AI/ML Engineer, Data Curation Lead |
+| Yitian Chen       | Scripps Research (Non-BRC)                  | Priority Pathogen Data Alignment   |
 
 **Project Summary**
 
@@ -37,9 +38,9 @@ This project leverages HiPerRAG—a high-performance retrieval-augmented generat
 
 **Goals and Objectives**
 
-- Goal 1: Define target data types relevant to CEPI and BV-BRC (e.g., PPIs, drug-protein interactions)
+- Goal 1: Define target data types relevant to BV-BRC (e.g., PPIs, drug-protein interactions)
 - Goal 2: Deploy HiPerRAG on relevant literature corpora to extract structured relationships
-- Goal 3: Generate curated datasets for 1–2 CEPI priority pathogens (e.g., Nipah, Lassa)
+- Goal 3: Generate curated datasets for 1–2 priority pathogens (e.g., Nipah, Lassa)
 
 **Approach**
 
@@ -56,11 +57,11 @@ HiPerRAG will be configured to parse biomedical literature and extract relations
 
 **Expected Outcomes / Deliverables**
 
-Curated datasets of structured biological relationships for CEPI priority pathogens, integrated into BV-BRC pipelines.
+Curated datasets of structured biological relationships for priority pathogens, integrated into BV-BRC pipelines.
 
 **Potential Impact and Next Steps**
 
-This project demonstrates scalable AI-driven literature mining for infectious disease research. It will enable automated knowledge enrichment and accelerate understanding of pathogen biology, supporting CEPI's 100-day mission and BV-BRC's informatics goals.
+This project demonstrates scalable AI-driven literature mining for infectious disease research. It will enable automated knowledge enrichment and accelerate understanding of pathogen biology, supporting BV-BRC's informatics goals.
 
 **Technical Support Needed**
 

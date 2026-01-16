@@ -13,19 +13,20 @@ github: "https://github.com/NIAID-BRC-Codeathons/workflow-generation-mcp"
 
 **Team Lead(s):**
 
-- Name: Clark Cucinell, Bob Olson
-- Affiliation: Argonne National Lab
+- Name: Clark Cucinell
+- Affiliation: Argonne National Laboratory, BV-BRC
 - Email: cucinell@anl.gov
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name          | Affiliation          | Role / Expertise             |
-| ------------- | -------------------- | ---------------------------- |
-| Nicole Bowers | Argonne National Lab | Bioinformatician             |
-| Bruce Parello | Argonne National Lab | Computer Scientist           |
-| Chris Grams   | Argonne National Lab | PhD Student Computer Science |
-|               |                      |                              |
-|               |                      |                              |
+| Name               | Affiliation                                  | Role / Expertise             |
+| ------------------ | -------------------------------------------- | ---------------------------- |
+| Chris Escobar      | Argonne National Laboratory, BV-BRC/ANL      | Computer Scientist           |
+| Clark Cucinell     | Argonne National Laboratory, BV-BRC          | PhD Student Computer Science |
+| David Gelerinter   | Argonne National Laboratory, BV-BRC/ANL      | Computer Scientist           |
+| Dylan Pilz         | Scripps Research Institute (Non-BRC)         | Bioinformatician             |
+| Nicole Bowers      | Argonne National Laboratory, BV-BRC/ANL      | Bioinformatician             |
+| Rebecca Wattam     | University of Virginia, BV-BRC               | Bioinformatician             |
 
 **Project Summary**
 
