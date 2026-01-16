@@ -12,6 +12,7 @@ const projects = defineCollection({
 			heroImage: image().optional(),
 			team: z.array(z.string()).optional(),
 			github: z.string().url().optional(),
+			video: z.string().url().optional(),
 			tags: z.array(z.string()).optional(),
 		}),
 });
