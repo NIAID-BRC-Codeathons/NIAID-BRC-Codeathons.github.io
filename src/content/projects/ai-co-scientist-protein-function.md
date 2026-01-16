@@ -27,9 +27,10 @@ github: "https://github.com/NIAID-BRC-Codeathons/ai-co-scientist-protein-functio
 | Name              | Affiliation                 | Role / Expertise                             |
 | ----------------- | --------------------------- | -------------------------------------------- |
 | Arvind Ramanathan | Argonne National Laboratory | Principal Investigator, AI Systems Architect |
-| Ozan Gokdemir     | Argonne National Laboratory | RAG and Data Integration Specialist          |
+| Archit Vasan | Argonne National Laboratory | Model integration and deployment          |
 | Bharat Kale       | Argonne National Laboratory | Use-case definition and validation          |
 | Brian Hsu | Argonne National Laboratory | Model integration and deployment             |
+| Ozan Gokdemir     | Argonne National Laboratory | RAG and Data Integration Specialist          |
 | Ruijie Zhu    | University of Chicago   | Use-case definition and validation           |
 
 **Project Summary**
