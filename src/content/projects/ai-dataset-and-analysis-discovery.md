@@ -16,7 +16,7 @@ video: "https://www.youtube.com/watch?v=dhcBc6oA2gQ&list=PL_N12rfaolzcuN8DT95jK7
 
 - Name: Dannon Baker
 - Affiliation: Johns Hopkins University, BRC Analytics
-- Email: dannon.baker@jhu.edu
+- Email: dannon@jhu.edu
 
 **Suggested Team Members and Roles [4-6 members]**
 
