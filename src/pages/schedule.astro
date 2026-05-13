@@ -2,7 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import { SITE_TITLE } from "../consts";
+import { EVENT_DATE, EVENT_LOCATION, SITE_TITLE } from "../consts";
 ---
 
 <!doctype html>
@@ -10,7 +10,7 @@ import { SITE_TITLE } from "../consts";
 	<head>
 		<BaseHead
 			title={`Schedule | ${SITE_TITLE}`}
-			description="NIAID BRC AI Codeathon 2025 Schedule - November 12-14, 2025 at Argonne National Laboratory"
+			description={`NIAID BRC AI Codeathon 2026 Schedule - ${EVENT_DATE} at ${EVENT_LOCATION}`}
 		/>
 		<style>
 			main {
@@ -22,15 +22,6 @@ import { SITE_TITLE } from "../consts";
 			h1 {
 				text-align: center;
 				margin-bottom: 0.5em;
-			}
-			.draft-notice {
-				background: #fff3cd;
-				border: 1px solid #ffc107;
-				border-radius: 4px;
-				padding: 1em;
-				margin: 2em 0;
-				text-align: center;
-				font-weight: bold;
 			}
 			.day {
 				margin: 3em 0;
@@ -92,7 +83,7 @@ import { SITE_TITLE } from "../consts";
 			</div>
 
 			<div class="day">
-				<h2>Day 1 - Wednesday, November 12, 2025</h2>
+				<h2>Day 1 - Wednesday, September 16, 2026</h2>
 
 				<div class="schedule-item">
 					<div class="time">8:30 AM</div>
@@ -111,12 +102,21 @@ import { SITE_TITLE } from "../consts";
 				<div class="schedule-item">
 					<div class="time">9:15 AM</div>
 					<div class="activity">
-						<div class="activity-title">Codeathon Overview and Charge</div>
+						<div class="activity-title">
+							AI Update: The Future of Scientific Discovery
+						</div>
 					</div>
 				</div>
 
 				<div class="schedule-item">
 					<div class="time">10:00 AM</div>
+					<div class="activity">
+						<div class="activity-title">Codeathon Overview and Charge</div>
+					</div>
+				</div>
+
+				<div class="schedule-item">
+					<div class="time">10:30 AM</div>
 					<div class="activity">
 						<div class="activity-title">Breakout Sessions</div>
 					</div>
@@ -137,6 +137,20 @@ import { SITE_TITLE } from "../consts";
 				</div>
 
 				<div class="schedule-item">
+					<div class="time">3:00 PM</div>
+					<div class="activity">
+						<div class="activity-title">Aurora Reveal Tour</div>
+					</div>
+				</div>
+
+				<div class="schedule-item">
+					<div class="time">3:30 PM</div>
+					<div class="activity">
+						<div class="activity-title">Icebreaker Bingo</div>
+					</div>
+				</div>
+
+				<div class="schedule-item">
 					<div class="time">4:00 PM</div>
 					<div class="activity">
 						<div class="activity-title">Team Reports</div>
@@ -151,7 +165,7 @@ import { SITE_TITLE } from "../consts";
 				</div>
 
 				<div class="schedule-item">
-					<div class="time">6:00 PM</div>
+					<div class="time">5:30 PM</div>
 					<div class="activity">
 						<div class="activity-title">Group Dinner (optional)</div>
 					</div>
@@ -159,7 +173,7 @@ import { SITE_TITLE } from "../consts";
 			</div>
 
 			<div class="day">
-				<h2>Day 2 - Thursday, November 13, 2025</h2>
+				<h2>Day 2 - Thursday, September 17, 2026</h2>
 
 				<div class="schedule-item">
 					<div class="time">8:30 AM</div>
@@ -192,6 +206,13 @@ import { SITE_TITLE } from "../consts";
 				<div class="schedule-item">
 					<div class="time">1:00 PM</div>
 					<div class="activity">
+						<div class="activity-title">Rapid Prototyping Lab Tour</div>
+					</div>
+				</div>
+
+				<div class="schedule-item">
+					<div class="time">1:30 PM</div>
+					<div class="activity">
 						<div class="activity-title">Breakout Sessions</div>
 					</div>
 				</div>
@@ -212,7 +233,7 @@ import { SITE_TITLE } from "../consts";
 			</div>
 
 			<div class="day">
-				<h2>Day 3 - Friday, November 14, 2025</h2>
+				<h2>Day 3 - Friday, September 18, 2026</h2>
 
 				<div class="schedule-item">
 					<div class="time">8:30 AM</div>

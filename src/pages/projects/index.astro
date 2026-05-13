@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 import BaseHead from "../../components/BaseHead.astro";
 import Footer from "../../components/Footer.astro";
 import Header from "../../components/Header.astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
+import { SITE_TITLE } from "../../consts";
 
 const projects = (await getCollection("projects")).sort((a, b) =>
 	a.data.title.localeCompare(b.data.title)
@@ -14,10 +14,33 @@ const projects = (await getCollection("projects")).sort((a, b) =>
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead
+			title={`Past Projects | ${SITE_TITLE}`}
+			description="Projects from the 2025 NIAID BRC AI Codeathon at Argonne National Laboratory"
+		/>
 		<style>
 			main {
 				width: 960px;
+			}
+			.intro {
+				margin-bottom: 2rem;
+			}
+			.intro h1 {
+				margin-bottom: 0.25em;
+			}
+			.intro .subtitle {
+				color: rgb(var(--gray-dark));
+				margin: 0 0 1em 0;
+			}
+			.banner {
+				background: rgba(var(--accent), 0.08);
+				border-left: 4px solid rgb(var(--accent));
+				padding: 1em 1.25em;
+				border-radius: 4px;
+				margin: 1em 0 2em 0;
+			}
+			.banner p {
+				margin: 0;
 			}
 			ul {
 				display: flex;
@@ -73,6 +96,22 @@ const projects = (await getCollection("projects")).sort((a, b) =>
 	<body>
 		<Header />
 		<main>
+			<section class="intro">
+				<h1>Past Projects — 2025 Codeathon</h1>
+				<p class="subtitle">
+					Projects from the inaugural NIAID BRC AI Codeathon held November
+					12–14, 2025 at Argonne National Laboratory.
+				</p>
+				<div class="banner">
+					<p>
+						Project teams for the <strong
+							>2026 Codeathon (September 16–18, 2026)</strong
+						> will be announced after applications close. <a href="/"
+							>Learn more and apply &rarr;</a
+						>
+					</p>
+				</div>
+			</section>
 			<section>
 				<ul>
 					{

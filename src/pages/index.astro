@@ -2,7 +2,13 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+import {
+	APPLICATION_DEADLINE,
+	EVENT_DATE,
+	EVENT_LOCATION,
+	SITE_DESCRIPTION,
+	SITE_TITLE,
+} from "../consts";
 ---
 
 <!doctype html>
@@ -13,76 +19,102 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 	<body>
 		<Header />
 		<main>
-			<h1>NIAID BRC AI Codeathon 2025</h1>
+			<h1>NIAID BRC AI Codeathon 2.0</h1>
 			<h2>Accelerating FAIR Data and Tools with AI</h2>
 
 			<p>
-				<strong>November 12–14, 2025</strong><br />
-				Argonne National Laboratory, Lemont, IL
+				<strong>{EVENT_DATE}</strong><br />
+				{EVENT_LOCATION}
 			</p>
 
 			<p>
 				The NIAID Bioinformatics Resource Centers (BRCs) invite researchers,
-				data scientists, and developers to a three-day AI Codeathon focused on
-				improving <strong
+				data scientists, developers, bioinformaticians, and students to the
+				<strong>2026 NIAID-BRC AI Codeathon for Infectious Disease Research</strong>,
+				a three-day, in-person event focused on advancing infectious disease
+				research through artificial intelligence (AI), large language models
+				(LLMs), and agentic frameworks.
+			</p>
+
+			<p>
+				Building on the success of the previous codeathon, participants will
+				collaborate in small teams to develop prototype tools and workflows
+				that improve the <strong
 					>Findability, Accessibility, Interoperability, and Reusability
 					(FAIR-ness)</strong
-				> of BRC data and tools using artificial intelligence (AI) and large language
-				models (LLMs).
+				> of BRC data, resources, and analysis tools.
 			</p>
+
+			<h3>Project Focus Areas</h3>
+			<p>This year's codeathon will emphasize two focus areas:</p>
+			<ul>
+				<li>
+					<strong
+						>Automated Knowledge Extraction and Curation from Literature</strong
+					> — Using Retrieval-Augmented Generation (RAG) and LLM frameworks to extract,
+					structure, and integrate biological and epidemiological knowledge from
+					the scientific literature into BRC platforms.
+				</li>
+				<li>
+					<strong>Bioinformatics Workflow Automation</strong> — Designing
+					agent-based systems that translate research questions into executable
+					workflows using Model Context Protocol (MCP)-enabled tools and
+					services.
+				</li>
+			</ul>
 
 			<h3>Event Goals</h3>
 			<ul>
 				<li>
-					Apply AI and LLMs to improve accessibility and usability of BRC data
-					and tools
-				</li>
-				<li>Enhance interoperability and reuse of BRC resources</li>
-				<li>
-					Foster collaboration between infectious disease researchers, AI
-					developers, and bioinformaticians
+					Apply AI and LLMs to enable scalable knowledge extraction and
+					integration from scientific literature
 				</li>
 				<li>
-					Deliver openly available prototypes that can serve as seeds for
-					long-term community solutions
+					Develop intelligent systems for automated bioinformatics workflow
+					design and execution
+				</li>
+				<li>
+					Enhance interoperability and reuse of BRC data, tools, and services
+				</li>
+				<li>
+					Foster collaboration among infectious disease researchers, AI
+					developers, bioinformaticians, and data scientists
+				</li>
+				<li>
+					Deliver openly available prototypes that can seed long-term community
+					solutions
 				</li>
 			</ul>
 
-			<h3>Project Topics</h3>
-			<p>Participants will form teams around proposed themes:</p>
+			<h3>Who Should Apply?</h3>
 			<ul>
+				<li>Infectious disease researchers and domain experts</li>
 				<li>
-					<strong>Virtual BRC Helpdesk</strong> - AI-powered helpdesk to guide users
-					through bioinformatics tasks
+					Data scientists and AI/ML researchers interested in biological and
+					biomedical applications
 				</li>
+				<li>Bioinformaticians and computational biologists</li>
+				<li>Software developers and research engineers</li>
 				<li>
-					<strong>Automated Workflow Generation</strong> - Generate and run workflows
-					from user descriptions
-				</li>
-				<li>
-					<strong>Knowledge Extraction and Curation</strong> - Extract biological
-					insights from literature
-				</li>
-				<li>
-					<strong>Function Assignment</strong> - Predict functions for uncharacterized
-					genes
-				</li>
-				<li>
-					<strong>Outbreak Monitoring</strong> - Track and process outbreak data
-					for real-time monitoring
-				</li>
-				<li>
-					<strong>Virtual AI Co-scientist</strong> - Multi-agent system for hypothesis
-					generation and ranking
+					Students, postdoctoral researchers, and trainees interested in AI and
+					data-driven infectious disease research
 				</li>
 			</ul>
+
+			<h3>Application and Registration</h3>
+			<p>
+				Participation is free, but space is limited.<br />
+				<strong>Application deadline:</strong>
+				{APPLICATION_DEADLINE}.<br />
+				Application form and additional details coming soon.
+			</p>
 
 			<p style="text-align: center; margin: 2rem 0;">
 				<a
-					href="/projects/"
+					href="/schedule/"
 					style="display: inline-block; padding: 1rem 2rem; background: rgb(var(--accent)); color: white; text-decoration: none; border-radius: 4px; font-weight: bold;"
 				>
-					View Projects
+					View Schedule
 				</a>
 			</p>
 		</main>
