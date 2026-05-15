@@ -20,75 +20,249 @@ const projects = (await getCollection("projects")).sort((a, b) =>
 		/>
 		<style>
 			main {
-				width: 960px;
+				width: 1100px;
+				max-width: calc(100% - 2.5em);
+				margin: auto;
+				padding: 2em 1.25em 5em;
 			}
-			.intro {
-				margin-bottom: 2rem;
+
+			.page-head {
+				display: grid;
+				grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+				gap: 3em;
+				padding: 3em 0 4em;
+				border-bottom: 1px solid var(--rule);
+				align-items: end;
 			}
-			.intro h1 {
-				margin-bottom: 0.25em;
+			.page-head h1 {
+				margin: 0.4em 0 0 0;
+				font-size: clamp(2.75rem, 7vw, 5rem);
+				font-weight: 300;
+				letter-spacing: -0.035em;
+				line-height: 1;
 			}
-			.intro .subtitle {
-				color: rgb(var(--gray-dark));
-				margin: 0 0 1em 0;
+			.page-head h1 em {
+				color: var(--rust);
 			}
-			.banner {
-				background: rgba(var(--accent), 0.08);
-				border-left: 4px solid rgb(var(--accent));
-				padding: 1em 1.25em;
-				border-radius: 4px;
-				margin: 1em 0 2em 0;
+			.page-head .subtitle {
+				font-family: var(--font-display);
+				font-style: italic;
+				font-weight: 300;
+				font-size: 1.25rem;
+				line-height: 1.45;
+				color: var(--ink-soft);
+				max-width: 36ch;
+				margin-top: 1em;
 			}
-			.banner p {
+			.callout {
+				background: var(--ink);
+				color: var(--paper);
+				padding: 1.5em 1.75em;
+				border-left: 3px solid var(--rust);
+				align-self: end;
+			}
+			.callout .clabel {
+				font-family: var(--font-mono);
+				font-size: 0.7rem;
+				letter-spacing: 0.22em;
+				text-transform: uppercase;
+				color: rgba(245, 240, 229, 0.6);
+				display: block;
+				margin-bottom: 0.5em;
+			}
+			.callout p {
 				margin: 0;
+				font-size: 0.95rem;
+				color: rgba(245, 240, 229, 0.85);
+				line-height: 1.5;
 			}
-			ul {
+			.callout a {
+				color: #f3a76b;
+				text-decoration: none;
+				border-bottom: 1px solid rgba(243, 167, 107, 0.4);
+				transition: border-color 0.2s ease;
+			}
+			.callout a:hover {
+				border-bottom-color: #f3a76b;
+			}
+
+			.stat-strip {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 0;
+				padding: 2em 0;
+				border-bottom: 1px solid var(--rule);
+			}
+			.stat {
+				padding: 0 2em;
+				border-right: 1px solid var(--rule);
+			}
+			.stat:last-child {
+				border-right: none;
+			}
+			.stat:first-child {
+				padding-left: 0;
+			}
+			.stat-label {
+				font-family: var(--font-mono);
+				font-size: 0.7rem;
+				letter-spacing: 0.22em;
+				text-transform: uppercase;
+				color: var(--mute);
+				display: block;
+				margin-bottom: 0.4em;
+			}
+			.stat-value {
+				font-family: var(--font-display);
+				font-style: italic;
+				font-weight: 300;
+				font-size: 2.25rem;
+				color: var(--ink);
+				line-height: 1;
+			}
+			.stat-sub {
+				font-family: var(--font-mono);
+				font-size: 0.8rem;
+				color: var(--ink-soft);
+				margin-top: 0.3em;
+			}
+
+			.archive {
+				padding: 3.5em 0 0;
+			}
+			.archive-head {
 				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
+				align-items: baseline;
+				justify-content: space-between;
+				gap: 1em;
+				margin-bottom: 2em;
+			}
+			.archive-head h2 {
+				font-size: 1.4rem;
+				font-weight: 500;
+				margin: 0;
+				font-family: var(--font-display);
+				letter-spacing: -0.01em;
+			}
+			.archive-count {
+				font-family: var(--font-mono);
+				font-size: 0.78rem;
+				letter-spacing: 0.16em;
+				text-transform: uppercase;
+				color: var(--mute);
+			}
+
+			ul.project-list {
+				list-style: none;
 				margin: 0;
 				padding: 0;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 0;
+				border-top: 1px solid var(--ink);
 			}
-			ul li {
-				width: calc(50% - 1rem);
+			ul.project-list li {
+				border-bottom: 1px solid var(--rule);
 			}
-			ul li * {
+			ul.project-list li:nth-child(odd) {
+				border-right: 1px solid var(--rule);
+			}
+			ul.project-list a {
+				display: grid;
+				grid-template-rows: auto auto 1fr;
+				padding: 1.5em 1.75em 1.75em;
+				color: inherit;
 				text-decoration: none;
-				transition: 0.2s ease;
+				height: 100%;
+				transition: background 0.25s ease;
+				position: relative;
 			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
+			ul.project-list a:hover {
+				background: var(--paper-deep);
 			}
-			ul li a {
-				display: block;
+			.proj-num {
+				font-family: var(--font-mono);
+				font-size: 0.7rem;
+				letter-spacing: 0.18em;
+				text-transform: uppercase;
+				color: var(--mute);
+				margin-bottom: 0.75em;
 			}
-			.title {
-				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1.2;
+			.proj-title {
+				font-family: var(--font-display);
+				font-size: 1.5rem;
+				font-weight: 500;
+				color: var(--ink);
+				margin: 0 0 0.6em 0;
+				letter-spacing: -0.015em;
+				line-height: 1.15;
+				transition: color 0.2s ease;
 			}
-			.description {
-				margin: 0.5rem 0 0 0;
-				color: rgb(var(--gray-dark));
-				font-size: 0.9em;
-				line-height: 1.4;
+			ul.project-list a:hover .proj-title {
+				color: var(--rust);
 			}
-			ul li a:hover h4,
-			ul li a:hover .description {
-				color: rgb(var(--accent));
+			.proj-desc {
+				color: var(--ink-soft);
+				font-size: 0.95rem;
+				line-height: 1.55;
+				margin: 0 0 1.2em 0;
+				max-width: 50ch;
 			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
+			.proj-arrow {
+				font-family: var(--font-mono);
+				font-size: 0.78rem;
+				letter-spacing: 0.16em;
+				text-transform: uppercase;
+				color: var(--rust);
+				align-self: end;
+				opacity: 0.6;
+				transition: opacity 0.2s ease;
 			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
+			ul.project-list a:hover .proj-arrow {
+				opacity: 1;
+			}
+			.proj-thumb {
+				width: 100%;
+				aspect-ratio: 16 / 9;
+				overflow: hidden;
+				margin-bottom: 1em;
+				background: var(--paper-deep);
+				border-radius: 1px;
+			}
+			.proj-thumb img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 0;
+				transition:
+					transform 0.6s ease,
+					filter 0.4s ease;
+				filter: grayscale(0.15) contrast(1.05);
+			}
+			ul.project-list a:hover .proj-thumb img {
+				transform: scale(1.04);
+				filter: grayscale(0) contrast(1.05);
+			}
+
+			@media (max-width: 820px) {
+				.page-head,
+				.stat-strip {
+					grid-template-columns: 1fr;
+					gap: 1.5em;
 				}
-				ul li {
-					width: 100%;
-					text-align: center;
+				.stat {
+					padding: 1em 0;
+					border-right: none;
+					border-bottom: 1px solid var(--rule);
+				}
+				.stat:last-child {
+					border-bottom: none;
+				}
+				ul.project-list {
+					grid-template-columns: 1fr;
+				}
+				ul.project-list li:nth-child(odd) {
+					border-right: none;
 				}
 			}
 		</style>
@@ -96,38 +270,72 @@ const projects = (await getCollection("projects")).sort((a, b) =>
 	<body>
 		<Header />
 		<main>
-			<section class="intro">
-				<h1>Past Projects — 2025 Codeathon</h1>
-				<p class="subtitle">
-					Projects from the inaugural NIAID BRC AI Codeathon held November
-					12–14, 2025 at Argonne National Laboratory.
-				</p>
-				<div class="banner">
+			<section class="page-head">
+				<div>
+					<span class="eyebrow">Archive · 2025</span>
+					<h1>
+						Past projects<em>.</em>
+					</h1>
+					<p class="subtitle">
+						Prototypes built at the inaugural NIAID BRC AI Codeathon, November
+						12–14, 2025 at Argonne National Laboratory.
+					</p>
+				</div>
+				<div class="callout">
+					<span class="clabel">Looking for 2026?</span>
 					<p>
-						Project teams for the <strong
-							>2026 Codeathon (September 16–18, 2026)</strong
-						> will be announced after applications close. <a href="/"
-							>Learn more and apply &rarr;</a
-						>
+						2026 project teams will be announced after applications close.
+						<a href="/">See the announcement →</a>
 					</p>
 				</div>
 			</section>
-			<section>
-				<ul>
+
+			<section class="stat-strip">
+				<div class="stat">
+					<span class="stat-label">Projects</span>
+					<div class="stat-value">{projects.length}</div>
+					<div class="stat-sub">prototypes shipped</div>
+				</div>
+				<div class="stat">
+					<span class="stat-label">Days on site</span>
+					<div class="stat-value">3</div>
+					<div class="stat-sub">Nov 12 — 14, 2025</div>
+				</div>
+				<div class="stat">
+					<span class="stat-label">Venue</span>
+					<div class="stat-value">ANL</div>
+					<div class="stat-sub">Argonne National Lab</div>
+				</div>
+			</section>
+
+			<section class="archive">
+				<div class="archive-head">
+					<h2>The 2025 archive</h2>
+					<span class="archive-count">
+						{String(projects.length).padStart(2, "0")} entries
+					</span>
+				</div>
+				<ul class="project-list">
 					{
-						projects.map((project) => (
+						projects.map((project, i) => (
 							<li>
 								<a href={`/projects/${project.id}/`}>
+									<div class="proj-num">
+										P · {String(i + 1).padStart(2, "0")}
+									</div>
 									{project.data.heroImage && (
-										<Image
-											width={720}
-											height={360}
-											src={project.data.heroImage}
-											alt=""
-										/>
+										<div class="proj-thumb">
+											<Image
+												width={720}
+												height={405}
+												src={project.data.heroImage}
+												alt=""
+											/>
+										</div>
 									)}
-									<h4 class="title">{project.data.title}</h4>
-									<p class="description">{project.data.description}</p>
+									<h3 class="proj-title">{project.data.title}</h3>
+									<p class="proj-desc">{project.data.description}</p>
+									<div class="proj-arrow">Read more →</div>
 								</a>
 							</li>
 						))

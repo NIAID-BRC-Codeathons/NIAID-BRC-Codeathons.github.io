@@ -1,138 +1,372 @@
 /*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+  NIAID BRC AI Codeathon 2.0 — editorial-scientific theme.
+  Paper-and-ink palette with rust + teal accents.
+  Fonts loaded via Google Fonts in BaseHead.astro.
+*/
 
 :root {
-	--accent: 249, 115, 22;
-	--accent-dark: 194, 65, 12;
-	--black: 15, 18, 25;
-	--gray: 110, 105, 100;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
+	--paper: #f5f0e5;
+	--paper-deep: #ede5d3;
+	--paper-soft: #fbf8f1;
+	--ink: #14181f;
+	--ink-soft: #2a3038;
+	--mute: #6f6a5e;
+	--rule: #d4c9af;
+	--rust: #b8451f;
+	--rust-dark: #8e3416;
+	--teal: #2d5862;
+	--teal-dark: #1f3f47;
+
+	--accent: 184, 69, 31;
+	--accent-dark: 142, 52, 22;
+	--black: 20, 24, 31;
+	--gray: 111, 106, 94;
+	--gray-light: 212, 201, 175;
+	--gray-dark: 42, 48, 56;
+	--gray-gradient: rgba(237, 229, 211, 60%), rgba(245, 240, 229, 0%);
 	--box-shadow:
-		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
+		0 1px 0 rgba(20, 24, 31, 0.04), 0 8px 24px rgba(20, 24, 31, 0.06),
+		0 16px 48px rgba(20, 24, 31, 0.05);
+
+	--font-display:
+		"Fraunces", "Iowan Old Style", "Hoefler Text", Georgia, serif;
+	--font-body:
+		"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	--font-mono: "IBM Plex Mono", "JetBrains Mono", ui-monospace, monospace;
 }
-@font-face {
-	font-family: "Atkinson";
-	src: url("/fonts/atkinson-regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+
+* {
+	box-sizing: border-box;
 }
-@font-face {
-	font-family: "Atkinson";
-	src: url("/fonts/atkinson-bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
+
+html {
+	background: var(--paper);
 }
+
 body {
-	font-family: "Atkinson", sans-serif;
+	font-family: var(--font-body);
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
+	background: var(--paper);
+	background-image:
+		radial-gradient(
+			circle at 15% 0%,
+			rgba(184, 69, 31, 0.05) 0%,
+			transparent 40%
+		),
+		radial-gradient(
+			circle at 90% 10%,
+			rgba(45, 88, 98, 0.06) 0%,
+			transparent 45%
+		),
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.08 0 0 0 0 0.09 0 0 0 0 0.12 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+	color: var(--ink-soft);
+	font-size: 18px;
+	line-height: 1.65;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
-	font-size: 20px;
-	line-height: 1.7;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings:
+		"ss01" on,
+		"cv11" on;
 }
+
+::selection {
+	background: var(--rust);
+	color: var(--paper);
+}
+
 main {
-	width: 1024px;
-	max-width: calc(100% - 2em);
+	width: 1100px;
+	max-width: calc(100% - 2.5em);
 	margin: auto;
-	padding: 3em 1em;
+	padding: 4em 1.25em 6em;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
-	line-height: 1.2;
+	margin: 0 0 0.6rem 0;
+	color: var(--ink);
+	line-height: 1.05;
+	font-family: var(--font-display);
+	font-weight: 500;
+	letter-spacing: -0.02em;
+	font-variation-settings:
+		"opsz" 144,
+		"SOFT" 30,
+		"WONK" 0;
 }
+
 h1 {
-	font-size: 3.052em;
+	font-size: clamp(3rem, 7.5vw, 6rem);
+	font-weight: 400;
 }
 h2 {
-	font-size: 2.441em;
+	font-size: clamp(2rem, 4vw, 3.25rem);
+	font-weight: 500;
 }
 h3 {
-	font-size: 1.953em;
+	font-size: clamp(1.5rem, 2.5vw, 2.125rem);
+	font-weight: 500;
 }
 h4 {
-	font-size: 1.563em;
+	font-size: 1.35rem;
+	font-weight: 500;
 }
 h5 {
-	font-size: 1.25em;
+	font-size: 1.1rem;
 }
+
+p {
+	margin: 0 0 1.15em 0;
+	max-width: 64ch;
+}
+
 strong,
 b {
-	font-weight: 700;
+	font-weight: 600;
+	color: var(--ink);
 }
+
+em,
+i {
+	font-style: italic;
+}
+
 a {
-	color: rgb(var(--accent));
+	color: var(--rust);
+	text-decoration-color: rgba(184, 69, 31, 0.35);
+	text-underline-offset: 3px;
+	text-decoration-thickness: 1px;
+	transition:
+		color 0.2s ease,
+		text-decoration-color 0.2s ease;
 }
+
 a:hover {
-	color: rgb(var(--accent));
+	color: var(--rust-dark);
+	text-decoration-color: var(--rust-dark);
 }
-p {
-	margin-bottom: 1em;
-}
+
 .prose p {
-	margin-bottom: 2em;
+	margin-bottom: 1.5em;
 }
-textarea {
-	width: 100%;
-	font-size: 16px;
-}
+
+textarea,
 input {
 	font-size: 16px;
+	font-family: var(--font-body);
 }
+
 table {
 	width: 100%;
+	border-collapse: collapse;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
-	border-radius: 8px;
-}
-code {
-	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
+	filter: contrast(1.02) saturate(0.95);
 }
+
+code {
+	font-family: var(--font-mono);
+	padding: 0.1em 0.35em;
+	background: var(--paper-deep);
+	border-radius: 2px;
+	font-size: 0.9em;
+	color: var(--ink);
+}
+
 pre {
 	padding: 1.5em;
-	border-radius: 8px;
+	background: var(--paper-deep);
+	border-radius: 2px;
+	border-left: 2px solid var(--rust);
+	overflow-x: auto;
+	font-size: 0.95em;
 }
 pre > code {
 	all: unset;
 }
+
 blockquote {
-	border-left: 4px solid rgb(var(--accent));
-	padding: 0 0 0 20px;
-	margin: 0px;
-	font-size: 1.333em;
+	border-left: 2px solid var(--rust);
+	padding: 0.25em 0 0.25em 1.25em;
+	margin: 1.5em 0;
+	font-family: var(--font-display);
+	font-style: italic;
+	font-size: 1.25em;
+	color: var(--ink);
+	font-weight: 400;
 }
+
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+	border-top: 1px solid var(--rule);
+	margin: 2em 0;
 }
+
+/* ---------- Editorial primitives ---------- */
+
+.eyebrow {
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	font-weight: 500;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: var(--rust);
+	display: inline-block;
+}
+
+.eyebrow--mute {
+	color: var(--mute);
+}
+
+.eyebrow--teal {
+	color: var(--teal);
+}
+
+.divider {
+	display: block;
+	height: 1px;
+	background: var(--rule);
+	margin: 3em 0;
+	border: 0;
+}
+
+.divider--bold {
+	background: var(--ink);
+	height: 2px;
+	margin: 2.5em 0;
+}
+
+.mono {
+	font-family: var(--font-mono);
+	font-feature-settings:
+		"ss01" on,
+		"zero" on;
+}
+
+.lede {
+	font-family: var(--font-display);
+	font-weight: 300;
+	font-size: clamp(1.35rem, 2vw, 1.75rem);
+	line-height: 1.35;
+	color: var(--ink);
+	max-width: 32ch;
+	letter-spacing: -0.01em;
+}
+
+.btn-primary {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5em;
+	padding: 0.95em 1.6em;
+	background: var(--ink);
+	color: var(--paper);
+	text-decoration: none;
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	font-weight: 500;
+	transition:
+		background 0.2s ease,
+		transform 0.2s ease;
+	border: none;
+	cursor: pointer;
+}
+
+.btn-primary:hover {
+	background: var(--rust);
+	color: var(--paper);
+	text-decoration: none;
+	transform: translateY(-1px);
+}
+
+.btn-secondary {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5em;
+	padding: 0.95em 1.6em;
+	background: transparent;
+	color: var(--ink);
+	text-decoration: none;
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	font-weight: 500;
+	border: 1px solid var(--ink);
+	transition:
+		background 0.2s ease,
+		color 0.2s ease;
+}
+
+.btn-secondary:hover {
+	background: var(--ink);
+	color: var(--paper);
+	text-decoration: none;
+}
+
+/* ---------- Reveal animation ---------- */
+
+.reveal {
+	opacity: 0;
+	transform: translateY(12px);
+	animation: reveal-up 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+.reveal-1 {
+	animation-delay: 0.05s;
+}
+.reveal-2 {
+	animation-delay: 0.18s;
+}
+.reveal-3 {
+	animation-delay: 0.32s;
+}
+.reveal-4 {
+	animation-delay: 0.48s;
+}
+.reveal-5 {
+	animation-delay: 0.62s;
+}
+
+@keyframes reveal-up {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.reveal,
+	.reveal-1,
+	.reveal-2,
+	.reveal-3,
+	.reveal-4,
+	.reveal-5 {
+		animation: none;
+		opacity: 1;
+		transform: none;
+	}
+}
+
 @media (max-width: 720px) {
 	body {
-		font-size: 18px;
+		font-size: 17px;
 	}
 	main {
-		padding: 1em;
+		padding: 2em 1em 4em;
 	}
 }
 
@@ -144,12 +378,8 @@ hr {
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
 	clip: rect(1px 1px 1px 1px);
-	/* maybe deprecated but we need to support legacy browsers */
 	clip: rect(1px, 1px, 1px, 1px);
-	/* modern browsers, clip-path works inwards from each corner */
 	clip-path: inset(50%);
-	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }

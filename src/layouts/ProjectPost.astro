@@ -17,55 +17,143 @@ const editUrl = `https://github.com/NIAID-BRC-Codeathons/NIAID-BRC-Codeathons.gi
 	<head>
 		<BaseHead title={title} description={description} />
 		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
+			.project-head {
+				max-width: 1100px;
+				margin: 0 auto;
+				padding: 3em 1.25em 2em;
 			}
+			.crumb {
+				font-family: var(--font-mono);
+				font-size: 0.75rem;
+				letter-spacing: 0.18em;
+				text-transform: uppercase;
+				color: var(--mute);
+				margin-bottom: 1.25em;
+			}
+			.crumb a {
+				color: var(--ink-soft);
+				text-decoration: none;
+				border-bottom: 1px solid var(--rule);
+				padding-bottom: 2px;
+				transition: color 0.2s ease;
+			}
+			.crumb a:hover {
+				color: var(--rust);
+				border-bottom-color: var(--rust);
+			}
+			.project-head h1 {
+				margin: 0.25em 0 0.4em 0;
+				font-size: clamp(2.25rem, 5.5vw, 4rem);
+				font-weight: 400;
+				letter-spacing: -0.025em;
+				line-height: 1.05;
+			}
+			.project-head .desc {
+				font-family: var(--font-display);
+				font-style: italic;
+				font-weight: 300;
+				font-size: 1.25rem;
+				color: var(--ink-soft);
+				margin: 0;
+				max-width: 60ch;
+			}
+
+			.actions {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.75em;
+				margin-top: 2em;
+			}
+			.action {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5em;
+				padding: 0.7em 1.1em;
+				font-family: var(--font-mono);
+				font-size: 0.78rem;
+				letter-spacing: 0.14em;
+				text-transform: uppercase;
+				color: var(--ink);
+				text-decoration: none;
+				border: 1px solid var(--rule);
+				transition:
+					border-color 0.2s ease,
+					color 0.2s ease,
+					background 0.2s ease;
+			}
+			.action:hover {
+				border-color: var(--rust);
+				color: var(--rust);
+				text-decoration: none;
+				background: rgba(184, 69, 31, 0.05);
+			}
+
 			.hero-image {
-				width: 100%;
+				max-width: 1100px;
+				margin: 2em auto 0;
+				padding: 0 1.25em;
 			}
 			.hero-image img {
 				display: block;
 				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
+				border-radius: 1px;
+				filter: contrast(1.05) saturate(0.95);
+				width: 100%;
+				height: auto;
 			}
+
 			.prose {
-				width: 1024px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
+				width: 760px;
+				max-width: calc(100% - 2.5em);
+				margin: 4em auto;
+				padding: 0 1.25em;
+				color: var(--ink-soft);
+				font-size: 1.1rem;
+				line-height: 1.75;
 			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
+			.prose :global(h2) {
+				margin-top: 2em;
+				margin-bottom: 0.6em;
+				font-family: var(--font-display);
+				font-weight: 500;
+				letter-spacing: -0.015em;
 			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
+			.prose :global(h3) {
+				margin-top: 1.6em;
+				margin-bottom: 0.4em;
+				font-family: var(--font-display);
+				font-weight: 500;
+				font-size: 1.4rem;
 			}
-			.edit-link {
-				display: inline-flex;
-				align-items: center;
-				gap: 0.4em;
-				margin: 0.5em 0;
-				padding: 0.4em 0.8em;
-				font-size: 0.85em;
-				color: rgb(var(--accent));
+			.prose :global(p) {
+				margin: 0 0 1.4em;
+			}
+			.prose :global(p:first-of-type)::first-letter {
+				font-family: var(--font-display);
+				font-weight: 300;
+				font-size: 4em;
+				float: left;
+				line-height: 0.85;
+				padding: 0.05em 0.12em 0 0;
+				color: var(--ink);
+			}
+			.prose :global(ul),
+			.prose :global(ol) {
+				padding-left: 1.5em;
+				margin: 0 0 1.4em;
+			}
+			.prose :global(li) {
+				margin: 0.4em 0;
+			}
+			.prose :global(a) {
+				color: var(--rust);
+				border-bottom: 1px solid rgba(184, 69, 31, 0.35);
+				padding-bottom: 1px;
 				text-decoration: none;
-				border: 1px solid rgb(var(--accent));
-				border-radius: 4px;
-				transition: all 0.2s ease;
+				transition: border-color 0.2s ease;
 			}
-			.edit-link:hover {
-				background: rgb(var(--accent));
-				color: white;
-			}
-			.edit-link svg {
-				flex-shrink: 0;
+			.prose :global(a:hover) {
+				border-bottom-color: var(--rust);
 			}
 		</style>
 	</head>
@@ -74,64 +162,56 @@ const editUrl = `https://github.com/NIAID-BRC-Codeathons/NIAID-BRC-Codeathons.gi
 		<Header />
 		<main>
 			<article>
-				<div class="hero-image">
-					{
-						heroImage && (
-							<Image width={1020} height={510} src={heroImage} alt="" />
-						)
-					}
-				</div>
-				<div class="prose">
-					<div class="title">
-						<h1>{title}</h1>
-						<div
-							style="display: flex; gap: 0.5em; justify-content: center; flex-wrap: wrap;"
-						>
-							{
-								github && (
-									<a
-										href={github}
-										class="edit-link"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<svg
-											viewBox="0 0 16 16"
-											aria-hidden="true"
-											width="16"
-											height="16"
-										>
-											<path
-												fill="currentColor"
-												d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-											/>
-										</svg>
-										Project Repository
-									</a>
-								)
-							}
-							<a
-								href={editUrl}
-								class="edit-link"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<svg
-									viewBox="0 0 16 16"
-									aria-hidden="true"
-									width="16"
-									height="16"
-								>
-									<path
-										fill="currentColor"
-										d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-									></path>
-								</svg>
-								Edit
-							</a>
-						</div>
-						<hr />
+				<header class="project-head">
+					<div class="crumb">
+						<a href="/projects/">Past Projects</a> &nbsp;·&nbsp; 2025
 					</div>
+					<h1>{title}</h1>
+					<p class="desc">{description}</p>
+					<div class="actions">
+						{
+							github && (
+								<a
+									href={github}
+									class="action"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<svg
+										viewBox="0 0 16 16"
+										aria-hidden="true"
+										width="14"
+										height="14"
+									>
+										<path
+											fill="currentColor"
+											d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+										/>
+									</svg>
+									Repository
+								</a>
+							)
+						}
+						<a
+							href={editUrl}
+							class="action"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Edit on GitHub
+						</a>
+					</div>
+				</header>
+
+				{
+					heroImage && (
+						<div class="hero-image">
+							<Image width={1100} height={550} src={heroImage} alt="" />
+						</div>
+					)
+				}
+
+				<div class="prose">
 					<slot />
 				</div>
 			</article>

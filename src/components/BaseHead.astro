@@ -29,21 +29,14 @@ const { title, description, image = FallbackImage } = Astro.props;
 	href={new URL("rss.xml", Astro.site)}
 />
 <meta name="generator" content={Astro.generator} />
+<meta name="theme-color" content="#f5f0e5" />
 
-<!-- Font preloads -->
+<!-- Fonts: Fraunces (display), IBM Plex Sans (body), IBM Plex Mono (UI/labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-	rel="preload"
-	href="/fonts/atkinson-regular.woff"
-	as="font"
-	type="font/woff"
-	crossorigin
-/>
-<link
-	rel="preload"
-	href="/fonts/atkinson-bold.woff"
-	as="font"
-	type="font/woff"
-	crossorigin
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,30;1,9..144,300..600,30&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
 />
 
 <!-- Canonical URL -->
