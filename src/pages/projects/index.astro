@@ -37,22 +37,24 @@ const projects = (await getCollection("projects")).sort((a, b) =>
 			.page-head h1 {
 				margin: 0.4em 0 0 0;
 				font-size: clamp(2.75rem, 7vw, 5rem);
-				font-weight: 300;
-				letter-spacing: -0.035em;
+				font-weight: 200;
+				letter-spacing: -0.05em;
 				line-height: 1;
 			}
 			.page-head h1 em {
+				font-style: normal;
 				color: var(--rust);
+				font-weight: 200;
 			}
 			.page-head .subtitle {
 				font-family: var(--font-display);
-				font-style: italic;
 				font-weight: 300;
-				font-size: 1.25rem;
-				line-height: 1.45;
+				font-size: 1.15rem;
+				line-height: 1.5;
 				color: var(--ink-soft);
-				max-width: 36ch;
+				max-width: 40ch;
 				margin-top: 1em;
+				letter-spacing: -0.01em;
 			}
 			.callout {
 				background: var(--ink);
@@ -114,11 +116,11 @@ const projects = (await getCollection("projects")).sort((a, b) =>
 			}
 			.stat-value {
 				font-family: var(--font-display);
-				font-style: italic;
-				font-weight: 300;
-				font-size: 2.25rem;
+				font-weight: 200;
+				font-size: 2.75rem;
 				color: var(--ink);
 				line-height: 1;
+				letter-spacing: -0.05em;
 			}
 			.stat-sub {
 				font-family: var(--font-mono);
@@ -138,11 +140,11 @@ const projects = (await getCollection("projects")).sort((a, b) =>
 				margin-bottom: 2em;
 			}
 			.archive-head h2 {
-				font-size: 1.4rem;
+				font-size: 1.25rem;
 				font-weight: 500;
 				margin: 0;
 				font-family: var(--font-display);
-				letter-spacing: -0.01em;
+				letter-spacing: -0.015em;
 			}
 			.archive-count {
 				font-family: var(--font-mono);
@@ -190,12 +192,12 @@ const projects = (await getCollection("projects")).sort((a, b) =>
 			}
 			.proj-title {
 				font-family: var(--font-display);
-				font-size: 1.5rem;
+				font-size: 1.25rem;
 				font-weight: 500;
 				color: var(--ink);
 				margin: 0 0 0.6em 0;
-				letter-spacing: -0.015em;
-				line-height: 1.15;
+				letter-spacing: -0.02em;
+				line-height: 1.25;
 				transition: color 0.2s ease;
 			}
 			ul.project-list a:hover .proj-title {
