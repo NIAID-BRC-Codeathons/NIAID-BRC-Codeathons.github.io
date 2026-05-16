@@ -53,24 +53,15 @@ import {
 				line-height: 0.9;
 				color: var(--ink);
 			}
+			.hero-title .line {
+				display: block;
+				white-space: nowrap;
+			}
 			.hero-title .big-num {
 				font-family: var(--font-display);
 				font-weight: 200;
 				color: var(--rust);
-				display: inline-block;
 				letter-spacing: -0.05em;
-				margin-left: 0.06em;
-				position: relative;
-			}
-			.hero-title .big-num::after {
-				content: "";
-				position: absolute;
-				left: 0;
-				right: 0;
-				bottom: 0.18em;
-				height: 0.04em;
-				background: var(--rust);
-				opacity: 0.5;
 			}
 			.hero-subtitle {
 				margin-top: 1.2em;
@@ -480,7 +471,8 @@ import {
 
 				<div>
 					<h1 class="hero-title reveal reveal-2">
-						AI Codeathon <span class="big-num">2.0</span>
+						<span class="line">AI Codeathon</span>
+						<span class="line big-num">2.0</span>
 					</h1>
 					<p class="hero-subtitle reveal reveal-3">
 						Accelerating FAIR data and tools for infectious disease research.
