@@ -3,6 +3,7 @@ title: "Extracting Training Data for Automated Workflow Generation"
 description: "Creating structured question-answer training datasets from BRC resources and publications to train LLMs for bioinformatics workflow generation"
 tags: ["LLM", "Training Data", "Workflows", "Question Answering"]
 github: "https://github.com/NIAID-BRC-Codeathons/workflow-training-data-extraction"
+video: "https://www.youtube.com/watch?v=UMoSn6r7hZ4"
 ---
 
 **Project Themes:**
@@ -14,18 +15,18 @@ github: "https://github.com/NIAID-BRC-Codeathons/workflow-training-data-extracti
 **Team Lead(s):**
 
 - Name: Nicholas Chia
-- Affiliation: ANL
+- Affiliation: Argonne National Laboratory, BV-BRC/ANL
 - Email: chia@anl.gov
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name | Affiliation | Role / Expertise |
-| ---- | ----------- | ---------------- |
-| ???  |             |                  |
-|      |             |                  |
-|      |             |                  |
-|      |             |                  |
-|      |             |                  |
+| Name           | Affiliation                                            | Role / Expertise |
+| -------------- | ------------------------------------------------------ | ---------------- |
+| Andreas Wilke  | Argonne National Laboratory, BV-BRC/ANL                |                  |
+| Anoosha Tahir  | University of Illinois - Urbana Champaign (Non-BRC)    |                  |
+| Bruce Parrello | Argonne National Laboratory, BV-BRC/ANL                |                  |
+| Robert Olson   | Argonne National Laboratory, BV-BRC                    |                  |
+| Scott Cain     | Penn State, BRC Analytics                              |                  |
 
 **Project Summary**
 

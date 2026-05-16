@@ -3,6 +3,7 @@ title: "StorySeq: Automated Sequence Narrative Generation"
 description: "Automating sequence identification and contextualization using BLAST, database queries, and LLM narrative synthesis to accelerate pathogen and AMR gene discovery"
 tags: ["LLM", "BLAST", "Narrative Generation", "Knowledge Extraction"]
 github: "https://github.com/NIAID-BRC-Codeathons/storyseq-sequence-narrative"
+video: "https://www.youtube.com/watch?v=jTAEv2hpLgQ"
 ---
 
 **Project Themes:**
@@ -15,18 +16,17 @@ github: "https://github.com/NIAID-BRC-Codeathons/storyseq-sequence-narrative"
 **Team Lead(s):**
 
 - Name: Andrew Warren
-- Affiliation: UVA
+- Affiliation: University of Virginia, BV-BRC
 - Email: asw3xp@virginia.edu
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name               | Affiliation | Role / Expertise     |
-| ------------------ | ----------- | -------------------- |
-| Dustin Machi       | UVA         | AI / Software        |
-| Curtis Hendrickson | UAB         | Software development |
-|                    |             |                      |
-|                    |             |                      |
-|                    |             |                      |
+| Name               | Affiliation                                  | Role / Expertise     |
+| ------------------ | -------------------------------------------- | -------------------- |
+| Andrew Warren      | University of Virginia, BV-BRC               | AI / Software        |
+| Curtis Hendrickson | University of Alabama at Birmingham, BV-BRC  | Software development |
+| Dustin Machi       | University of Virginia, BV-BRC               | AI / Software        |
+| Jason Williams     | Cold Spring Harbor Laboratory, PDN           |                      |
 
 **Project Summary**
 

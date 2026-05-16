@@ -1,6 +1,6 @@
 ---
 title: "AI Co-Scientist for Protein Function Prediction and Hypothesis Generation"
-description: "Extending the Co-Scientist framework to build reasoning agents for protein function prediction using CEPI and BV-BRC datasets for priority pathogens"
+description: "Extending the Co-Scientist framework to build reasoning agents for protein function prediction using BV-BRC datasets for priority pathogens"
 tags:
   [
     "AI Co-Scientist",
@@ -10,6 +10,7 @@ tags:
     "Jnana",
   ]
 github: "https://github.com/NIAID-BRC-Codeathons/ai-co-scientist-protein-function"
+video: "https://www.youtube.com/watch?v=eC1cs9bnyWo"
 ---
 
 **Project Themes:**
@@ -20,20 +21,22 @@ github: "https://github.com/NIAID-BRC-Codeathons/ai-co-scientist-protein-functio
 
 - Name: Arvind Ramanathan
 - Affiliation: Argonne National Laboratory
-- Email: [To be added]
+- Email: ramanathana@anl.gov
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
 | Name              | Affiliation                 | Role / Expertise                             |
 | ----------------- | --------------------------- | -------------------------------------------- |
 | Arvind Ramanathan | Argonne National Laboratory | Principal Investigator, AI Systems Architect |
-| Ozan              | Argonne National Laboratory | RAG and Data Integration Specialist          |
-| BV-BRC Developers | -                           | Model integration and deployment             |
-| CEPI Scientists   | -                           | Use-case definition and validation           |
+| Archit Vasan | Argonne National Laboratory | Model integration and deployment          |
+| Bharat Kale       | Argonne National Laboratory | Use-case definition and validation          |
+| Brian Hsu | Argonne National Laboratory | Model integration and deployment             |
+| Ozan Gokdemir     | Argonne National Laboratory | RAG and Data Integration Specialist          |
+| Ruijie Zhu    | University of Chicago   | Use-case definition and validation           |
 
 **Project Summary**
 
-This project extends the open-source Co-Scientist framework (https://github.com/acadev/Jnana) to build reasoning agents for protein function prediction, using CEPI and BV-BRC datasets as testbeds. The goal is to enable hypothesis-driven dialogue and AI-assisted exploration of uncharacterized genes and proteins relevant to priority pathogens.
+This project extends the open-source Co-Scientist framework (https://github.com/acadev/Jnana) to build reasoning agents for protein function prediction, using BV-BRC datasets as testbeds. The goal is to enable hypothesis-driven dialogue and AI-assisted exploration of uncharacterized genes and proteins relevant to priority pathogens.
 
 **Goals and Objectives**
 
@@ -49,7 +52,7 @@ The Co-Scientist framework will use an agentic reasoning loop combining retrieva
 
 | Resource Type     | Source / Link                         | Description / Purpose          |
 | ----------------- | ------------------------------------- | ------------------------------ |
-| Data              | BV-BRC genomes, CEPI curated datasets | Training and evaluation data   |
+| Data              | BV-BRC genomes and curated datasets   | Training and evaluation data   |
 | Tools / Services  | Jnana (Co-Scientist GitHub repo)      | Agentic reasoning system       |
 | LLMs / AI Models  | GPT-4, Claude 3                       | Reasoning and synthesis agents |
 | Compute / Storage | Argonne HPC                           | Experimentation environment    |
@@ -60,7 +63,7 @@ Prototype AI Co-Scientist agent capable of hypothesis-driven protein function pr
 
 **Potential Impact and Next Steps**
 
-This project showcases autonomous scientific reasoning and interactive discovery for infectious disease research. It will help CEPI and BV-BRC develop transparent, AI-assisted research workflows and foster a foundation for broader agentic science platforms.
+This project showcases autonomous scientific reasoning and interactive discovery for infectious disease research. It will help BV-BRC develop transparent, AI-assisted research workflows and foster a foundation for broader agentic science platforms.
 
 **Technical Support Needed**
 

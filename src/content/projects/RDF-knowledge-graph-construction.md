@@ -4,6 +4,7 @@ description: "Transforming Pathogen Data Network Resources to RDF using Large La
 tags:
   ["Knowledge Graphs", "RDF", "Linked Data", "Semantic Web", "Data Integration"]
 github: "https://github.com/NIAID-BRC-Codeathons/RDF-knowledge-graph-construction"
+video: "https://www.youtube.com/watch?v=0fcYShCnXA4"
 ---
 
 \*\*Project Theme
@@ -26,12 +27,13 @@ github: "https://github.com/NIAID-BRC-Codeathons/RDF-knowledge-graph-constructio
 
 **Team Members (4-6 members recommended):**
 
-| Name              | Affiliation                             | Role / Expertise |
-| ----------------- | --------------------------------------- | ---------------- |
-| Panayiotis Smeros | Swiss Institute of Bioinformatics (SIB) | LLM, RDF, SPARQL |
-| Imane Lboukili    | Swiss Institute of Bioinformatics (SIB) | LLM              |
-| TBD               | -                                       | -                |
-| TBD               | -                                       | -                |
+| Name                      | Affiliation                                      | Role / Expertise |
+| ------------------------- | ------------------------------------------------ | ---------------- |
+| David/Yu Yuan             | European Bioinformatics Institute (Non-BRC)      |                  |
+| Douglas Fils              | University of California San Diego (Non-BRC)     |                  |
+| Imane Lboukili            | SIB Swiss Institute of Bioinformatics, PDN       | LLM              |
+| Panayiotis Smeros         | Swiss Institute of Bioinformatics (Non-BRC)      | LLM, RDF, SPARQL |
+| Senthilnathan Vijayaraja* | European Bioinformatics Institute (Non-BRC)      |                  |
 
 \*\*Project Summary
 
