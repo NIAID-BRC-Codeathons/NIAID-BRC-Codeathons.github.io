@@ -20,13 +20,13 @@ video: "https://www.youtube.com/watch?v=UMoSn6r7hZ4"
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name           | Affiliation                                            | Role / Expertise |
-| -------------- | ------------------------------------------------------ | ---------------- |
-| Andreas Wilke  | Argonne National Laboratory, BV-BRC/ANL                |                  |
-| Anoosha Tahir  | University of Illinois - Urbana Champaign (Non-BRC)    |                  |
-| Bruce Parrello | Argonne National Laboratory, BV-BRC/ANL                |                  |
-| Robert Olson   | Argonne National Laboratory, BV-BRC                    |                  |
-| Scott Cain     | Penn State, BRC Analytics                              |                  |
+| Name           | Affiliation                                         | Role / Expertise |
+| -------------- | --------------------------------------------------- | ---------------- |
+| Andreas Wilke  | Argonne National Laboratory, BV-BRC/ANL             |                  |
+| Anoosha Tahir  | University of Illinois - Urbana Champaign (Non-BRC) |                  |
+| Bruce Parrello | Argonne National Laboratory, BV-BRC/ANL             |                  |
+| Robert Olson   | Argonne National Laboratory, BV-BRC                 |                  |
+| Scott Cain     | Penn State, BRC Analytics                           |                  |
 
 **Project Summary**
 

@@ -25,13 +25,13 @@ video: "https://www.youtube.com/watch?v=PQ_r2Cc8OPY"
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name              | Affiliation                                 | Role / Expertise                   |
-| ----------------- | ------------------------------------------- | ---------------------------------- |
-| Blessy Antony     | Virginia Tech (Non-BRC)                     | Data integration and validation    |
-| James McFeeters   | CViSB (Non-BRC)                             | Scientific Advisor                 |
-| Maliha Aziz       | George Washington University (Non-BRC)      | Data integration and validation    |
-| Ozan Gokdemir     | Argonne National Laboratory, BV-BRC/ANL     | AI/ML Engineer, Data Curation Lead |
-| Yitian Chen       | Scripps Research (Non-BRC)                  | Priority Pathogen Data Alignment   |
+| Name            | Affiliation                             | Role / Expertise                   |
+| --------------- | --------------------------------------- | ---------------------------------- |
+| Blessy Antony   | Virginia Tech (Non-BRC)                 | Data integration and validation    |
+| James McFeeters | CViSB (Non-BRC)                         | Scientific Advisor                 |
+| Maliha Aziz     | George Washington University (Non-BRC)  | Data integration and validation    |
+| Ozan Gokdemir   | Argonne National Laboratory, BV-BRC/ANL | AI/ML Engineer, Data Curation Lead |
+| Yitian Chen     | Scripps Research (Non-BRC)              | Priority Pathogen Data Alignment   |
 
 **Project Summary**
 

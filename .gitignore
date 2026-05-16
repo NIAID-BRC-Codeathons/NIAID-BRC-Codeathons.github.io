@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# local-only artifacts
+.pr-shots/
+pnpm-lock.yaml

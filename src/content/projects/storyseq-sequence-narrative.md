@@ -21,12 +21,12 @@ video: "https://www.youtube.com/watch?v=jTAEv2hpLgQ"
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name               | Affiliation                                  | Role / Expertise     |
-| ------------------ | -------------------------------------------- | -------------------- |
-| Andrew Warren      | University of Virginia, BV-BRC               | AI / Software        |
-| Curtis Hendrickson | University of Alabama at Birmingham, BV-BRC  | Software development |
-| Dustin Machi       | University of Virginia, BV-BRC               | AI / Software        |
-| Jason Williams     | Cold Spring Harbor Laboratory, PDN           |                      |
+| Name               | Affiliation                                 | Role / Expertise     |
+| ------------------ | ------------------------------------------- | -------------------- |
+| Andrew Warren      | University of Virginia, BV-BRC              | AI / Software        |
+| Curtis Hendrickson | University of Alabama at Birmingham, BV-BRC | Software development |
+| Dustin Machi       | University of Virginia, BV-BRC              | AI / Software        |
+| Jason Williams     | Cold Spring Harbor Laboratory, PDN          |                      |
 
 **Project Summary**
 

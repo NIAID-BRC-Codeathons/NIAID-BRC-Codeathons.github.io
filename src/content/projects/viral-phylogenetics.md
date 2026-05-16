@@ -25,13 +25,13 @@ video: "https://www.youtube.com/watch?v=84mxnspRuk8"
 
 **Suggested Team Members and Roles [4-6 members]**
 
-| Name             | Affiliation                                        | Expected Role / Expertise                                                                                                            |
-| ---------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Alex Partin      | Argonne National Laboratory, BV-BRC/ANL            | Model development part / AI expert(s) on transformer models, biological language models, sequence embeddings                         |
-| Christian Zmasek | J. Craig Venter Institute, BV-BRC                  | Validation part / Biology and/or Bioinformatics expert(s) on virology, viral taxonomy, sequence analysis, sequence database          |
-| Dave Moi         | University of Lausanne / SIB, PDN                  | Project leader (model development) / AI, ML, snakemake, HPC, docker, structural biology, phylogenetics                               |
-| Dongwook Kim     | University of Lausanne / SIB, PDN                  | Project leader (validation and integration) / Phylogenetics, sequence analysis, protein structures, Protein Language Models          |
-| Jamie Overbeek   | Argonne National Laboratory, BV-BRC/ANL            | Model development part / AI expert(s) on transformer models, biological language models, sequence embeddings                         |
+| Name             | Affiliation                             | Expected Role / Expertise                                                                                                   |
+| ---------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Alex Partin      | Argonne National Laboratory, BV-BRC/ANL | Model development part / AI expert(s) on transformer models, biological language models, sequence embeddings                |
+| Christian Zmasek | J. Craig Venter Institute, BV-BRC       | Validation part / Biology and/or Bioinformatics expert(s) on virology, viral taxonomy, sequence analysis, sequence database |
+| Dave Moi         | University of Lausanne / SIB, PDN       | Project leader (model development) / AI, ML, snakemake, HPC, docker, structural biology, phylogenetics                      |
+| Dongwook Kim     | University of Lausanne / SIB, PDN       | Project leader (validation and integration) / Phylogenetics, sequence analysis, protein structures, Protein Language Models |
+| Jamie Overbeek   | Argonne National Laboratory, BV-BRC/ANL | Model development part / AI expert(s) on transformer models, biological language models, sequence embeddings                |
 
 ## Project Summary
 
@@ -55,23 +55,26 @@ In this project, we will zero in on producing a fast and accurate language model
 ### Implementation Steps
 
 **Milestone 1: Fine-tuning the ProstT5 model with viral sequence/structure pairs**
-   - BFVD dataset transformed to 3di and ready to train
-   - Prepare large corpus of structural tokens to train virus-specific ProstT5 model
-   - Tokenization and training using Hugging Face tokenizer with fill-in and translation tasks
-   - LoRA optimization of ProstT5 weights using the Hugging Face interface
-   - If necessary, split into clade-specific models
-   - Inference: Transform UniProt proteomic data to 3di
+
+- BFVD dataset transformed to 3di and ready to train
+- Prepare large corpus of structural tokens to train virus-specific ProstT5 model
+- Tokenization and training using Hugging Face tokenizer with fill-in and translation tasks
+- LoRA optimization of ProstT5 weights using the Hugging Face interface
+- If necessary, split into clade-specific models
+- Inference: Transform UniProt proteomic data to 3di
 
 **Milestone 2: Validation of the model with viral taxonomy reconstruction**
-   - Prepare ground-truth dataset of viruses with well-studied taxonomic relationships
-   - Run fine-tuned model to predict 3Di strings and compare with known structures
-   - Define structural core genes to conduct structural phylogeny of virus species
-   - Estimate model quality by comparing results with pre-established taxonomy
+
+- Prepare ground-truth dataset of viruses with well-studied taxonomic relationships
+- Run fine-tuned model to predict 3Di strings and compare with known structures
+- Define structural core genes to conduct structural phylogeny of virus species
+- Estimate model quality by comparing results with pre-established taxonomy
 
 **Milestone 3: Foldseek framework integration and applications**
-   - Integrate updated weights into Foldseek-ProstT5 framework
-   - Run model on viral subset of NCBI/UniProt protein databases
-   - Convert to 3Di strings as valuable resource for structural analysis
+
+- Integrate updated weights into Foldseek-ProstT5 framework
+- Run model on viral subset of NCBI/UniProt protein databases
+- Convert to 3Di strings as valuable resource for structural analysis
 
 ## Data and Resources Required
 

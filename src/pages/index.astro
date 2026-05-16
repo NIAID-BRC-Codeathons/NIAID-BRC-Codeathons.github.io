@@ -192,6 +192,103 @@ import {
 				letter-spacing: -0.05em;
 			}
 
+			/* ---------- Hosts (three BRCs) ---------- */
+			.hosts {
+				padding: 2em 0 3em;
+			}
+			.hosts-head {
+				display: grid;
+				grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+				gap: 3em;
+				margin-bottom: 3em;
+			}
+			.hosts-head h2 {
+				margin: 0;
+				font-size: clamp(2.2rem, 4.5vw, 3.75rem);
+				font-weight: 300;
+				letter-spacing: -0.035em;
+				line-height: 1.05;
+			}
+			.hosts-head h2 em {
+				font-style: normal;
+				color: var(--teal);
+				font-weight: 300;
+			}
+			.hosts-list {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+			}
+			.host-item {
+				display: grid;
+				grid-template-columns: 8rem minmax(0, 1.4fr) minmax(0, 1.6fr);
+				gap: 2.5em;
+				padding: 2.5em 0;
+				border-top: 1px solid var(--rule);
+				align-items: start;
+			}
+			.host-item:last-child {
+				border-bottom: 1px solid var(--rule);
+			}
+			.host-num {
+				font-family: var(--font-display);
+				font-weight: 200;
+				font-size: clamp(3rem, 6vw, 5.5rem);
+				line-height: 0.9;
+				color: var(--teal);
+				letter-spacing: -0.06em;
+			}
+			.host-meta {
+				font-family: var(--font-mono);
+				font-size: 0.72rem;
+				letter-spacing: 0.18em;
+				text-transform: uppercase;
+				color: var(--rust);
+				margin-bottom: 0.75em;
+				position: relative;
+				padding-left: 1.5em;
+			}
+			.host-meta::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0.45em;
+				width: 0.75em;
+				height: 1px;
+				background: var(--rust);
+			}
+			.host-name {
+				font-family: var(--font-display);
+				font-size: clamp(1.3rem, 2.1vw, 1.75rem);
+				font-weight: 500;
+				line-height: 1.25;
+				color: var(--ink);
+				margin: 0 0 0.5em 0;
+				letter-spacing: -0.02em;
+			}
+			.host-link {
+				display: inline-block;
+				font-family: var(--font-mono);
+				font-size: 0.8rem;
+				letter-spacing: 0.06em;
+				color: var(--rust);
+				text-decoration: none;
+				border-bottom: 1px solid rgba(184, 69, 31, 0.35);
+				padding-bottom: 1px;
+				transition: border-color 0.2s ease;
+			}
+			.host-link:hover {
+				border-bottom-color: var(--rust);
+			}
+			.host-desc {
+				color: var(--ink-soft);
+				font-size: 0.98rem;
+				line-height: 1.6;
+				margin: 0;
+			}
+
 			/* ---------- Focus areas ---------- */
 			.focus {
 				padding: 2em 0 3em;
@@ -337,7 +434,8 @@ import {
 				content: "";
 				position: absolute;
 				inset: 0;
-				background-image: radial-gradient(
+				background-image:
+					radial-gradient(
 						circle at 20% 30%,
 						rgba(184, 69, 31, 0.18),
 						transparent 60%
@@ -435,6 +533,7 @@ import {
 				.hero,
 				.intro,
 				.focus-head,
+				.hosts-head,
 				.two-col,
 				.apply {
 					grid-template-columns: 1fr;
@@ -444,11 +543,13 @@ import {
 					border-top: 1px solid var(--rule);
 					padding: 1.5em 0 0;
 				}
-				.focus-item {
+				.focus-item,
+				.host-item {
 					grid-template-columns: 4rem 1fr;
 					gap: 1.25em;
 				}
-				.focus-item > .focus-desc {
+				.focus-item > .focus-desc,
+				.host-item > .host-desc {
 					grid-column: 1 / -1;
 				}
 				.apply .deadline-card {
@@ -517,15 +618,91 @@ import {
 						frameworks.
 					</p>
 					<p>
-						Building on the success of the previous codeathon, participants
-						will collaborate in small teams to develop prototype tools and
-						workflows that improve the
+						Building on the success of the previous codeathon, participants will
+						collaborate in small teams to develop prototype tools and workflows
+						that improve the
 						<strong
 							>Findability, Accessibility, Interoperability, and Reusability</strong
 						>
 						of BRC data, resources, and analysis tools.
 					</p>
 				</div>
+			</section>
+
+			<div class="section-mark" aria-hidden="true">
+				<span class="line"></span>
+				<Mark size={14} color="var(--teal)" variant="node" />
+				<span class="line"></span>
+			</div>
+
+			<section class="hosts">
+				<div class="hosts-head">
+					<span class="eyebrow eyebrow--teal">Hosted by</span>
+					<h2>
+						Three centers.<br /><em>One codeathon.</em>
+					</h2>
+				</div>
+
+				<ol class="hosts-list">
+					<li class="host-item">
+						<div class="host-num">01</div>
+						<div>
+							<div class="host-meta">BV-BRC</div>
+							<h3 class="host-name">
+								Bacterial and Viral Bioinformatics Resource Center
+							</h3>
+							<a
+								href="https://www.bv-brc.org"
+								class="host-link"
+								target="_blank"
+								rel="noopener noreferrer">bv-brc.org →</a
+							>
+						</div>
+						<p class="host-desc">
+							Integrated access to curated pathogen data and analysis tools.
+						</p>
+					</li>
+
+					<li class="host-item">
+						<div class="host-num">02</div>
+						<div>
+							<div class="host-meta">BRC Analytics</div>
+							<h3 class="host-name">
+								Comprehensive analysis tools and workflows
+							</h3>
+							<a
+								href="https://brc-analytics.org"
+								class="host-link"
+								target="_blank"
+								rel="noopener noreferrer">brc-analytics.org →</a
+							>
+						</div>
+						<p class="host-desc">
+							A unified analytics layer for data exploration across BRC
+							resources.
+						</p>
+					</li>
+
+					<li class="host-item">
+						<div class="host-num">03</div>
+						<div>
+							<div class="host-meta">Pathogen Data Network</div>
+							<h3 class="host-name">
+								Interoperability across infectious disease resources
+							</h3>
+							<a
+								href="https://pathogendatanetwork.org"
+								class="host-link"
+								target="_blank"
+								rel="noopener noreferrer">pathogendatanetwork.org →</a
+							>
+						</div>
+						<p class="host-desc">
+							Coordinated access and shared standards across infectious disease
+							data.
+						</p>
+					</li>
+				</ol>
 			</section>
 
 			<div class="section-mark" aria-hidden="true">
@@ -564,9 +741,7 @@ import {
 						<div class="focus-num">02</div>
 						<div>
 							<div class="focus-tag">MCP · Agentic AI</div>
-							<h3 class="focus-title">
-								Bioinformatics workflow automation
-							</h3>
+							<h3 class="focus-title">Bioinformatics workflow automation</h3>
 						</div>
 						<p class="focus-desc">
 							Agent-based systems that translate research questions into

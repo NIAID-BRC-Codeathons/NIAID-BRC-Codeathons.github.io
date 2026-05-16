@@ -20,14 +20,14 @@ video: "https://www.youtube.com/watch?v=Tm2uV7Ydm6o"
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name               | Affiliation                                      | Role / Expertise |
-| ------------------ | ------------------------------------------------ | ---------------- |
-| Alexander Taepper  | Swiss Institute of Bioinformatics, PDN           |                  |
-| Natalie Kucher     | Galaxy (Non-BRC)                                 |                  |
-| Nicholas Chia      | Argonne National Laboratory, BV-BRC/ANL          |                  |
-| Rachel Poretskey   | UIC, BV-BRC                                      |                  |
-| Sam Halabi         | Georgetown University, PDN                       |                  |
-| Thomas Grys        | Mayo Clinic (Non-BRC)                            |                  |
+| Name              | Affiliation                             | Role / Expertise |
+| ----------------- | --------------------------------------- | ---------------- |
+| Alexander Taepper | Swiss Institute of Bioinformatics, PDN  |                  |
+| Natalie Kucher    | Galaxy (Non-BRC)                        |                  |
+| Nicholas Chia     | Argonne National Laboratory, BV-BRC/ANL |                  |
+| Rachel Poretskey  | UIC, BV-BRC                             |                  |
+| Sam Halabi        | Georgetown University, PDN              |                  |
+| Thomas Grys       | Mayo Clinic (Non-BRC)                   |                  |
 
 **Project Summary**
 

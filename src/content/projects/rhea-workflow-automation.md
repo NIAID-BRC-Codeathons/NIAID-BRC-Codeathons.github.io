@@ -20,13 +20,13 @@ video: "https://www.youtube.com/watch?v=t2kotelzYZU"
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name                  | Affiliation                                  | Role / Expertise                   |
-| --------------------- | -------------------------------------------- | ---------------------------------- |
-| Arvind Ramanathan     | Argonne National Laboratory                  | AI Systems Integration Advisor     |
-| Chris Grams           | Argonne National Laboratory, BV-BRC/ANL      | Lead Developer, Galaxy Integration |
-| Marius van den Beek   | SCI-SCALE, BRC Analytics                     | Workflow Automation Engineer       |
-| Maulik Shukla         | Argonne National Laboratory, BV-BRC          | Use-case Alignment and Testing     |
-| Oleksandr Narykov     | Argonne National Laboratory, BV-BRC/ANL      | Workflow Automation Engineer       |
+| Name                | Affiliation                             | Role / Expertise                   |
+| ------------------- | --------------------------------------- | ---------------------------------- |
+| Arvind Ramanathan   | Argonne National Laboratory             | AI Systems Integration Advisor     |
+| Chris Grams         | Argonne National Laboratory, BV-BRC/ANL | Lead Developer, Galaxy Integration |
+| Marius van den Beek | SCI-SCALE, BRC Analytics                | Workflow Automation Engineer       |
+| Maulik Shukla       | Argonne National Laboratory, BV-BRC     | Use-case Alignment and Testing     |
+| Oleksandr Narykov   | Argonne National Laboratory, BV-BRC/ANL | Workflow Automation Engineer       |
 
 **Project Summary**
 
@@ -44,12 +44,12 @@ Rhea will use retrieval-augmented generation (RAG) to identify relevant BV-BRC t
 
 **Data and Resources Required**
 
-| Resource Type     | Source / Link                                   | Description / Purpose              |
-| ----------------- | ----------------------------------------------- | ---------------------------------- |
+| Resource Type     | Source / Link                              | Description / Purpose              |
+| ----------------- | ------------------------------------------ | ---------------------------------- |
 | Data              | BV-BRC genomes, priority pathogen datasets | Training and workflow inputs       |
-| Tools / Services  | BV-BRC APIs, Galaxy server                      | Workflow integration and execution |
-| LLMs / AI Models  | Rhea MCP model, GPT-5                           | Tool reasoning and synthesis       |
-| Compute / Storage | Argonne HPC / Galaxy cluster                    | Execution backend                  |
+| Tools / Services  | BV-BRC APIs, Galaxy server                 | Workflow integration and execution |
+| LLMs / AI Models  | Rhea MCP model, GPT-5                      | Tool reasoning and synthesis       |
+| Compute / Storage | Argonne HPC / Galaxy cluster               | Execution backend                  |
 
 **Expected Outcomes / Deliverables**
 

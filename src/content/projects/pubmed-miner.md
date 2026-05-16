@@ -27,14 +27,14 @@ video: "https://www.youtube.com/watch?v=PQ_r2Cc8OPY"
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name                 | Affiliation                                  | Role / Expertise            |
-| -------------------- | -------------------------------------------- | --------------------------- |
-| Allan Dickerman      | University of Virginia, BV-BRC               |                             |
-| Gordon Pusch         | Argonne National Laboratory, BV-BRC/ANL      |                             |
-| Hasin Rehana         | University of North Dakota (Non-BRC)         |                             |
-| Indresh Singh        | J. Craig Venter Institute, BV-BRC            | Software engineering, AI/ML |
-| Sayed Asaduzzaman    | University of North Dakota (Non-BRC)         |                             |
-| Shubham Deshmukh     | Virginia Tech (Non-BRC)                      | Software engineering, AI/ML |
+| Name              | Affiliation                             | Role / Expertise            |
+| ----------------- | --------------------------------------- | --------------------------- |
+| Allan Dickerman   | University of Virginia, BV-BRC          |                             |
+| Gordon Pusch      | Argonne National Laboratory, BV-BRC/ANL |                             |
+| Hasin Rehana      | University of North Dakota (Non-BRC)    |                             |
+| Indresh Singh     | J. Craig Venter Institute, BV-BRC       | Software engineering, AI/ML |
+| Sayed Asaduzzaman | University of North Dakota (Non-BRC)    |                             |
+| Shubham Deshmukh  | Virginia Tech (Non-BRC)                 | Software engineering, AI/ML |
 
 **Project Summary**
 

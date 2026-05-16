@@ -20,14 +20,14 @@ video: "https://www.youtube.com/watch?v=XaRzwiMXUmU"
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name               | Affiliation                                  | Role / Expertise             |
-| ------------------ | -------------------------------------------- | ---------------------------- |
-| Chris Escobar      | Argonne National Laboratory, BV-BRC/ANL      | Computer Scientist           |
-| Clark Cucinell     | Argonne National Laboratory, BV-BRC          | PhD Student Computer Science |
-| David Gelerinter   | Argonne National Laboratory, BV-BRC/ANL      | Computer Scientist           |
-| Dylan Pilz         | Scripps Research Institute (Non-BRC)         | Bioinformatician             |
-| Nicole Bowers      | Argonne National Laboratory, BV-BRC/ANL      | Bioinformatician             |
-| Rebecca Wattam     | University of Virginia, BV-BRC               | Bioinformatician             |
+| Name             | Affiliation                             | Role / Expertise             |
+| ---------------- | --------------------------------------- | ---------------------------- |
+| Chris Escobar    | Argonne National Laboratory, BV-BRC/ANL | Computer Scientist           |
+| Clark Cucinell   | Argonne National Laboratory, BV-BRC     | PhD Student Computer Science |
+| David Gelerinter | Argonne National Laboratory, BV-BRC/ANL | Computer Scientist           |
+| Dylan Pilz       | Scripps Research Institute (Non-BRC)    | Bioinformatician             |
+| Nicole Bowers    | Argonne National Laboratory, BV-BRC/ANL | Bioinformatician             |
+| Rebecca Wattam   | University of Virginia, BV-BRC          | Bioinformatician             |
 
 **Project Summary**
 

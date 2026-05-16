@@ -20,15 +20,15 @@ video: "https://www.youtube.com/watch?v=3kw4v5ecxuE"
 
 **Suggested Team Members and Roles \[4-6 members\]**
 
-| Name            | Affiliation                                  | Role / Expertise                 |
-| --------------- | -------------------------------------------- | -------------------------------- |
-| Alex Brace      | Argonne National Laboratory, BV-BRC/ANL      | LLM modeling                     |
-| Gary Olsen      | UIUC, BV-BRC/ANL                             | Model building and data cleaning |
-| James Davis     | Argonne National Laboratory, BV-BRC          | Model building and data cleaning |
-| Justin Padowski | Argonne National Laboratory, BV-BRC/ANL      | Model building and data cleaning |
-| Marcus Nguyen   | Argonne National Laboratory, BV-BRC          | Model building and data cleaning |
-| Raleigh Butler  | Argonne National Laboratory, BV-BRC/ANL      | Model building and data cleaning |
-| Ross Overbeek   | Argonne National Laboratory, BV-BRC/ANL      | Model building and data cleaning |
+| Name            | Affiliation                             | Role / Expertise                 |
+| --------------- | --------------------------------------- | -------------------------------- |
+| Alex Brace      | Argonne National Laboratory, BV-BRC/ANL | LLM modeling                     |
+| Gary Olsen      | UIUC, BV-BRC/ANL                        | Model building and data cleaning |
+| James Davis     | Argonne National Laboratory, BV-BRC     | Model building and data cleaning |
+| Justin Padowski | Argonne National Laboratory, BV-BRC/ANL | Model building and data cleaning |
+| Marcus Nguyen   | Argonne National Laboratory, BV-BRC     | Model building and data cleaning |
+| Raleigh Butler  | Argonne National Laboratory, BV-BRC/ANL | Model building and data cleaning |
+| Ross Overbeek   | Argonne National Laboratory, BV-BRC/ANL | Model building and data cleaning |
 
 **Project Summary**
 

@@ -28,11 +28,11 @@ video: "https://www.youtube.com/watch?v=eC1cs9bnyWo"
 | Name              | Affiliation                 | Role / Expertise                             |
 | ----------------- | --------------------------- | -------------------------------------------- |
 | Arvind Ramanathan | Argonne National Laboratory | Principal Investigator, AI Systems Architect |
-| Archit Vasan | Argonne National Laboratory | Model integration and deployment          |
-| Bharat Kale       | Argonne National Laboratory | Use-case definition and validation          |
-| Brian Hsu | Argonne National Laboratory | Model integration and deployment             |
+| Archit Vasan      | Argonne National Laboratory | Model integration and deployment             |
+| Bharat Kale       | Argonne National Laboratory | Use-case definition and validation           |
+| Brian Hsu         | Argonne National Laboratory | Model integration and deployment             |
 | Ozan Gokdemir     | Argonne National Laboratory | RAG and Data Integration Specialist          |
-| Ruijie Zhu    | University of Chicago   | Use-case definition and validation           |
+| Ruijie Zhu        | University of Chicago       | Use-case definition and validation           |
 
 **Project Summary**
 
@@ -50,12 +50,12 @@ The Co-Scientist framework will use an agentic reasoning loop combining retrieva
 
 **Data and Resources Required**
 
-| Resource Type     | Source / Link                         | Description / Purpose          |
-| ----------------- | ------------------------------------- | ------------------------------ |
-| Data              | BV-BRC genomes and curated datasets   | Training and evaluation data   |
-| Tools / Services  | Jnana (Co-Scientist GitHub repo)      | Agentic reasoning system       |
-| LLMs / AI Models  | GPT-4, Claude 3                       | Reasoning and synthesis agents |
-| Compute / Storage | Argonne HPC                           | Experimentation environment    |
+| Resource Type     | Source / Link                       | Description / Purpose          |
+| ----------------- | ----------------------------------- | ------------------------------ |
+| Data              | BV-BRC genomes and curated datasets | Training and evaluation data   |
+| Tools / Services  | Jnana (Co-Scientist GitHub repo)    | Agentic reasoning system       |
+| LLMs / AI Models  | GPT-4, Claude 3                     | Reasoning and synthesis agents |
+| Compute / Storage | Argonne HPC                         | Experimentation environment    |
 
 **Expected Outcomes / Deliverables**
 
