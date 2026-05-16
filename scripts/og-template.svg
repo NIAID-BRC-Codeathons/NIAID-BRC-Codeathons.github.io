@@ -1,0 +1,107 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<radialGradient id="warm" cx="15%" cy="0%" r="60%">
+			<stop offset="0%" stop-color="#b8451f" stop-opacity="0.08" />
+			<stop offset="100%" stop-color="#b8451f" stop-opacity="0" />
+		</radialGradient>
+		<radialGradient id="cool" cx="90%" cy="100%" r="55%">
+			<stop offset="0%" stop-color="#2d5862" stop-opacity="0.1" />
+			<stop offset="100%" stop-color="#2d5862" stop-opacity="0" />
+		</radialGradient>
+	</defs>
+
+	<!-- Background -->
+	<rect width="1200" height="630" fill="#f5f0e5" />
+	<rect width="1200" height="630" fill="url(#warm)" />
+	<rect width="1200" height="630" fill="url(#cool)" />
+
+	<!-- Outer hairline -->
+	<rect
+		x="36"
+		y="36"
+		width="1128"
+		height="558"
+		fill="none"
+		stroke="#d4c9af"
+		stroke-width="1"
+	/>
+
+	<!-- Eyebrow: mark + label + rule -->
+	<g transform="translate(80, 110)">
+		<circle cx="9" cy="9" r="8" fill="none" stroke="#b8451f" stroke-width="1.4" />
+		<circle cx="9" cy="9" r="2.8" fill="#b8451f" />
+		<text
+			x="34"
+			y="14"
+			font-family="'IBM Plex Mono', 'SF Mono', 'Menlo', 'Consolas', monospace"
+			font-size="18"
+			font-weight="500"
+			letter-spacing="3.6"
+			fill="#b8451f"
+		>NIAID · BRC AI CODEATHON 2.0</text>
+		<line x1="445" y1="9" x2="1040" y2="9" stroke="#b8451f" stroke-width="1" opacity="0.4" />
+	</g>
+
+	<!-- Headline -->
+	<text
+		x="80"
+		y="290"
+		font-family="'IBM Plex Sans', -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+		font-size="148"
+		font-weight="200"
+		letter-spacing="-7"
+		fill="#14181f"
+	>AI Codeathon</text>
+
+	<text
+		x="80"
+		y="430"
+		font-family="'IBM Plex Sans', -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+		font-size="148"
+		font-weight="200"
+		letter-spacing="-7"
+		fill="#b8451f"
+	>2.0</text>
+
+	<!-- Hairline under 2.0 -->
+	<line x1="80" y1="448" x2="266" y2="448" stroke="#b8451f" stroke-width="1.5" opacity="0.55" />
+
+	<!-- Subtitle -->
+	<text
+		x="450"
+		y="425"
+		font-family="'IBM Plex Sans', -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+		font-size="32"
+		font-weight="300"
+		letter-spacing="-0.6"
+		fill="#14181f"
+	>
+		<tspan x="450" dy="0">Accelerating FAIR data and tools</tspan>
+		<tspan x="450" dy="44">for infectious disease research.</tspan>
+	</text>
+
+	<!-- Bottom meta row -->
+	<g transform="translate(80, 530)">
+		<text
+			font-family="'IBM Plex Mono', 'SF Mono', 'Menlo', 'Consolas', monospace"
+			font-size="20"
+			font-weight="500"
+			letter-spacing="2.6"
+			fill="#14181f"
+		>SEPT 16 — 18, 2026</text>
+		<text
+			x="335"
+			font-family="'IBM Plex Mono', 'SF Mono', 'Menlo', 'Consolas', monospace"
+			font-size="20"
+			font-weight="400"
+			letter-spacing="2.6"
+			fill="#6f6a5e"
+		>ARGONNE NATIONAL LABORATORY</text>
+	</g>
+
+	<!-- Far-right small mark -->
+	<g transform="translate(1080, 530)">
+		<circle cx="9" cy="0" r="8" fill="none" stroke="#b8451f" stroke-width="1.4" />
+		<circle cx="9" cy="0" r="2.8" fill="#b8451f" />
+	</g>
+</svg>

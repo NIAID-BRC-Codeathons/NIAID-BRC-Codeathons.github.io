@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import Mark from "../components/Mark.astro";
 import { EVENT_DATE, EVENT_LOCATION, SITE_TITLE } from "../consts";
 
 type Item = { time: string; title: string; tag?: string; muted?: boolean };
@@ -94,17 +95,23 @@ const days: Day[] = [
 				padding: 3em 0 4em;
 				border-bottom: 1px solid var(--rule);
 			}
+			.page-head .head-eyebrow {
+				display: flex;
+				align-items: center;
+				gap: 0.7em;
+				color: var(--rust);
+			}
 			.page-head h1 {
 				margin: 0.4em 0 0 0;
 				font-size: clamp(2.75rem, 7vw, 5.5rem);
-				font-weight: 200;
-				letter-spacing: -0.05em;
+				font-weight: 100;
+				letter-spacing: -0.055em;
 				line-height: 1;
 			}
 			.page-head h1 em {
 				font-style: normal;
 				color: var(--rust);
-				font-weight: 200;
+				font-weight: 100;
 			}
 			.venue-card {
 				border-left: 1px solid var(--rule);
@@ -157,11 +164,23 @@ const days: Day[] = [
 			}
 			.day-num {
 				font-family: var(--font-display);
-				font-weight: 200;
+				font-weight: 100;
 				font-size: clamp(5rem, 11vw, 8rem);
 				line-height: 0.85;
 				color: var(--rust);
 				letter-spacing: -0.06em;
+				position: relative;
+				display: inline-block;
+			}
+			.day-num::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0.1em;
+				width: 1.5em;
+				height: 1px;
+				background: var(--rust);
+				opacity: 0.4;
 			}
 			.day-weekday {
 				font-family: var(--font-mono);
@@ -306,7 +325,12 @@ const days: Day[] = [
 		<main>
 			<section class="page-head">
 				<div>
-					<span class="eyebrow">Three Days · Argonne National Lab</span>
+					<div class="head-eyebrow">
+						<Mark size={12} color="var(--rust)" variant="node" />
+						<span class="eyebrow"
+							>Three Days · Argonne National Lab</span
+						>
+					</div>
 					<h1>
 						Schedule<em>.</em>
 					</h1>

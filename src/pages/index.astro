@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import Mark from "../components/Mark.astro";
 import {
 	APPLICATION_DEADLINE,
 	EVENT_DATE,
@@ -36,27 +37,40 @@ import {
 				gap: 1em;
 				align-items: center;
 				margin-bottom: 1.5em;
+				color: var(--rust);
 			}
 			.hero-eyebrow .sep {
 				flex: 1;
 				height: 1px;
-				background: var(--rule);
+				background: var(--rust);
+				opacity: 0.45;
 			}
 			.hero-title {
 				margin: 0;
 				font-size: clamp(3.25rem, 9vw, 7.5rem);
-				font-weight: 200;
-				letter-spacing: -0.05em;
-				line-height: 0.92;
+				font-weight: 100;
+				letter-spacing: -0.055em;
+				line-height: 0.9;
 				color: var(--ink);
 			}
 			.hero-title .big-num {
 				font-family: var(--font-display);
-				font-weight: 300;
+				font-weight: 200;
 				color: var(--rust);
 				display: inline-block;
 				letter-spacing: -0.05em;
 				margin-left: 0.06em;
+				position: relative;
+			}
+			.hero-title .big-num::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0.18em;
+				height: 0.04em;
+				background: var(--rust);
+				opacity: 0.5;
 			}
 			.hero-subtitle {
 				margin-top: 1.2em;
@@ -138,6 +152,23 @@ import {
 				}
 			}
 
+			/* ---------- Section divider ---------- */
+			.section-mark {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 2.5em 0;
+				gap: 1.25em;
+				color: var(--rust);
+				opacity: 0.55;
+			}
+			.section-mark .line {
+				flex: 1;
+				max-width: 8rem;
+				height: 1px;
+				background: var(--rule);
+			}
+
 			/* ---------- Intro / lede ---------- */
 			.intro {
 				display: grid;
@@ -145,7 +176,6 @@ import {
 				gap: 3em;
 				padding: 4em 0;
 				border-top: 1px solid var(--rule);
-				border-bottom: 1px solid var(--rule);
 			}
 			.intro-label {
 				font-family: var(--font-mono);
@@ -173,7 +203,7 @@ import {
 
 			/* ---------- Focus areas ---------- */
 			.focus {
-				padding: 5em 0 3em;
+				padding: 2em 0 3em;
 			}
 			.focus-head {
 				display: grid;
@@ -192,6 +222,19 @@ import {
 				font-style: normal;
 				color: var(--rust);
 				font-weight: 300;
+			}
+			.focus-tag {
+				position: relative;
+				padding-left: 1.5em;
+			}
+			.focus-tag::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0.45em;
+				width: 0.75em;
+				height: 1px;
+				background: var(--teal);
 			}
 			.focus-list {
 				list-style: none;
@@ -248,8 +291,7 @@ import {
 				display: grid;
 				grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 				gap: 4em;
-				padding: 5em 0;
-				border-top: 1px solid var(--rule);
+				padding: 2em 0 5em;
 			}
 			.two-col h3 {
 				font-size: 1.85rem;
@@ -431,6 +473,7 @@ import {
 		<main>
 			<section class="hero">
 				<div class="hero-eyebrow reveal reveal-1">
+					<Mark size={12} color="var(--rust)" variant="node" />
 					<span class="eyebrow">Sept 16 — 18, 2026 · Argonne National Lab</span>
 					<span class="sep"></span>
 				</div>
@@ -493,6 +536,12 @@ import {
 				</div>
 			</section>
 
+			<div class="section-mark" aria-hidden="true">
+				<span class="line"></span>
+				<Mark size={14} color="var(--rust)" variant="pair" />
+				<span class="line"></span>
+			</div>
+
 			<section class="focus">
 				<div class="focus-head">
 					<span class="eyebrow">Focus Areas, 2026</span>
@@ -536,6 +585,12 @@ import {
 					</li>
 				</ol>
 			</section>
+
+			<div class="section-mark" aria-hidden="true">
+				<span class="line"></span>
+				<Mark size={14} color="var(--teal)" variant="node" />
+				<span class="line"></span>
+			</div>
 
 			<section class="two-col">
 				<div>

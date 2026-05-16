@@ -5,12 +5,16 @@ import {
 	EVENT_LOCATION,
 	EVENT_YEAR,
 } from "../consts";
+import Mark from "./Mark.astro";
 ---
 
 <footer>
 	<div class="inner">
 		<div class="col">
-			<span class="label">Event</span>
+			<div class="label-row">
+				<Mark size={10} color="#f3a76b" variant="node" />
+				<span class="label">Event</span>
+			</div>
 			<p class="value">
 				NIAID BRC AI Codeathon <em>2.0</em>
 			</p>
@@ -71,13 +75,22 @@ import {
 	.col-end {
 		align-items: flex-start;
 	}
+	.label-row {
+		display: flex;
+		align-items: center;
+		gap: 0.6em;
+		margin-bottom: 0.5em;
+	}
 	.label {
 		font-family: var(--font-mono);
 		font-size: 0.7rem;
 		letter-spacing: 0.22em;
 		text-transform: uppercase;
-		color: rgba(245, 240, 229, 0.5);
+		color: rgba(245, 240, 229, 0.65);
 		margin-bottom: 0.5em;
+	}
+	.label-row .label {
+		margin-bottom: 0;
 	}
 	.value {
 		font-family: var(--font-display);
@@ -103,7 +116,7 @@ import {
 		font-size: 0.72rem;
 		letter-spacing: 0.08em;
 		margin-top: 1em;
-		color: rgba(245, 240, 229, 0.45);
+		color: rgba(245, 240, 229, 0.6);
 	}
 	.emph {
 		color: var(--paper);
