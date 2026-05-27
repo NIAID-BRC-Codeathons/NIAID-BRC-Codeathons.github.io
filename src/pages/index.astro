@@ -57,6 +57,14 @@ import {
 				display: block;
 				white-space: nowrap;
 			}
+			.hero-title .prelude {
+				font-family: var(--font-display);
+				font-size: clamp(1.5rem, 3.6vw, 2.75rem);
+				font-weight: 300;
+				letter-spacing: -0.02em;
+				color: var(--ink-soft, var(--ink));
+				margin-bottom: 0.15em;
+			}
 			.hero-title .big-num {
 				font-family: var(--font-display);
 				font-weight: 200;
@@ -572,6 +580,7 @@ import {
 
 				<div>
 					<h1 class="hero-title reveal reveal-2">
+						<span class="line prelude">NIAID-BRCs</span>
 						<span class="line">AI Codeathon</span>
 						<span class="line big-num">2.0</span>
 					</h1>

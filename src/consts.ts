@@ -1,9 +1,9 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = "NIAID BRC AI Codeathon 2026";
+export const SITE_TITLE = "NIAID-BRCs AI Codeathon 2.0";
 export const SITE_DESCRIPTION =
-	"NIAID-BRC AI Codeathon 2.0 for Infectious Disease Research - September 16-18, 2026 at Argonne National Laboratory";
+	"NIAID-BRCs AI Codeathon 2.0 for Infectious Disease Research - September 16-18, 2026 at Argonne National Laboratory";
 
 export const EVENT_DATE = "September 16-18, 2026";
 export const EVENT_LOCATION = "Argonne National Laboratory, Lemont, IL";
