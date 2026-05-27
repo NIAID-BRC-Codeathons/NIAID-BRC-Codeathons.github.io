@@ -1,6 +1,7 @@
 ---
 import {
 	APPLICATION_DEADLINE,
+	APPLICATION_FORM_URL,
 	EVENT_DATE,
 	EVENT_LOCATION,
 	EVENT_YEAR,
@@ -27,7 +28,14 @@ import Mark from "./Mark.astro";
 			<p class="meta">
 				Deadline <span class="emph">{APPLICATION_DEADLINE}</span>
 			</p>
-			<p class="meta">Application form coming soon.</p>
+			<a
+				href={APPLICATION_FORM_URL}
+				target="_blank"
+				rel="noopener"
+				class="link"
+			>
+				Open application form ↗
+			</a>
 		</div>
 
 		<div class="col col-end">
