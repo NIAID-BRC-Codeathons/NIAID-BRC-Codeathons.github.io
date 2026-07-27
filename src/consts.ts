@@ -11,3 +11,5 @@ export const EVENT_YEAR = "2026";
 export const APPLICATION_DEADLINE = "June 30, 2026";
 export const APPLICATION_FORM_URL =
 	"https://docs.google.com/forms/d/e/1FAIpQLSdul1UUsXyYDlpW7-uape4jbuHfufzMmNIp37ezKtTP8WW6dg/viewform";
+// Flip to true to re-open applications -- restores every apply CTA site-wide.
+export const APPLICATIONS_OPEN = false;

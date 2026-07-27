@@ -2,6 +2,7 @@
 import {
 	APPLICATION_DEADLINE,
 	APPLICATION_FORM_URL,
+	APPLICATIONS_OPEN,
 	EVENT_DATE,
 	EVENT_LOCATION,
 	EVENT_YEAR,
@@ -24,18 +25,31 @@ import Mark from "./Mark.astro";
 		</div>
 
 		<div class="col">
-			<span class="label">Apply</span>
-			<p class="meta">
-				Deadline <span class="emph">{APPLICATION_DEADLINE}</span>
-			</p>
-			<a
-				href={APPLICATION_FORM_URL}
-				target="_blank"
-				rel="noopener"
-				class="link"
-			>
-				Open application form ↗
-			</a>
+			<span class="label">{APPLICATIONS_OPEN ? "Apply" : "Applications"}</span>
+			{
+				APPLICATIONS_OPEN ? (
+					<>
+						<p class="meta">
+							Deadline <span class="emph">{APPLICATION_DEADLINE}</span>
+						</p>
+						<a
+							href={APPLICATION_FORM_URL}
+							target="_blank"
+							rel="noopener"
+							class="link"
+						>
+							Open application form ↗
+						</a>
+					</>
+				) : (
+					<>
+						<p class="meta">
+							<span class="emph">Closed</span>
+						</p>
+						<p class="meta">Deadline was {APPLICATION_DEADLINE}</p>
+					</>
+				)
+			}
 		</div>
 
 		<div class="col col-end">

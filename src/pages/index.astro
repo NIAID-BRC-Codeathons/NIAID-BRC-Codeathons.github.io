@@ -6,6 +6,7 @@ import Mark from "../components/Mark.astro";
 import {
 	APPLICATION_DEADLINE,
 	APPLICATION_FORM_URL,
+	APPLICATIONS_OPEN,
 	EVENT_DATE,
 	EVENT_LOCATION,
 	SITE_DESCRIPTION,
@@ -122,6 +123,21 @@ import {
 				gap: 1em;
 				margin-top: 2.5em;
 				align-items: center;
+			}
+			.btn-closed {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5em;
+				padding: 0.95em 1.6em;
+				background: transparent;
+				color: var(--mute);
+				font-family: var(--font-mono);
+				font-size: 0.8rem;
+				letter-spacing: 0.16em;
+				text-transform: uppercase;
+				font-weight: 500;
+				border: 1px dashed var(--rule);
+				cursor: default;
 			}
 
 			/* ---------- Section divider ---------- */
@@ -592,18 +608,39 @@ import {
 						<div class="meta-sub">Bldg 240 · Room 1416</div>
 					</div>
 					<div class="meta-block">
-						<span class="meta-label">Applications close</span>
-						<div class="meta-value">{APPLICATION_DEADLINE}</div>
+						<span class="meta-label"
+							>{APPLICATIONS_OPEN ? "Applications close" : "Applications"}</span
+						>
+						{
+							APPLICATIONS_OPEN ? (
+								<div class="meta-value">{APPLICATION_DEADLINE}</div>
+							) : (
+								<>
+									<div class="meta-value">Closed</div>
+									<div class="meta-sub">Deadline was {APPLICATION_DEADLINE}</div>
+								</>
+							)
+						}
 					</div>
 				</div>
 
 				<div class="hero-actions reveal reveal-5">
-					<a
-						href={APPLICATION_FORM_URL}
-						class="btn-primary"
-						target="_blank"
-						rel="noopener noreferrer">Apply Now →</a
-					>
+					{
+						APPLICATIONS_OPEN ? (
+							<a
+								href={APPLICATION_FORM_URL}
+								class="btn-primary"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Apply Now →
+							</a>
+						) : (
+							<span class="btn-closed" aria-disabled="true">
+								Applications Closed
+							</span>
+						)
+					}
 					<a href="/schedule/" class="btn-secondary">View Schedule</a>
 					<a href="/projects/" class="btn-secondary">2025 Project Archive</a>
 				</div>
@@ -806,33 +843,68 @@ import {
 
 			<section class="apply">
 				<div>
-					<span class="eyebrow-light">Apply</span>
+					<span class="eyebrow-light"
+						>{APPLICATIONS_OPEN ? "Apply" : "Applications closed"}</span
+					>
 					<h2>
 						Three days at <em>Argonne</em>.<br />Free to attend.
 					</h2>
-					<p>
-						Participation is free, but space is limited. Travel and lodging
-						support may be available for a limited number of participants.
-						Additional details on project themes and logistics will be announced
-						soon.
-					</p>
+					{
+						APPLICATIONS_OPEN ? (
+							<p>
+								Participation is free, but space is limited. Travel and lodging
+								support may be available for a limited number of participants.
+								Additional details on project themes and logistics will be
+								announced soon.
+							</p>
+						) : (
+							<p>
+								Applications closed on {APPLICATION_DEADLINE} and we are no
+								longer accepting submissions. Selected participants will be
+								notified by email, and confirmed teams begin bi-weekly
+								preparatory calls ahead of the event.
+							</p>
+						)
+					}
 					<div class="apply-actions">
-						<a
-							href={APPLICATION_FORM_URL}
-							class="btn-light btn-light--primary"
-							target="_blank"
-							rel="noopener noreferrer">Apply Now →</a
-						>
+						{
+							APPLICATIONS_OPEN && (
+								<a
+									href={APPLICATION_FORM_URL}
+									class="btn-light btn-light--primary"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Apply Now →
+								</a>
+							)
+						}
 						<a href="/schedule/" class="btn-light">View Full Schedule</a>
 					</div>
 				</div>
 				<div class="deadline-card">
-					<span class="deadline-label">Application Deadline</span>
-					<div class="deadline-date">{APPLICATION_DEADLINE}</div>
-					<p class="deadline-note">
-						Notifications shortly after. Confirmed teams begin bi-weekly
-						preparatory calls.
-					</p>
+					<span class="deadline-label"
+						>{APPLICATIONS_OPEN ? "Application Deadline" : "Applications"}</span
+					>
+					{
+						APPLICATIONS_OPEN ? (
+							<>
+								<div class="deadline-date">{APPLICATION_DEADLINE}</div>
+								<p class="deadline-note">
+									Notifications shortly after. Confirmed teams begin bi-weekly
+									preparatory calls.
+								</p>
+							</>
+						) : (
+							<>
+								<div class="deadline-date">Closed</div>
+								<p class="deadline-note">
+									Deadline passed {APPLICATION_DEADLINE}. Selected participants
+									will be notified by email.
+								</p>
+							</>
+						)
+					}
 				</div>
 			</section>
 		</main>
