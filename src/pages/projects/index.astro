@@ -4,7 +4,12 @@ import BaseHead from "../../components/BaseHead.astro";
 import Footer from "../../components/Footer.astro";
 import Header from "../../components/Header.astro";
 import Mark from "../../components/Mark.astro";
-import { EVENT_DATE, EVENT_YEAR, SITE_TITLE } from "../../consts";
+import {
+	EVENT_DATE,
+	EVENT_YEAR,
+	PROJECT_CHARTER_DEADLINE,
+	SITE_TITLE,
+} from "../../consts";
 
 const projects = (await getCollection("projects"))
 	.filter((p) => p.data.year === 2026)
@@ -16,7 +21,7 @@ const projects = (await getCollection("projects"))
 	<head>
 		<BaseHead
 			title={`Projects | ${SITE_TITLE}`}
-			description={`The ${projects.length} proposed projects for the NIAID-BRCs AI Codeathon 2.0, ${EVENT_DATE} at Argonne National Laboratory`}
+			description={`The ${projects.length} draft project pitches for the NIAID-BRCs AI Codeathon 2.0, ${EVENT_DATE} at Argonne National Laboratory`}
 		/>
 		<style>
 			main {
@@ -261,11 +266,23 @@ const projects = (await getCollection("projects"))
 				margin-bottom: 0.5em;
 			}
 			.note p {
-				margin: 0;
+				margin: 0 0 0.9em 0;
 				color: var(--ink-soft);
 				font-size: 0.95rem;
 				line-height: 1.6;
 				max-width: 72ch;
+			}
+			.note p:last-child {
+				margin-bottom: 0;
+			}
+			.note a {
+				color: var(--rust);
+				text-decoration: none;
+				border-bottom: 1px solid rgba(184, 69, 31, 0.35);
+				transition: border-color 0.2s ease;
+			}
+			.note a:hover {
+				border-bottom-color: var(--rust);
 			}
 
 			@media (max-width: 820px) {
@@ -304,23 +321,25 @@ const projects = (await getCollection("projects"))
 				<div>
 					<div class="head-eyebrow">
 						<Mark size={12} color="var(--rust)" variant="node" />
-						<span class="eyebrow">Proposals · {EVENT_YEAR}</span>
+						<span class="eyebrow">Draft pitches · {EVENT_YEAR}</span>
 					</div>
 					<h1>
 						Projects<em>.</em>
 					</h1>
 					<p class="subtitle">
-						The proposed projects for the NIAID-BRCs AI Codeathon 2.0, {
-							EVENT_DATE
-						} at Argonne National Laboratory. Each is scoped to a three-day build
-						with a defined MVP and evaluation plan.
+						Starting points for the NIAID-BRCs AI Codeathon 2.0, {EVENT_DATE} at Argonne
+						National Laboratory — sketched by the organizing team, to be developed
+						by the teams that take them on.
 					</p>
 				</div>
 				<div class="callout">
-					<span class="clabel">From the first codeathon</span>
+					<span class="clabel">Read these as drafts</span>
 					<p>
-						Twelve prototypes were built at the 2025 event.
-						<a href="/projects/2025/">Browse the 2025 archive →</a>
+						Each entry below is a one-slide pitch — enough to form balanced
+						teams around, and no more. Scope, methods, and success criteria are
+						all still open. Teams develop them into full project charters by {
+							PROJECT_CHARTER_DEADLINE
+						}.
 					</p>
 				</div>
 			</section>
@@ -329,7 +348,7 @@ const projects = (await getCollection("projects"))
 				<div class="stat">
 					<span class="stat-label">Projects</span>
 					<div class="stat-value">{projects.length}</div>
-					<div class="stat-sub">proposals in scope</div>
+					<div class="stat-sub">pitches to develop</div>
 				</div>
 				<div class="stat">
 					<span class="stat-label">Days on site</span>
@@ -375,13 +394,21 @@ const projects = (await getCollection("projects"))
 				</ul>
 
 				<aside class="note">
-					<span class="label">Teams and scope</span>
+					<span class="label">What happens next</span>
 					<p>
-						Project scopes are proposals, not commitments — teams are expected
-						to sharpen them in the run-up to the event and during the first day
-						on site. Team assignments are being finalized; participants can
-						review their project and request a reassignment through the
-						participant spreadsheet circulated by the organizing team.
+						These pitches exist to give teams something concrete to argue with.
+						Expect them to change substantially — narrowing the organism or
+						dataset, replacing the proposed method, cutting the three-day scope
+						down to something that actually ships, or reframing the question
+						altogether. That work belongs to the team, and lands in the project
+						charter due {PROJECT_CHARTER_DEADLINE}.
+					</p>
+					<p>
+						Team assignments are still being finalized; participants can review
+						their project and request a reassignment through the participant
+						spreadsheet circulated by the organizing team. For a sense of what a
+						finished project looks like, see the
+						<a href="/projects/2025/">2025 archive</a>.
 					</p>
 				</aside>
 			</section>

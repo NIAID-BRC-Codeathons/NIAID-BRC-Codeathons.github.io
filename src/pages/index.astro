@@ -10,6 +10,7 @@ import {
 	APPLICATIONS_OPEN,
 	EVENT_DATE,
 	EVENT_LOCATION,
+	PROJECT_CHARTER_DEADLINE,
 	SITE_DESCRIPTION,
 	SITE_TITLE,
 } from "../consts";
@@ -942,13 +943,17 @@ const projects = (await getCollection("projects"))
 					<div>
 						<span class="eyebrow">Projects, 2026</span>
 						<h2>
-							{projects.length} builds.<br /><em>Three days.</em>
+							{projects.length} starting points.<br /><em
+								>Not {projects.length} plans.</em
+							>
 						</h2>
 					</div>
 					<p class="pt-lede">
-						Each proposal is scoped to a three-day MVP with a defined evaluation
-						plan. Teams sharpen the scope in the run-up to the event and on the
-						first day on site.
+						Each of these is a one-slide pitch from the organizing team — enough
+						to form a balanced team around, and no more. The teams that take
+						them on develop them into real project charters by {
+							PROJECT_CHARTER_DEADLINE
+						}.
 					</p>
 				</div>
 
