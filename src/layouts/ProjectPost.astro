@@ -9,7 +9,11 @@ type Props = CollectionEntry<"projects">["data"] & {
 	slug: string;
 };
 
-const { title, description, heroImage, github, video, slug } = Astro.props;
+const { title, description, heroImage, github, video, proposal, year, slug } =
+	Astro.props;
+const isArchive = year === 2025;
+const listingHref = isArchive ? "/projects/2025/" : "/projects/";
+const listingLabel = isArchive ? "Past Projects" : "Projects";
 const editUrl = `https://github.com/NIAID-BRC-Codeathons/NIAID-BRC-Codeathons.github.io/edit/main/src/content/projects/${slug}.md`;
 ---
 
@@ -165,7 +169,7 @@ const editUrl = `https://github.com/NIAID-BRC-Codeathons/NIAID-BRC-Codeathons.gi
 			<article>
 				<header class="project-head">
 					<div class="crumb">
-						<a href="/projects/">Past Projects</a> &nbsp;·&nbsp; 2025
+						<a href={listingHref}>{listingLabel}</a> &nbsp;·&nbsp; {year}
 					</div>
 					<h1>{title}</h1>
 					<p class="desc">{description}</p>
@@ -213,6 +217,18 @@ const editUrl = `https://github.com/NIAID-BRC-Codeathons/NIAID-BRC-Codeathons.gi
 										/>
 									</svg>
 									Video
+								</a>
+							)
+						}
+						{
+							proposal && (
+								<a
+									href={proposal}
+									class="action"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Full proposal
 								</a>
 							)
 						}

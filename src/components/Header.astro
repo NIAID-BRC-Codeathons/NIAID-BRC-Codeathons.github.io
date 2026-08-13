@@ -1,5 +1,25 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
+
+const NAV = [
+	{ href: "/", label: "Overview" },
+	{ href: "/schedule", label: "Schedule" },
+	{ href: "/projects", label: "Projects" },
+	{ href: "/projects/2025", label: "Past Projects" },
+	{ href: "/report", label: "Report" },
+];
+
+// Longest matching prefix wins, so /projects/2025 highlights "Past Projects"
+// rather than lighting up "Projects" as well.
+const path =
+	"/" +
+	Astro.url.pathname
+		.replace(import.meta.env.BASE_URL, "")
+		.replace(/^\/+|\/+$/g, "");
+const activeHref =
+	NAV.map((n) => n.href)
+		.filter((h) => path === h || (h !== "/" && path.startsWith(h + "/")))
+		.sort((a, b) => b.length - a.length)[0] ?? "/";
 ---
 
 <header>
@@ -10,10 +30,13 @@ import HeaderLink from "./HeaderLink.astro";
 		</a>
 
 		<nav class="internal-links">
-			<HeaderLink href="/">Overview</HeaderLink>
-			<HeaderLink href="/schedule">Schedule</HeaderLink>
-			<HeaderLink href="/projects">Past Projects</HeaderLink>
-			<HeaderLink href="/report">Report</HeaderLink>
+			{
+				NAV.map((item) => (
+					<HeaderLink href={item.href} active={item.href === activeHref}>
+						{item.label}
+					</HeaderLink>
+				))
+			}
 		</nav>
 
 		<div class="social-links">
