@@ -1,8 +1,27 @@
-# NIAID-BRCs AI Codeathon Website
+# NIAID-BRCs AI Codeathon 2.0
 
-Website for the NIAID-BRCs AI Codeathon 2.0, September 16-18, 2026 at Argonne National Laboratory. Also hosts the archive from the inaugural 2025 codeathon.
+**September 16-18, 2026 · Argonne National Laboratory, Lemont, IL**
 
-**Live Site:** https://niaid-brc-codeathons.github.io/
+Three days of building AI-driven tools and workflows for infectious disease
+research, hosted by the NIAID Bioinformatics Resource Centers — BV-BRC, BRC
+Analytics, and the Pathogen Data Network. Applications for 2026 are closed;
+participants have been selected and project teams are being finalized.
+
+|                  |                                                       |
+| ---------------- | ----------------------------------------------------- |
+| **Website**      | https://niaid-brc-codeathons.github.io/               |
+| **Projects**     | https://niaid-brc-codeathons.github.io/projects/      |
+| **Schedule**     | https://niaid-brc-codeathons.github.io/schedule/      |
+| **2025 archive** | https://niaid-brc-codeathons.github.io/projects/2025/ |
+
+Each of the eleven 2026 projects has its own repository in this organization,
+seeded with the project pitch. Those pitches are **starting points, not plans** —
+teams develop them into project charters ahead of the event.
+
+This repository holds the website itself. Everything below is about building and
+editing that site.
+
+---
 
 Built with [Astro](https://astro.build/), a modern static site generator.
 
