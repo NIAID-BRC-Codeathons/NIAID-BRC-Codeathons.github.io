@@ -26,3 +26,6 @@ pnpm-debug.log*
 # local-only artifacts
 .pr-shots/
 pnpm-lock.yaml
+
+# org invite scripts -- these carry participant email addresses, and this repo is public
+invite-to-org*.sh
