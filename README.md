@@ -1,6 +1,6 @@
-# NIAID BRC AI Codeathon 2025 Website
+# NIAID-BRCs AI Codeathon Website
 
-Website for the NIAID BRC AI Codeathon 2025, November 12-14, 2025 at Argonne National Laboratory.
+Website for the NIAID-BRCs AI Codeathon 2.0, September 16-18, 2026 at Argonne National Laboratory. Also hosts the archive from the inaugural 2025 codeathon.
 
 **Live Site:** https://niaid-brc-codeathons.github.io/
 
@@ -13,12 +13,17 @@ Built with [Astro](https://astro.build/), a modern static site generator.
 ├── src/
 │   ├── components/      # Reusable Astro components
 │   ├── content/
-│   │   └── projects/    # Project proposals as Markdown files
+│   │   └── projects/    # Project proposals as Markdown files (all years, flat)
+│   │       └── themes/  # 2025 theme write-ups, not part of the collection
 │   ├── layouts/         # Page layouts
 │   ├── pages/           # Routes (file-based routing)
 │   │   ├── index.astro  # Homepage
 │   │   ├── schedule.astro # Event schedule
-│   │   └── projects/    # Project listing and detail pages
+│   │   ├── report.astro # 2025 event report
+│   │   └── projects/
+│   │       ├── index.astro     # Current-year listing
+│   │       ├── 2025.astro      # Archive listing
+│   │       └── [...slug].astro # Detail page per project
 │   └── consts.ts        # Site configuration
 ├── astro.config.mjs     # Astro configuration
 └── package.json
@@ -38,21 +43,38 @@ All commands are run from the root of the project:
 
 ## 📝 Adding Project Content
 
-To add a new project proposal:
+Project files all live flat in `src/content/projects/` regardless of year — the
+`year` field is what splits them, so a project's URL never changes when a new
+codeathon comes around.
 
-1. Copy `src/content/projects/your-project-here.md` to a new file (e.g., `my-project.md`)
-2. Edit the frontmatter with your project details:
+To add a project:
+
+1. Create `src/content/projects/my-project.md`
+2. Fill in the frontmatter:
    ```yaml
    ---
    title: "Your Project Title"
-   description: "Brief description"
+   description: "One or two sentences, shown on the listing page"
+   year: 2026
+   order: 12 # position in the listing; current-year projects sort by this
    tags: ["AI", "Bioinformatics"]
+   github: "https://github.com/NIAID-BRC-Codeathons/my-project"
+   proposal: "https://..." # optional, adds a "Full proposal" button
+   video: "https://..." # optional, added after the event
    ---
    ```
-3. Fill in the project sections following the template structure
-4. The project will automatically appear on the projects page
+3. Write the body — current-year proposals use Goal / Three-Day MVP / Evaluation
+4. The project appears on `/projects` (or `/projects/2025` for `year: 2025`) and gets its own page automatically
 
-The template includes all recommended sections for a complete project proposal.
+Each project also gets a repository of the same name in the
+[NIAID-BRC-Codeathons](https://github.com/NIAID-BRC-Codeathons) organization.
+
+## 🗓️ Rolling over to a new codeathon
+
+1. Update the event constants in `src/consts.ts` (dates, location, deadline, `APPLICATIONS_OPEN`)
+2. Add the new project files with the new `year`
+3. Point `/projects` at the new year and add an archive page for the outgoing one, following `src/pages/projects/2025.astro`
+4. Add the archive to the `NAV` list in `src/components/Header.astro`
 
 ## 🌐 Deployment
 
