@@ -11,6 +11,7 @@ tags:
   ]
 github: "https://github.com/NIAID-BRC-Codeathons/pubmed-miner"
 video: "https://www.youtube.com/watch?v=PQ_r2Cc8OPY"
+year: 2025
 ---
 
 **Project Themes:**

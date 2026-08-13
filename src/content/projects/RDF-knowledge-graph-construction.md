@@ -5,6 +5,7 @@ tags:
   ["Knowledge Graphs", "RDF", "Linked Data", "Semantic Web", "Data Integration"]
 github: "https://github.com/NIAID-BRC-Codeathons/RDF-knowledge-graph-construction"
 video: "https://www.youtube.com/watch?v=0fcYShCnXA4"
+year: 2025
 ---
 
 \*\*Project Theme

@@ -4,6 +4,7 @@ description: "Leveraging machine learning and AI to predict functions of charact
 tags: ["Machine Learning", "Gene Function", "LLM", "Protein Function"]
 github: "https://github.com/NIAID-BRC-Codeathons/gene-function-prediction"
 video: "https://www.youtube.com/watch?v=3kw4v5ecxuE"
+year: 2025
 ---
 
 **Project Themes:**

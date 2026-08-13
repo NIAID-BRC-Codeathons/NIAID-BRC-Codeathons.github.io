@@ -11,6 +11,7 @@ tags:
   ]
 github: "https://github.com/NIAID-BRC-Codeathons/ai-co-scientist-protein-function"
 video: "https://www.youtube.com/watch?v=eC1cs9bnyWo"
+year: 2025
 ---
 
 **Project Themes:**

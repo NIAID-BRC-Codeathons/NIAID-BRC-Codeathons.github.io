@@ -4,6 +4,7 @@ description: "Extending the Rhea platform with MCP+RAG to enable automated workf
 tags: ["Rhea", "Workflow Automation", "Galaxy", "MCP", "RAG"]
 github: "https://github.com/NIAID-BRC-Codeathons/rhea-workflow-automation"
 video: "https://www.youtube.com/watch?v=t2kotelzYZU"
+year: 2025
 ---
 
 **Project Themes:**

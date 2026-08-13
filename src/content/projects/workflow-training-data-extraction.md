@@ -4,6 +4,7 @@ description: "Creating structured question-answer training datasets from BRC res
 tags: ["LLM", "Training Data", "Workflows", "Question Answering"]
 github: "https://github.com/NIAID-BRC-Codeathons/workflow-training-data-extraction"
 video: "https://www.youtube.com/watch?v=UMoSn6r7hZ4"
+year: 2025
 ---
 
 **Project Themes:**

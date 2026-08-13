@@ -4,6 +4,7 @@ description: "Automating bioinformatics workflow design, refinement, and executi
 tags: ["AI", "Workflows", "MCP", "Automation", "LLM"]
 github: "https://github.com/NIAID-BRC-Codeathons/workflow-generation-mcp"
 video: "https://www.youtube.com/watch?v=XaRzwiMXUmU"
+year: 2025
 ---
 
 **Project Themes:**

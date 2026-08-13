@@ -4,6 +4,7 @@ description: "AI-powered outbreak surveillance aggregating web data sources incl
 tags: ["Outbreak Monitoring", "Surveillance", "AI", "Public Health", "Web Data"]
 github: "https://github.com/NIAID-BRC-Codeathons/outbreak-surveillance-monitoring"
 video: "https://www.youtube.com/watch?v=Tm2uV7Ydm6o"
+year: 2025
 ---
 
 **Project Themes:**

@@ -4,6 +4,7 @@ description: "Automating sequence identification and contextualization using BLA
 tags: ["LLM", "BLAST", "Narrative Generation", "Knowledge Extraction"]
 github: "https://github.com/NIAID-BRC-Codeathons/storyseq-sequence-narrative"
 video: "https://www.youtube.com/watch?v=jTAEv2hpLgQ"
+year: 2025
 ---
 
 **Project Themes:**
