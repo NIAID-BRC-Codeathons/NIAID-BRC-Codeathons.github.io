@@ -8,8 +8,10 @@ import {
 	APPLICATION_DEADLINE,
 	APPLICATION_FORM_URL,
 	APPLICATIONS_OPEN,
+	EVENT_BUILDING,
 	EVENT_DATE,
 	EVENT_LOCATION,
+	EVENT_ROOM,
 	PROJECT_CHARTER_DEADLINE,
 	SITE_DESCRIPTION,
 	SITE_TITLE,
@@ -735,7 +737,9 @@ const projects = (await getCollection("projects"))
 					<div class="meta-block">
 						<span class="meta-label">Venue</span>
 						<div class="meta-value">{EVENT_LOCATION}</div>
-						<div class="meta-sub">Bldg 240 · Room 1416</div>
+						<div class="meta-sub">
+							Bldg {EVENT_BUILDING} · Room {EVENT_ROOM}
+						</div>
 					</div>
 					<div class="meta-block">
 						<span class="meta-label"

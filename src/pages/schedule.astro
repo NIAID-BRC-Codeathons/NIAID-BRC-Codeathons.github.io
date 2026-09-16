@@ -3,7 +3,13 @@ import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Mark from "../components/Mark.astro";
-import { EVENT_DATE, EVENT_LOCATION, SITE_TITLE } from "../consts";
+import {
+	EVENT_BUILDING,
+	EVENT_DATE,
+	EVENT_LOCATION,
+	EVENT_ROOM,
+	SITE_TITLE,
+} from "../consts";
 
 type Item = { time: string; title: string; tag?: string; muted?: boolean };
 type Day = {
@@ -336,7 +342,9 @@ const days: Day[] = [
 				<div class="venue-card">
 					<div>
 						<span class="venue-label">Venue</span>
-						<div class="venue-room">Room 1416, Building 240</div>
+						<div class="venue-room">
+							Room {EVENT_ROOM}, Building {EVENT_BUILDING}
+						</div>
 						<div class="venue-addr">
 							Argonne National Laboratory<br />
 							9700 S Cass Ave, Lemont, IL

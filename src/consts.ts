@@ -7,6 +7,10 @@ export const SITE_DESCRIPTION =
 
 export const EVENT_DATE = "September 16-18, 2026";
 export const EVENT_LOCATION = "Argonne National Laboratory, Lemont, IL";
+// The hero and the schedule venue card word this differently but must agree on
+// the number -- they were hardcoded separately and drifted once already.
+export const EVENT_BUILDING = "240";
+export const EVENT_ROOM = "1501";
 export const EVENT_YEAR = "2026";
 export const APPLICATION_DEADLINE = "June 30, 2026";
 export const APPLICATION_FORM_URL =
